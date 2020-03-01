@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://eoriented.github.io/</loc>
+    <loc>https://eoriented.github.io/</loc>
     <lastmod>2020-03-01T17:24:43+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://eoriented.github.io/posts/</loc>
+    <loc>https://eoriented.github.io/posts/</loc>
     <lastmod>2020-03-01T17:24:43+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://eoriented.github.io/posts/test/</loc>
+    <loc>https://eoriented.github.io/posts/test/</loc>
     <lastmod>2020-03-01T17:24:43+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://eoriented.github.io/categories/</loc>
+    <loc>https://eoriented.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>http://eoriented.github.io/tags/</loc>
+    <loc>https://eoriented.github.io/tags/</loc>
   </url>
   
 </urlset>
