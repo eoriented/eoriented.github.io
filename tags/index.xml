@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My New Hugo Site</title>
+    <title>Tags on Smart Tiger&#39;s blog</title>
     <link>https://eoriented.github.io/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <description>Recent content in Tags on Smart Tiger&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-KR</language>
+    <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
+    <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Mon, 02 Mar 2020 17:24:43 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blog</title>
+      <link>https://eoriented.github.io/tags/blog/</link>
+      <pubDate>Mon, 02 Mar 2020 17:24:43 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github page</title>
+      <link>https://eoriented.github.io/tags/github-page/</link>
+      <pubDate>Sun, 01 Mar 2020 17:24:43 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/github-page/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github.io</title>
+      <link>https://eoriented.github.io/tags/github.io/</link>
+      <pubDate>Sun, 01 Mar 2020 17:24:43 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/github.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://eoriented.github.io/tags/hugo/</link>
+      <pubDate>Sun, 01 Mar 2020 17:24:43 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static site</title>
+      <link>https://eoriented.github.io/tags/static-site/</link>
+      <pubDate>Sun, 01 Mar 2020 17:24:43 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/static-site/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static site generator</title>
+      <link>https://eoriented.github.io/tags/static-site-generator/</link>
+      <pubDate>Sun, 01 Mar 2020 17:24:43 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/static-site-generator/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

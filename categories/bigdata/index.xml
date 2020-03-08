@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Smart Tiger&#39;s blog</title>
-    <link>https://eoriented.github.io/</link>
-    <description>Recent content on Smart Tiger&#39;s blog</description>
+    <title>bigdata on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/categories/bigdata/</link>
+    <description>Recent content in bigdata on Smart Tiger&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
     <lastBuildDate>Mon, 02 Mar 2020 17:24:43 +0900</lastBuildDate>
     
-	<atom:link href="https://eoriented.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eoriented.github.io/categories/bigdata/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

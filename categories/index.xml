@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on My New Hugo Site</title>
+    <title>Categories on Smart Tiger&#39;s blog</title>
     <link>https://eoriented.github.io/categories/</link>
-    <description>Recent content in Categories on My New Hugo Site</description>
+    <description>Recent content in Categories on Smart Tiger&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-KR</language>
+    <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
+    <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Mon, 02 Mar 2020 17:24:43 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bigdata</title>
+      <link>https://eoriented.github.io/categories/bigdata/</link>
+      <pubDate>Mon, 02 Mar 2020 17:24:43 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/categories/bigdata/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -3,26 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://eoriented.github.io/</loc>
-    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
+    <loc>https://eoriented.github.io/categories/bigdata/</loc>
+    <lastmod>2020-03-02T17:24:43+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/posts/</loc>
-    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/posts/test/</loc>
-    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
+    <loc>https://eoriented.github.io/tags/blog/</loc>
+    <lastmod>2020-03-02T17:24:43+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/categories/</loc>
+    <lastmod>2020-03-02T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/hadoop/</loc>
+    <lastmod>2020-03-02T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/new-file/</loc>
+    <lastmod>2020-03-02T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2020-03-02T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/</loc>
+    <lastmod>2020-03-02T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/</loc>
+    <lastmod>2020-03-02T17:24:43+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/</loc>
+    <lastmod>2020-03-02T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/github-page/</loc>
+    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/github.io/</loc>
+    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/hugo/</loc>
+    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/spark/</loc>
+    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/static-site/</loc>
+    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/static-site-generator/</loc>
+    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/test/</loc>
+    <lastmod>2020-03-01T17:24:43+09:00</lastmod>
   </url>
   
 </urlset>
