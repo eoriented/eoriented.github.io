@@ -8,19 +8,9 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Mon, 02 Mar 2020 17:24:43 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>bigdata</title>
-      <link>https://eoriented.github.io/categories/bigdata/</link>
-      <pubDate>Mon, 02 Mar 2020 17:24:43 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/categories/bigdata/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

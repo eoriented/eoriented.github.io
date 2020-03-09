@@ -8,28 +8,9 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Mon, 02 Mar 2020 17:24:43 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hello</title>
-      <link>https://eoriented.github.io/post/new-file/</link>
-      <pubDate>Mon, 02 Mar 2020 17:24:43 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/new-file/</guid>
-      <description>Hello world </description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://eoriented.github.io/post/test/</link>
-      <pubDate>Sun, 01 Mar 2020 17:24:43 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/test/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
