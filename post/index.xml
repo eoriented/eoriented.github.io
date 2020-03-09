@@ -8,27 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Mon, 02 Mar 2020 17:24:43 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2020 15:21:35 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello</title>
-      <link>https://eoriented.github.io/post/new-file/</link>
-      <pubDate>Mon, 02 Mar 2020 17:24:43 +0900</pubDate>
+      <title>Docker and Container</title>
+      <link>https://eoriented.github.io/post/docker-and-container/</link>
+      <pubDate>Sun, 16 Feb 2020 15:21:35 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/new-file/</guid>
-      <description>Hello world </description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://eoriented.github.io/post/test/</link>
-      <pubDate>Sun, 01 Mar 2020 17:24:43 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/test/</guid>
-      <description></description>
+      <guid>https://eoriented.github.io/post/docker-and-container/</guid>
+      <description>Container 먼저 컨테이너란 무엇일까요? 컨테이너는 Docker의 정식 홈페이지에서 다음과 같이 정의하고 있습니다.
+ Package Software into Standardized Units for Development, Shipment and Deployment</description>
     </item>
     
   </channel>
