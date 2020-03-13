@@ -8,10 +8,29 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sun, 16 Feb 2020 15:21:35 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 21:18:14 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to Kafka</title>
+      <link>https://eoriented.github.io/post/introduction-to-kafka/</link>
+      <pubDate>Thu, 12 Mar 2020 21:07:27 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/introduction-to-kafka/</guid>
+      <description>1. Apache Kafka 아파치 카프카(이하 카프카)는 여러 대의 분산 서버에서 대량의 데이터를 처리하는 분산 메시징 시스템입니다.
+  카프카는 여러 시스템과 장치를 연결하는 중요한 역할을 수행합니다.</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://eoriented.github.io/about/</link>
+      <pubDate>Sun, 08 Mar 2020 21:18:14 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/about/</guid>
+      <description>PROFILE  Over eight years of experience in programming using Scala, Java, Python Worked on building and maintaining big data engineering and analytics system using Spark, Hadoop, Akka, Kafka, HBase, MongoDB  EXPERIENCE Naver Aug, 2016 - Present Data Engineer / Software Engineer</description>
+    </item>
     
     <item>
       <title>Docker and Container</title>

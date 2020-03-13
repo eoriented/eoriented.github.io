@@ -9,18 +9,18 @@
 
     <title>Smart Tiger&#39;s blog</title>
     
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
     
     
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#FF3DB4">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
     <meta name="theme-color" content="#ffffff">
 
     
     
     
-    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.edfefaa4359e11e0beb51af3acc1d6d22063b2579c724ef6c488dd8786bc15d8.css"/>
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.1a936af819e37f47769ad513b022da5b82f2f922214598ffd435abaf418c423b.css"/>
 
     
     
@@ -51,17 +51,17 @@ if (!doNotTrack) {
   <header>
     <div class="site-title">
         
-        <a href="/">
-        <img style="display: block; margin: 0px auto" width="90%" src="/images/logo2.png" /></a>
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
     </div>  
 </header>
   <div class="nav-menu">
   
-    <a class="color-link nav-link" href="/categories/">Categories</a>
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
   
-    <a class="color-link nav-link" href="/tags/">Tags</a>
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
   
-    <a class="color-link nav-link" href="/about/">About</a>
+    <a class="color-link nav-link" href="https://eoriented.github.io/about/">About</a>
   
   
 </div>
@@ -146,7 +146,7 @@ if (!doNotTrack) {
         <div id="content" class="content-container">
         
 <h1 class="post-title">Docker and Container</h1>
-    <time>February 16, 2020</time>
+    
     <div>
         <p>
         <h2 id="container">Container</h2>
@@ -155,7 +155,7 @@ if (!doNotTrack) {
 <p>Package Software into Standardized Units for Development, Shipment and Deployment</p>
 </blockquote>
 <p>컨테이너는 애플리케이션에게 격리된 실행 환경을 제공해주는 가상화 기술입니다. 컨테이너 단위로 OS, Library, Application을 패키징 할 수 있습니다. 컨테이너 기술을 통해 하나의 OS 상에서 여러 애플리케이션을 독립적으로 실행시킬 수 있습니다.</p>
-<p><img src="/images/docker-and-container/docker-architecture.png#center100" alt=""></p>
+<p><img src="https://eoriented.github.io/images/docker-and-container/docker-architecture.png#center100" alt=""></p>
 <h2 id="why-container">Why container?</h2>
 <p>그러면 왜 컨테이너 기술을 사용할까요? 그 이유는 다음과 같습니다.</p>
 <ul>
@@ -168,7 +168,7 @@ if (!doNotTrack) {
 <li>리소스 사용의 효율성 증대</li>
 <li>MSA(Micro Service Architecture)에 적합</li>
 </ul>
-<p><img src="/images/docker-and-container/vm-vs-container.png#center75" alt=""></p>
+<p><img src="https://eoriented.github.io/images/docker-and-container/vm-vs-container.png#center75" alt=""></p>
 <h2 id="technology">Technology</h2>
 <p>이러한 컨테이너 기술을 가능하게 하는 기반 기술들이 존재합니다. 그러한 기반 기술들에 대해 살펴보도록 하겠습니다.</p>
 <h4 id="namespace">Namespace</h4>
@@ -181,7 +181,7 @@ if (!doNotTrack) {
 <li>uts(hostname) : 독립적인 hostname 할당</li>
 <li>user(UID) : 독립적인 사용자 할당</li>
 </ul>
-<p><img src="/images/docker-and-container/namespace.png#center100" alt=""></p>
+<p><img src="https://eoriented.github.io/images/docker-and-container/namespace.png#center100" alt=""></p>
 <h4 id="cgroupscontrol-groups">cgroups(Control Groups)</h4>
 <p>cgroups는 자원에 대한 제어를 가능하게 해주는 리눅스 커널의 기능입니다. 제어 가능한 자원은 아래와 같습니다.</p>
 <p>- 메모리<br>
@@ -190,7 +190,7 @@ if (!doNotTrack) {
 - Network<br>
 - device 노드(/dev)</p>
 <p>cgroup으로 그룹핑된 프로세스들은 리소스별로 정해진 양만 사용 가능합니다.</p>
-<p><img src="/images/docker-and-container/cgroup.png#center100" alt=""></p>
+<p><img src="https://eoriented.github.io/images/docker-and-container/cgroup.png#center100" alt=""></p>
 <h4 id="union-filesystem">Union Filesystem</h4>
 <p>서로 다른 파일 시스템이나 디렉터리를 합쳐서 하나의 논리적인 파일 시스템으로 컨테이너에게 제공됩니다. Union Filesystem을 살펴보기 전에 먼저 Union mount에 대해서 알아야 합니다. Union mount는 다음과 같습니다.</p>
 <ul>
@@ -202,7 +202,7 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<p><img src="/images/docker-and-container/union-filesystem.png#center100" alt=""></p>
+<p><img src="https://eoriented.github.io/images/docker-and-container/union-filesystem.png#center100" alt=""></p>
 <p>그럼 Union Filesystem에 대해 살펴보도록 하겠습니다.</p>
 <ul>
 <li>Union Filesystem
@@ -225,7 +225,14 @@ if (!doNotTrack) {
 <h2 id="docker">Docker</h2>
 <p>Docker는 컨테이너를 이미지 파일로 빌드하고 배포하여 어디서나 실행할 수 있게 해 줄 수 있는 오픈소스 프로젝트입니다.
 Docker는 클라이언트(docker)와 서버(dockerd)로 구성되어 있습니다. 클라이언트에서 명령어를 서버로 전송해서 실행합니다.</p>
-<p><img src="/images/docker-and-container/docker-overview.png#center100" alt=""></p>
+<p><img src="https://eoriented.github.io/images/docker-and-container/docker-overview.png#center100" alt="">
+<figure>
+    <img src="https://eoriented.github.io/images/docker-and-container/docker-overview.png"
+         alt="https://docs.docker.com/engine/docker-overview/"/> <figcaption>
+            <p><a href="https://docs.docker.com/engine/docker-overview/">https://docs.docker.com/engine/docker-overview/</a></p>
+        </figcaption>
+</figure>
+</p>
 <p>docker의 동작 방식은 다음과 같습니다.</p>
 <ul>
 <li>Docker 이미지 빌드를 위해 Dockerfile 작성</li>
@@ -244,21 +251,21 @@ Docker는 클라이언트(docker)와 서버(dockerd)로 구성되어 있습니�
         
         <hr class="footer-divider">
         
-            <a class="tag" href="/tags/cloud">#cloud</a>
+            <a class="tag" href="https://eoriented.github.io/tags/cloud">#cloud</a>
         
-            <a class="tag" href="/tags/contianer">#contianer</a>
+            <a class="tag" href="https://eoriented.github.io/tags/contianer">#contianer</a>
         
-            <a class="tag" href="/tags/docker">#docker</a>
+            <a class="tag" href="https://eoriented.github.io/tags/docker">#docker</a>
         
-            <a class="tag" href="/tags/kubenetes">#kubenetes</a>
+            <a class="tag" href="https://eoriented.github.io/tags/kubenetes">#kubenetes</a>
         
-            <a class="tag" href="/tags/lxc">#lxc</a>
+            <a class="tag" href="https://eoriented.github.io/tags/lxc">#lxc</a>
         
-            <a class="tag" href="/tags/orchestration">#orchestration</a>
+            <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
         
-            <a class="tag" href="/tags/cd">#CD</a>
+            <a class="tag" href="https://eoriented.github.io/tags/cd">#CD</a>
         
-            <a class="tag" href="/tags/ci">#CI</a>
+            <a class="tag" href="https://eoriented.github.io/tags/ci">#CI</a>
         
       
     </div>

@@ -3,8 +3,93 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://eoriented.github.io/categories/bigdata/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/broker/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eoriented.github.io/categories/</loc>
-    <lastmod>2020-02-16T15:21:35+09:00</lastmod>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/consumer/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/introduction-to-kafka/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/kafka/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/kafka/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/message-queue/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/producer/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/pubsub/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/streaming/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%A9%94%EC%8B%9C%EC%A7%80%ED%81%90/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EC%B9%B4%ED%94%84%EC%B9%B4/</loc>
+    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/about/</loc>
+    <lastmod>2020-03-08T21:18:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/</loc>
+    <lastmod>2020-03-08T21:18:14+09:00</lastmod>
   </url>
   
   <url>
@@ -59,26 +144,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/orchestration/</loc>
-    <lastmod>2020-02-16T15:21:35+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/post/</loc>
-    <lastmod>2020-02-16T15:21:35+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/</loc>
-    <lastmod>2020-02-16T15:21:35+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/subcategories/</loc>
-    <lastmod>2020-02-16T15:21:35+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/</loc>
     <lastmod>2020-02-16T15:21:35+09:00</lastmod>
   </url>
   
