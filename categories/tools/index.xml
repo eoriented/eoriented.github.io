@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/categories/tools/</link>
+    <description>Recent content in tools on Smart Tiger&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
+    <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Fri, 15 May 2009 10:36:10 +0900</lastBuildDate>
+    
+	<atom:link href="https://eoriented.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Compile Using GCC</title>
+      <link>https://eoriented.github.io/post/how-to-compile-using-gcc/</link>
+      <pubDate>Fri, 15 May 2009 10:36:10 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/how-to-compile-using-gcc/</guid>
+      <description>1. gcc 동작 과정   gcc
+원래는 GNU C Compiler를 의미 했지만 1999년부터 GNU Compiler Collection을 의미한다.
+  gcc가 실행시키는 프로그램</description>
+    </item>
+    
+  </channel>
+</rss>
