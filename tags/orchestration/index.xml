@@ -20,7 +20,8 @@
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/post/docker-and-container/</guid>
       <description>Container 먼저 컨테이너란 무엇일까요? 컨테이너는 Docker의 정식 홈페이지에서 다음과 같이 정의하고 있습니다.
- Package Software into Standardized Units for Development, Shipment and Deployment</description>
+ Package Software into Standardized Units for Development, Shipment and Deployment
+ 컨테이너는 애플리케이션에게 격리된 실행 환경을 제공해주는 가상화 기술입니다. 컨테이너 단위로 OS, Library, Application을 패키징 할 수 있습니다.</description>
     </item>
     
   </channel>

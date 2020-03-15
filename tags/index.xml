@@ -8,10 +8,64 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Thu, 12 Mar 2020 21:07:27 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 22:15:26 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>combinebykey</title>
+      <link>https://eoriented.github.io/tags/combinebykey/</link>
+      <pubDate>Sat, 14 Mar 2020 22:15:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/combinebykey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>combiner</title>
+      <link>https://eoriented.github.io/tags/combiner/</link>
+      <pubDate>Sat, 14 Mar 2020 22:15:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/combiner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>groupbykey</title>
+      <link>https://eoriented.github.io/tags/groupbykey/</link>
+      <pubDate>Sat, 14 Mar 2020 22:15:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/groupbykey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pair-rdd</title>
+      <link>https://eoriented.github.io/tags/pair-rdd/</link>
+      <pubDate>Sat, 14 Mar 2020 22:15:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/pair-rdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reducebykey</title>
+      <link>https://eoriented.github.io/tags/reducebykey/</link>
+      <pubDate>Sat, 14 Mar 2020 22:15:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/reducebykey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spark</title>
+      <link>https://eoriented.github.io/tags/spark/</link>
+      <pubDate>Sat, 14 Mar 2020 22:15:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/spark/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>broker</title>
@@ -163,6 +217,96 @@
       <pubDate>Sun, 16 Feb 2020 15:21:35 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/orchestration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deeplearning</title>
+      <link>https://eoriented.github.io/tags/deeplearning/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/deeplearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dl</title>
+      <link>https://eoriented.github.io/tags/dl/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/dl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dnn</title>
+      <link>https://eoriented.github.io/tags/dnn/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/dnn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machinelearning</title>
+      <link>https://eoriented.github.io/tags/machinelearning/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/machinelearning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ml</title>
+      <link>https://eoriented.github.io/tags/ml/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/ml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>neuralnetworl</title>
+      <link>https://eoriented.github.io/tags/neuralnetworl/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/neuralnetworl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>overfitting</title>
+      <link>https://eoriented.github.io/tags/overfitting/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/overfitting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relu</title>
+      <link>https://eoriented.github.io/tags/relu/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/relu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sigmoid</title>
+      <link>https://eoriented.github.io/tags/sigmoid/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/sigmoid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>underfitting</title>
+      <link>https://eoriented.github.io/tags/underfitting/</link>
+      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/underfitting/</guid>
       <description></description>
     </item>
     

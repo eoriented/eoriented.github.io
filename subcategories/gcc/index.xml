@@ -21,7 +21,8 @@
       <guid>https://eoriented.github.io/post/how-to-compile-using-gcc/</guid>
       <description>1. gcc 동작 과정   gcc
 원래는 GNU C Compiler를 의미 했지만 1999년부터 GNU Compiler Collection을 의미한다.
-  gcc가 실행시키는 프로그램</description>
+  gcc가 실행시키는 프로그램
+         cpp 전처리기   cc1 컴파일러   as 어셈블러   ld 링커    1) 전처리 단계</description>
     </item>
     
   </channel>

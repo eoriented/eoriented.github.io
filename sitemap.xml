@@ -4,16 +4,71 @@
   
   <url>
     <loc>https://eoriented.github.io/categories/bigdata/</loc>
-    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/broker/</loc>
-    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/categories/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/combinebykey/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/combiner/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/groupbykey/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/pair-rdd/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/reducebykey/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/spark/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/spark/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/avoid-groupbykey/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/</loc>
+    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/broker/</loc>
     <lastmod>2020-03-12T21:07:27+09:00</lastmod>
   </url>
   
@@ -43,11 +98,6 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/post/</loc>
-    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/producer/</loc>
     <lastmod>2020-03-12T21:07:27+09:00</lastmod>
   </url>
@@ -59,16 +109,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/streaming/</loc>
-    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/subcategories/</loc>
-    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/</loc>
     <lastmod>2020-03-12T21:07:27+09:00</lastmod>
   </url>
   
@@ -145,6 +185,71 @@
   <url>
     <loc>https://eoriented.github.io/tags/orchestration/</loc>
     <lastmod>2020-02-16T15:21:35+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/deep-learning/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/deeplearning/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/dl/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/dnn/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/categories/machine-learning/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/machinelearning/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/ml/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/neuralnetworl/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/overfitting/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/relu/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/sigmoid/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/underfitting/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/deep-learning-overview-1/</loc>
+    <lastmod>2017-10-01T13:04:48+09:00</lastmod>
   </url>
   
   <url>
