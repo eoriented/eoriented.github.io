@@ -8,10 +8,20 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sun, 01 Oct 2017 13:04:48 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 07 Oct 2017 15:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>딥러닝(Deep Learning) 살펴보기 2탄</title>
+      <link>https://eoriented.github.io/post/deep-learning-overview-2/</link>
+      <pubDate>Sat, 07 Oct 2017 15:00:00 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/deep-learning-overview-2/</guid>
+      <description>지난 포스트에 Deep learning 살펴보기 1탄을 통해 딥러닝의 개요와 뉴럴 네트워크, 그리고 Underfitting의 문제점과 해결방법에 관해 알아보았습니다. 그럼 오늘은 이어서 Deep learning에서 학습이 느린 문제점을 어떠한 방식으로 해결하고 연구하고 있는지 한번 알아보도록 하겠습니다.
+Neural Network 복습 기존의 뉴럴 네트워크는 weight parameter들을 최적화(optimize)를 하기 위하여 Gradient Descent 방법을 사용했습니다.</description>
+    </item>
     
     <item>
       <title>딥러닝(Deep Learning) 살펴보기 1탄</title>
@@ -21,16 +31,6 @@
       <guid>https://eoriented.github.io/post/deep-learning-overview-1/</guid>
       <description>이번 포스트에서는 Deep learning에 대해 살펴볼 예정입니다. 이번 포스트는 Reference에 있는 내용을 정리한 것입니다. Deep learning은 대세가 되었습니다. 주변에서 딥러닝이라는 이야기가 많이 들립니다. 딥러닝이란 무엇인지 알아보도록 하겠습니다. 오늘날 딥러닝을 가능하게 해준 3가지가 있습니다.
  빅데이터  데이터가 많은게 깡패입니다.</description>
-    </item>
-    
-    <item>
-      <title>딥러닝(Deep Learning) 살펴보기 2탄</title>
-      <link>https://eoriented.github.io/post/deep-learning-overview-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/deep-learning-overview-2/</guid>
-      <description>지난 포스트에 Deep learning 살펴보기 1탄을 통해 딥러닝의 개요와 뉴럴 네트워크, 그리고 Underfitting의 문제점과 해결방법에 관해 알아보았습니다. 그럼 오늘은 이어서 Deep learning에서 학습이 느린 문제점을 어떠한 방식으로 해결하고 연구하고 있는지 한번 알아보도록 하겠습니다.
-Neural Network 복습 기존의 뉴럴 네트워크는 weight parameter들을 최적화(optimize)를 하기 위하여 Gradient Descent 방법을 사용했습니다.</description>
     </item>
     
   </channel>

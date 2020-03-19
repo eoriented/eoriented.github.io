@@ -8,6 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Sat, 07 Oct 2017 15:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/%EB%89%B4%EB%9F%B4%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +16,7 @@
     <item>
       <title>딥러닝(Deep Learning) 살펴보기 2탄</title>
       <link>https://eoriented.github.io/post/deep-learning-overview-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 07 Oct 2017 15:00:00 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/post/deep-learning-overview-2/</guid>
       <description>지난 포스트에 Deep learning 살펴보기 1탄을 통해 딥러닝의 개요와 뉴럴 네트워크, 그리고 Underfitting의 문제점과 해결방법에 관해 알아보았습니다. 그럼 오늘은 이어서 Deep learning에서 학습이 느린 문제점을 어떠한 방식으로 해결하고 연구하고 있는지 한번 알아보도록 하겠습니다.
