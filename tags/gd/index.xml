@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>machine-learning on Smart Tiger&#39;s blog</title>
-    <link>https://eoriented.github.io/categories/machine-learning/</link>
-    <description>Recent content in machine-learning on Smart Tiger&#39;s blog</description>
+    <title>GD on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/gd/</link>
+    <description>Recent content in GD on Smart Tiger&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sun, 01 Oct 2017 13:04:48 +0900</lastBuildDate>
     
-	<atom:link href="https://eoriented.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eoriented.github.io/tags/gd/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>딥러닝(Deep Learning) 살펴보기 1탄</title>
-      <link>https://eoriented.github.io/post/deep-learning-overview-1/</link>
-      <pubDate>Sun, 01 Oct 2017 13:04:48 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/deep-learning-overview-1/</guid>
-      <description>이번 포스트에서는 Deep learning에 대해 살펴볼 예정입니다. 이번 포스트는 Reference에 있는 내용을 정리한 것입니다. Deep learning은 대세가 되었습니다. 주변에서 딥러닝이라는 이야기가 많이 들립니다. 딥러닝이란 무엇인지 알아보도록 하겠습니다. 오늘날 딥러닝을 가능하게 해준 3가지가 있습니다.
- 빅데이터  데이터가 많은게 깡패입니다.</description>
-    </item>
     
     <item>
       <title>딥러닝(Deep Learning) 살펴보기 2탄</title>

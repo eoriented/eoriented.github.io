@@ -163,10 +163,12 @@ if (!doNotTrack) {
 <p>Package Software into Standardized Units for Development, Shipment and Deployment</p>
 </blockquote>
 <p>컨테이너는 애플리케이션에게 격리된 실행 환경을 제공해주는 가상화 기술입니다. 컨테이너 단위로 OS, Library, Application을 패키징 할 수 있습니다. 컨테이너 기술을 통해 하나의 OS 상에서 여러 애플리케이션을 독립적으로 실행시킬 수 있습니다.</p>
-<figure>
-    <img src="https://eoriented.github.io/images/docker-and-container/docker-architecture.png" width="100%"/> 
-</figure>
+<figure >
 
+  <img src="https://eoriented.github.io/images/docker-and-container/docker-architecture.png" width="100%"  style="max-width: 400px" />
+  
+
+</figure>
 <h2 id="why-container">Why container?</h2>
 <p>그러면 왜 컨테이너 기술을 사용할까요? 그 이유는 다음과 같습니다.</p>
 <ul>
@@ -179,10 +181,12 @@ if (!doNotTrack) {
 <li>리소스 사용의 효율성 증대</li>
 <li>MSA(Micro Service Architecture)에 적합</li>
 </ul>
-<figure><a href="https://www.redhat.com/ko/topics/containers/whats-a-linux-container" target="#">
-    <img src="https://eoriented.github.io/images/docker-and-container/vm-vs-container.png" width="100%"/> </a>
-</figure>
+<figure >
+<a href="https://www.redhat.com/ko/topics/containers/whats-a-linux-container">
+  <img src="https://eoriented.github.io/images/docker-and-container/vm-vs-container.png" width="100%"  style="max-width: 700px" />
+  </a>
 
+</figure>
 <h2 id="technology">Technology</h2>
 <p>이러한 컨테이너 기술을 가능하게 하는 기반 기술들이 존재합니다. 그러한 기반 기술들에 대해 살펴보도록 하겠습니다.</p>
 <h4 id="namespace">Namespace</h4>
@@ -195,10 +199,12 @@ if (!doNotTrack) {
 <li>uts(hostname) : 독립적인 hostname 할당</li>
 <li>user(UID) : 독립적인 사용자 할당</li>
 </ul>
-<figure>
-    <img src="https://eoriented.github.io/images/docker-and-container/namespace.png" width="100%"/> 
-</figure>
+<figure >
 
+  <img src="https://eoriented.github.io/images/docker-and-container/namespace.png" width="100%"  style="max-width: 600px" />
+  
+
+</figure>
 <h4 id="cgroupscontrol-groups">cgroups(Control Groups)</h4>
 <p>cgroups는 자원에 대한 제어를 가능하게 해주는 리눅스 커널의 기능입니다. 제어 가능한 자원은 아래와 같습니다.</p>
 <p>- 메모리<br>
@@ -207,10 +213,12 @@ if (!doNotTrack) {
 - Network<br>
 - device 노드(/dev)</p>
 <p>cgroup으로 그룹핑된 프로세스들은 리소스별로 정해진 양만 사용 가능합니다.</p>
-<figure>
-    <img src="https://eoriented.github.io/images/docker-and-container/cgroup.png" width="100%"/> 
-</figure>
+<figure >
 
+  <img src="https://eoriented.github.io/images/docker-and-container/cgroup.png" width="100%"  style="max-width: 500px" />
+  
+
+</figure>
 <h4 id="union-filesystem">Union Filesystem</h4>
 <p>서로 다른 파일 시스템이나 디렉터리를 합쳐서 하나의 논리적인 파일 시스템으로 컨테이너에게 제공됩니다. Union Filesystem을 살펴보기 전에 먼저 Union mount에 대해서 알아야 합니다. Union mount는 다음과 같습니다.</p>
 <ul>
@@ -222,10 +230,12 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<figure><a href="https://blog.naver.com/PostView.nhn?blogId=alice_k106&amp;logNo=221530340759" target="#">
-    <img src="https://eoriented.github.io/images/docker-and-container/union-filesystem.png" width="100%"/> </a>
-</figure>
+<figure >
+<a href="https://blog.naver.com/PostView.nhn?blogId=alice_k106&amp;logNo=221530340759">
+  <img src="https://eoriented.github.io/images/docker-and-container/union-filesystem.png" width="100%"  style="max-width: 500px" />
+  </a>
 
+</figure>
 <p>그럼 Union Filesystem에 대해 살펴보도록 하겠습니다.</p>
 <ul>
 <li>Union Filesystem
@@ -248,10 +258,12 @@ if (!doNotTrack) {
 <h2 id="docker">Docker</h2>
 <p>Docker는 컨테이너를 이미지 파일로 빌드하고 배포하여 어디서나 실행할 수 있게 해 줄 수 있는 오픈소스 프로젝트입니다.
 Docker는 클라이언트(docker)와 서버(dockerd)로 구성되어 있습니다. 클라이언트에서 명령어를 서버로 전송해서 실행합니다.</p>
-<figure><a href="https://docs.docker.com/engine/docker-overview/" target="#">
-    <img src="https://eoriented.github.io/images/docker-and-container/docker-overview.png" width="100%"/> </a>
-</figure>
+<figure >
+<a href="https://docs.docker.com/engine/docker-overview/">
+  <img src="https://eoriented.github.io/images/docker-and-container/docker-overview.png" width="100%"  style="max-width: 600px" />
+  </a>
 
+</figure>
 <p>docker의 동작 방식은 다음과 같습니다.</p>
 <ul>
 <li>Docker 이미지 빌드를 위해 Dockerfile 작성</li>
@@ -263,6 +275,9 @@ Docker는 클라이언트(docker)와 서버(dockerd)로 구성되어 있습니�
 <p>오늘은 docker와 docker의 기반 기술이 되는 container에 대해 알아보았습니다. 다음 시간에는 이러한 container들을 orchestration 할 수 있는 kubernetes에 대해 알아보도록 하겠습니다.</p>
 
         </p>
+
+        <br />
+        <br />
 
         <div class="paging post-paging">
             
