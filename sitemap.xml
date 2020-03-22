@@ -188,6 +188,36 @@
   </url>
   
   <url>
+    <loc>https://eoriented.github.io/tags/cvs/</loc>
+    <lastmod>2019-07-27T17:06:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/git/</loc>
+    <lastmod>2019-07-27T17:06:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/git/</loc>
+    <lastmod>2019-07-27T17:06:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/git-cheat-sheet/</loc>
+    <lastmod>2019-07-27T17:06:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/git-scm/</loc>
+    <lastmod>2019-07-27T17:06:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/categories/tools/</loc>
+    <lastmod>2019-07-27T17:06:56+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eoriented.github.io/tags/adam/</loc>
     <lastmod>2017-10-07T15:00:00+09:00</lastmod>
   </url>
@@ -329,11 +359,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/gcc%EC%98%B5%EC%85%98/</loc>
-    <lastmod>2009-05-15T10:36:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/categories/tools/</loc>
     <lastmod>2009-05-15T10:36:10+09:00</lastmod>
   </url>
   

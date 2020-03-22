@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tools on Smart Tiger&#39;s blog</title>
-    <link>https://eoriented.github.io/categories/tools/</link>
-    <description>Recent content in tools on Smart Tiger&#39;s blog</description>
+    <title>git on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/git/</link>
+    <description>Recent content in git on Smart Tiger&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
     <lastBuildDate>Sat, 27 Jul 2019 17:06:56 +0900</lastBuildDate>
     
-	<atom:link href="https://eoriented.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eoriented.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,18 +21,6 @@
       <guid>https://eoriented.github.io/post/git-cheat-sheet/</guid>
       <description>git은 오늘날 가장 많이 사용하는 버전 관리 시스템 중 하나입니다. 오늘은 git의 자주 사용하는 명령어에 대해서 살펴보고자 합니다. 먼저 각 명령어에 따른 흐름이 어떻게 변하는지 다음 그림을 통해 알 수 있습니다.
   생성하기   새로운 로컬 저장소를 생성하기</description>
-    </item>
-    
-    <item>
-      <title>gcc로 컴파일하는 방법</title>
-      <link>https://eoriented.github.io/post/how-to-compile-using-gcc/</link>
-      <pubDate>Fri, 15 May 2009 10:36:10 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/how-to-compile-using-gcc/</guid>
-      <description>1. gcc 동작 과정   gcc
-원래는 GNU C Compiler를 의미 했지만 1999년부터 GNU Compiler Collection을 의미한다.
-  gcc가 실행시키는 프로그램
-         cpp 전처리기   cc1 컴파일러   as 어셈블러   ld 링커    1) 전처리 단계</description>
     </item>
     
   </channel>
