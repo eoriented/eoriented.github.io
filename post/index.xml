@@ -75,6 +75,16 @@ Neural Network 복습 기존의 뉴럴 네트워크는 weight parameter들을 �
     </item>
     
     <item>
+      <title>Apache Oozie 알아보기</title>
+      <link>https://eoriented.github.io/post/introduction-to-oozie/</link>
+      <pubDate>Sat, 23 Sep 2017 23:15:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/introduction-to-oozie/</guid>
+      <description>Oozie 개요 Oozie는 정식 홈페이지에 나와 있듯이 Hadoop ecosystem에서 사용하는 Workflow Scheduler(혹은 orchestration) 프레임워크입니다. Oozie에서 제공하는 기능은 크게 아래의 3가지와 같습니다.
+ Scheduling  특정 시간에 액션 수행 주기적인 간격 이후에 액션 수행 이벤트가 발생하면 액션 수행   Coordinating  이전 액션이 성공적으로 끝나면 다음 액션 시작   Managing  액션이 성공하거나 실패했을 때 이메일 발송 액션 수행시간이나 액션의 단계를 저장    Oozie 용어  Action  우지에서 실행할 수 있는 하나의 작업 단위 MapReduce 작업, Spark 작업, Shell script 등   Workflow  Action들의 제어와 의존 관계를 DAG(Directed acyclic graph) 표현   Coordinator  Data sets과 Workflow를 실행하는 스케줄을 정의   Bundle  코디네이터의 모임    Oozie Architecture  우지는 Client-Server Model의 형태입니다.</description>
+    </item>
+    
+    <item>
       <title>gcc로 컴파일하는 방법</title>
       <link>https://eoriented.github.io/post/how-to-compile-using-gcc/</link>
       <pubDate>Fri, 15 May 2009 10:36:10 +0900</pubDate>
