@@ -30,8 +30,6 @@
     
  
     
-    <link rel="alternate" type="application/rss+xml" href="https://eoriented.github.io/tags/index.xml" title="Smart Tiger's blog" />
-    
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -155,129 +153,312 @@ if (!doNotTrack) {
 </nav>
         <div id="content" class="content-container">
         
+<h1 class="post-title">HBase 데이터 모델</h1>
+    
+    <div>
+        <p>
+        <p>이번 포스트에서는 HBase의 데이터 모델에 대해 살펴볼 예정입니다.<br>
+먼저 데이터 모델이란 무엇일까요? 데이터 모델이란 데이터를 인식하고 조작하는데 사용되는 모델을 말합니다.<br>
+데이터베이스를 사용하는 사람에게 데이터 모델은 데이터베이스 내의 데이터와 상호작용하는 방법을 이야기하는 것입니다.<br>
+HBase에서 데이터 모델을 어떻게 표현하는지 살펴보기 전에 HBase에서 사용하는 용어를 먼저 살펴보도록 하겠습니다.</p>
+<h2 id="hbase-data-model-용어-정리">HBase Data Model 용어 정리</h2>
+<p>HBase는 데이터를 테이블에 저장합니다. 테이블은 row와 column으로 구성되어 있습니다. 이러한 용어들은 관계형 데이터베이스와 매우 유사한 것으로 보입니다. HBase에서 데이터를 저장하는 테이블의 형태는 아래와 같습니다.</p>
+<figure >
+<a href="https://www.edureka.co/blog/hbase-architecture/" target="_blank">
+  <img src="https://eoriented.github.io/images/hbase-data-model/hbase-table.png" width="100%"  style="max-width: 700px" />
+  </a>
 
-<h1>Tags</h1>
+</figure>
+<p>하지만 HBase의 데이터 모델이 관계형 데이터베이스의 데이터 모델로 보는 것은 HBase의 데이터 모델을 이해하는데 도움이 되지 않습니다. 오히려 아래의 그림과 같이 HBase 테이블을 다차원을 가진 맵의 자료구조로 생각하는 것이 도움이 됩니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/hbase-data-model/multi-dimension-map.png" width="100%"  style="max-width: 500px" />
+  
+
+</figure>
+<p>그러면 HBase에서 데이터 모델을 나타내기 위해서 사용하는 용어에 대해 살펴보도록 하겠습니다.</p>
+<h4 id="table">Table</h4>
 <ul>
-    
-        <li><a href="https://eoriented.github.io/tags/adam/">Adam</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/airflow/">airflow</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/broker/">broker</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/cd/">CD</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/ci/">CI</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/cloud/">cloud</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/column-family/">column family</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/combinebykey/">combinebykey</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/combiner/">combiner</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/compiler/">compiler</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/consumer/">consumer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/contianer/">contianer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/cvs/">cvs</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/data-model/">data model</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/deep-learning/">Deep Learning</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/deeplearning/">deeplearning</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/dl/">dl</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/dnn/">dnn</a> 2</li>
-    
-        <li><a href="https://eoriented.github.io/tags/docker/">docker</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gcc/">gcc</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gcc%EC%98%B5%EC%85%98/">gcc옵션</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gd/">GD</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/git/">git</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/git-scm/">git-scm</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gradient-descent/">gradient descent</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/groupbykey/">groupbykey</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/hbase/">hbase</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/kafka/">kafka</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/keyvalue/">keyvalue</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/kubenetes/">kubenetes</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/lxc/">lxc</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/machinelearning/">machinelearning</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/message-queue/">message queue</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/ml/">ml</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/neural-network/">neural network</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/neuralnetworl/">neuralnetworl</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/nosql/">nosql</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/oozie/">oozie</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/optimizer/">Optimizer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/orchestration/">orchestration</a> 2</li>
-    
-        <li><a href="https://eoriented.github.io/tags/overfitting/">overfitting</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/pair-rdd/">pair-rdd</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/producer/">producer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/pubsub/">pubsub</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/reducebykey/">reducebykey</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/relu/">relu</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/sgd/">SGD</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/sigmoid/">sigmoid</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/spark/">spark</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/stochastic-gradient-descent/">Stochastic Gradient descent</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/streaming/">streaming</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/underfitting/">underfitting</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EB%89%B4%EB%9F%B4%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/">뉴럴네트워크</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EB%94%A5%EB%9F%AC%EB%8B%9D/">딥러닝</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EB%A9%94%EC%8B%9C%EC%A7%80%ED%81%90/">메시지큐</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80/">우지</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EC%B9%B4%ED%94%84%EC%B9%B4/">카프카</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC/">컴파일</a> 1</li>
-    
+<li>table은 여러개의 Row로 구성되어 있습니다.</li>
+</ul>
+<h4 id="row">Row</h4>
+<ul>
+<li>row는 하나의 row key와 하나 이상의 column으로 구성됩니다.</li>
+<li>row는 row key의 이름 순으로 정렬되어 저장됩니다.
+<ul>
+<li>이러한 이유로 row key 디자인이 굉장히 중요합니다.</li>
+<li>row key를 디자인하는 방법은 <a href="https://hbase.apache.org/book.html#rowkey.design">공식 홈페이지</a>에서 확인할 수 있습니다.</li>
+</ul>
+</li>
+</ul>
+<h4 id="column">Column</h4>
+<ul>
+<li>column family와 column qualifier로 구성되며 <code>:</code>으로 구분합니다.</li>
+</ul>
+<h4 id="column-family">Column Family</h4>
+<ul>
+<li>column family는 HBase가 실제 데이터를 저장하는 물리적인 처리 방식과 관련있고 성능에 영향을 줍니다.
+<ul>
+<li>즉, disk i/o를 위해 column family내의 컬럼들을 disk 내에 물리적으로 가깝게 저장합니다.</li>
+</ul>
+</li>
+<li>이러한 이유로 column family는 미리 정의되어야 하고 쉽게 변경될 수 없습니다.</li>
+<li>각각의 column family는 저장과 관련된 속성이 존재합니다.
+<ul>
+<li>예를 들어, 메모리에 캐시, 압축, row key 인코딩 등이 이에 해당합니다.</li>
+</ul>
+</li>
+<li>table 내의 각각의 row는 동일한 column family를 가지고 있습니다.</li>
+</ul>
+<h4 id="column-qualifier">Column Qualifier</h4>
+<ul>
+<li>column qualifier는 column family와 다르게 사전에 정의될 필요가 없이 유동적입니다.
+<ul>
+<li>즉, row 사이에 항상 같을 필요는 없습니다.</li>
+</ul>
+</li>
+<li>예를 들어, column family가 <code>content</code>일 때, rowkey1은 content:html이라는 qualifier를 가지고, rowkey2는 content:pdf를 가질 수 있으며 서로 다른 qualifier를 가질 수 있습니다.</li>
+</ul>
+<h4 id="cell">Cell</h4>
+<ul>
+<li>실제 저장된 값을 의미합니다.</li>
+<li>row key, column family, column qualifier의 조합을 Cell의 값을 식별할 수 있습니다.</li>
+<li>실제 값은 timestamp 별로 여러 개가 존재할 수 있습니다.</li>
+</ul>
+<h4 id="timestamp">Timestamp</h4>
+<ul>
+<li>value와 함께 저장됩니다.</li>
+<li>cell의 값을 저장할 때 버전별로 저장하는데 이러한 버전은 timestamp로 식별됩니다.</li>
+<li>cell의 버전의 개수는 설정을 통해 변경 가능합니다.</li>
+</ul>
+<p>HBase에서는 위에서 설명한 컨셉들이 기본이 됩니다. 실제 HBase에서 제공하는 API는 위의 6개의 조합을 통한 논리적인 뷰를 통해 접근할 수 있습니다.<br>
+지금까지 살펴본 용어에 대해 정확히 알면 HBase를 이해하는데 큰 도움이 됩니다.</p>
+<h2 id="hbase-conceptual-view">HBase Conceptual View</h2>
+<p>HBase의 논리적인 뷰를 살펴보겠습니다. 먼저 하나의 샘플 테이블에 대해 살펴보겠습니다. 이 테이블은 <a href="https://hbase.apache.org/book.html#datamodel">HBase 공식 문서</a>에 나와있는 예제입니다. 테이블 이름은 <code>webtable</code>이고 2개의 로우(<code>com.cnn.www</code>, <code>com.example.www</code>)가 있습니다. 컬럼 패밀리는 3개가 있으며 컬럼 패밀리 이름은 <code>contents</code>, <code>anchor</code>, <code>people</code> 입니다.</p>
+
+
+  
+
+  
+
+
+
+<table  align="center" style="max-width:1100px">
+<thead>
+<tr>
+<th>Row Key</th>
+<th align="center">Time Stamp</th>
+<th>ColumnFamily contents</th>
+<th>ColumnFamily anchor</th>
+<th>ColumnFamily people</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t9</td>
+<td></td>
+<td>anchor:cnnsi.com = &ldquo;CNN&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t8</td>
+<td></td>
+<td>anchor:my.look.ca = &ldquo;CNN.com&rdquo;</td>
+<td></td>
+</tr>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t6</td>
+<td>contents:html = &ldquo;<!-- raw HTML omitted -->…​&rdquo;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t5</td>
+<td>contents:html = &ldquo;<!-- raw HTML omitted -->…​&rdquo;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t3</td>
+<td>contents:html = &ldquo;<!-- raw HTML omitted -->…​&rdquo;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&ldquo;com.example.www&rdquo;</td>
+<td align="center">t5</td>
+<td>contents:html = &ldquo;<!-- raw HTML omitted -->…​&rdquo;</td>
+<td></td>
+<td>people:author = &ldquo;John Doe&rdquo;</td>
+</tr>
+</tbody>
+</table>
+<p><!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<p>위의 <code>com.cnn.www</code>는 버전이 5개입니다. <code>com.example.www</code>는 버전이 1개입니다. 위의 테이블은 비어있는 곳이 존재합니다. 이것을 보통 sparse한 테이블이라고 표현합니다. 논리적으로 보았을 땐 비어있는 것 같지만 HBase에서 실제로 데이터를 저장할 때는 빈 공간이 생기지 않습니다. 이렇게 테이블만 보았을땐 기존의 관계형 데이터베이스의 테이블과 유사합니다. 그러나 테이블의 형태로 보는건 논리적으로 보기 위한 것이고 실제로는 <strong>Multi-demensional map</strong>으로 생각하는 것이 HBase의 데이터 모델을 이해하기 쉽습니다. 위의 논리적인 테이블을 다차원 맵으로 바꾼다면 아래와 같습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{
+  <span style="color:#e6db74">&#34;com.cnn.www&#34;</span>: {
+    contents: {
+      t6: contents:html: <span style="color:#e6db74">&#34;&lt;html&gt;...&#34;</span>
+      t5: contents:html: <span style="color:#e6db74">&#34;&lt;html&gt;...&#34;</span>
+      t3: contents:html: <span style="color:#e6db74">&#34;&lt;html&gt;...&#34;</span>
+    }
+    anchor: {
+      t9: anchor:cnnsi<span style="color:#f92672">.</span>com <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;CNN&#34;</span>
+      t8: anchor:my<span style="color:#f92672">.</span>look<span style="color:#f92672">.</span>ca <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;CNN.com&#34;</span>
+    }
+    people: {}
+  }
+  <span style="color:#e6db74">&#34;com.example.www&#34;</span>: {
+    contents: {
+      t5: contents:html: <span style="color:#e6db74">&#34;&lt;html&gt;...&#34;</span>
+    }
+    anchor: {}
+    people: {
+      t5: people:author: <span style="color:#e6db74">&#34;John Doe&#34;</span>
+    }
+  }
+}
+</code></pre></div><p><!-- raw HTML omitted --></p>
+<h2 id="hbase-physical-view">HBase Physical View</h2>
+<p>HBase의 물리적인 뷰에 대해 살펴보겠습니다. 논리적인 뷰와 다르게 실제로 데이터를 저장할 때는 컬럼 패밀리 단위로 저장합니다. 위에선 살펴본 테이블의 <code>anchor</code> 컬럼 패밀리는 다음과 같이 저장합니다.</p>
+
+
+  
+
+
+
+<table  style="max-width:1100px">
+<thead>
+<tr>
+<th>Row Key</th>
+<th align="center">Time Stamp</th>
+<th>Column Family anchor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t9</td>
+<td>anchor:cnnsi.com = &ldquo;CNN&rdquo;</td>
+</tr>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t8</td>
+<td>anchor:my.look.ca = &ldquo;CNN.com&rdquo;</td>
+</tr>
+</tbody>
+</table>
+<p><!-- raw HTML omitted --></p>
+<p><code>contents</code> 컬럼 패밀리 역시 아래와 같이 저장합니다.</p>
+<p><!-- raw HTML omitted --></p>
+
+
+  
+
+
+
+<table  style="max-width:1100px">
+<thead>
+<tr>
+<th>Row Key</th>
+<th align="center">Time Stamp</th>
+<th>ColumnFamily contents:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t6</td>
+<td>contents:html = &ldquo;<!-- raw HTML omitted -->…​&rdquo;</td>
+</tr>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t5</td>
+<td>contents:html = &ldquo;<!-- raw HTML omitted -->…​&rdquo;</td>
+</tr>
+<tr>
+<td>&ldquo;com.cnn.www&rdquo;</td>
+<td align="center">t3</td>
+<td>contents:html = &ldquo;<!-- raw HTML omitted -->…​&rdquo;</td>
+</tr>
+</tbody>
+</table>
+<p><!-- raw HTML omitted --></p>
+<p>HBase는 위와 같이 컬럼 패밀리 별로 하나의 파일에 데이터를 저장합니다.</p>
+<h2 id="hbase-data-coordinate">HBase Data coordinate</h2>
+<p>기존의 로우와 칼럼을 기반으로 하는 관계형 데이터베이스는 2단계 코디네이트 시스템입니다. 그러나 HBase의 경우 4단계 코디네이트 시스템입니다. 코디네이트들은 순서대로 로우키, 컬럼 패밀리, 컬럼 한정자, 버전입니다. 해당 순서로 원하는 데이터에 접근을 할 수 있습니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/hbase-data-model/coordinate.jpg" width="100%"  style="max-width: 700px" />
+  
+
+</figure>
+<p>위의 그림에서 <code>abc123</code>이라는 값에 접근하기 위해서는 <code>(TheRealMT, info, password, 1329088818321)</code>을 통해 접근할 수 있습니다.
+이와 같이 HBase는 코디네이트인 <code>(TheRealMT, info, password, 1329088818321)</code>를 키로, 그리고 실제 데이터인 <code>abc123</code>을 값으로 하는 키 밸류 저장소로 볼 수 있습니다.</p>
+<p><!-- raw HTML omitted --></p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://hbase.apache.org/book.html#datamodel">HBase data model</a></li>
+<li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=7188930">HBase in action</a></li>
 </ul>
 
-<div class="page-footer"></div>
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging">
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/hbase">#hbase</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/data-model">#data model</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/column-family">#column family</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/keyvalue">#keyvalue</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/nosql">#nosql</a>
+        
+      
+    </div>
+
 
         
         </div>

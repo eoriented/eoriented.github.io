@@ -14,6 +14,18 @@
     
     
     <item>
+      <title>HBase 데이터 모델</title>
+      <link>https://eoriented.github.io/post/hbase-data-model/</link>
+      <pubDate>Mon, 06 Apr 2020 23:01:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/hbase-data-model/</guid>
+      <description>이번 포스트에서는 HBase의 데이터 모델에 대해 살펴볼 예정입니다.
+먼저 데이터 모델이란 무엇일까요? 데이터 모델이란 데이터를 인식하고 조작하는데 사용되는 모델을 말합니다.
+데이터베이스를 사용하는 사람에게 데이터 모델은 데이터베이스 내의 데이터와 상호작용하는 방법을 이야기하는 것입니다.
+HBase에서 데이터 모델을 어떻게 표현하는지 살펴보기 전에 HBase에서 사용하는 용어를 먼저 살펴보도록 하겠습니다.</description>
+    </item>
+    
+    <item>
       <title>Spark에서 groupByKey 대신 reduceByKey 사용하기</title>
       <link>https://eoriented.github.io/post/avoid-groupbykey/</link>
       <pubDate>Sat, 14 Mar 2020 22:15:26 +0900</pubDate>
