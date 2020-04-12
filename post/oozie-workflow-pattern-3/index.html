@@ -30,8 +30,6 @@
     
  
     
-    <link rel="alternate" type="application/rss+xml" href="https://eoriented.github.io/tags/index.xml" title="Smart Tiger's blog" />
-    
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -155,135 +153,160 @@ if (!doNotTrack) {
 </nav>
         <div id="content" class="content-container">
         
+<h1 class="post-title">Oozie Workflow Pattern 3</h1>
+    
+    <div>
+        <p>
+        <p><a href="https://eoriented.github.io/post/oozie-workflow-pattern-2/">이전 포스트</a>에는 Oozie의 워크플로우 패턴중 하나인 fork-and-join 패턴에 관해서 알아보았습니다. 이번 시간에는 워크플로우 내에 액션의 결과에 조건을 주어 다음 액션을 어디로 수행할 것인지 결정할 수 있는 capture-and-decide 패턴에 대해 알아보도록 하겠습니다.</p>
+<h2 id="capture-and-decide-pattern">capture-and-decide pattern</h2>
+<p>capture-and-decide 패턴이라고 하니까 약간 어려운 느낌이 있지만 실제로는 간단한 패턴이죠. 앞서 수행된 액션에서 저장된 결과를 아웃풋으로 전달해주고 다음 액션에서는 해당 아웃풋을 받아서 어떠한 액션을 수행할 것인지 결정하게 되는 것이죠. 즉 간단한 제어문이라고 볼 수 있겠습니다. if-else 패턴이라고도 할 수 있겠네요.</p>
+<figure >
 
-<h1>Tags</h1>
+  <img src="https://eoriented.github.io/images/oozie-workflow-pattern-3/capture-and-decide.png" width="100%"  style="max-width: 700px" />
+  
+
+</figure>
+<p>어디서 많이 본 형태의 그림인거 같죠? 순서도(flowchart)에서 참 거짓에 따라 수행하는 로직이 달라지는 형태와 같습니다. 앞의 자바 액션의 검사 결과를 바탕으로 데이터가 있는지 체크 후에 데이터 유무에 따라 서로 다른 액션을 수행하는 경우 사용됩니다. 그럼 workflow.xml을 어떤식으로 작성하는지 알아볼까요?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;workflow-app</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;validation&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:workflow:0.4&#34;</span><span style="color:#f92672">&gt;</span>
+
+   <span style="color:#f92672">&lt;global&gt;</span>
+         <span style="color:#f92672">&lt;job-tracker&gt;</span>${jobTracker}<span style="color:#f92672">&lt;/job-tracker&gt;</span>
+         <span style="color:#f92672">&lt;name-node&gt;</span>${nameNode}<span style="color:#f92672">&lt;/name-node&gt;</span>
+   <span style="color:#f92672">&lt;/global&gt;</span>
+
+    <span style="color:#f92672">&lt;start</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;validate&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+    <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#39;validate&#39;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;java&gt;</span>
+            <span style="color:#f92672">&lt;main-class&gt;</span>com.hadooparchitecturebook.DataValidationRunner
+            <span style="color:#f92672">&lt;/main-class&gt;</span>
+
+            <span style="color:#75715e">&lt;!-- 중략 --&gt;</span>
+
+            <span style="color:#75715e">&lt;!-- 결과를 캡쳐합니다. 이부분이 중요합니다. --&gt;</span>
+            <span style="color:#f92672">&lt;capture-output</span> <span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;/java&gt;</span>
+        <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;check_for_validation_errors&#34;</span> <span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;fail&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/action&gt;</span>
+
+    <span style="color:#75715e">&lt;!-- 캡쳐된 결과를 가지고 어떠한 액션을 수행할 것인지 결정합니다. --&gt;</span>
+    <span style="color:#f92672">&lt;decision</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#39;check_for_validation_errors&#39;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;switch&gt;</span>
+            <span style="color:#f92672">&lt;case</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;validation_failure&#34;</span><span style="color:#f92672">&gt;</span>
+                ${(wf:actionData(&#34;validate&#34;)[&#34;errors&#34;] == &#34;true&#34;)}
+            <span style="color:#f92672">&lt;/case&gt;</span>
+            <span style="color:#f92672">&lt;default</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;process_data&#34;</span> <span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;/switch&gt;</span>
+    <span style="color:#f92672">&lt;/decision&gt;</span>
+
+    <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#39;process_data&#39;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;java&gt;</span>
+            <span style="color:#f92672">&lt;main-class&gt;</span>com.hadooparchitecturebook.ProcessDataRunner<span style="color:#f92672">&lt;/main-class&gt;</span>
+        <span style="color:#f92672">&lt;/java&gt;</span>
+        <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;fail&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/action&gt;</span>
+
+    <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;validation_failure&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;java&gt;</span>
+            <span style="color:#f92672">&lt;main-class&gt;</span>com.hadooparchitecturebook.MoveOutputToErrorsAction
+            <span style="color:#f92672">&lt;/main-class&gt;</span>
+        <span style="color:#f92672">&lt;/java&gt;</span>
+        <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
+        <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;fail&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/action&gt;</span>
+
+    <span style="color:#f92672">&lt;kill</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fail&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;message&gt;</span>Java failed, error message[${wf:errorMessage
+                 (wf:lastErrorNode())}]<span style="color:#f92672">&lt;/message&gt;</span>
+    <span style="color:#f92672">&lt;/kill&gt;</span>
+
+    <span style="color:#f92672">&lt;end</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;/workflow-app&gt;</span>
+</code></pre></div><p>여기서 액션을 수행한 후에 <code>&lt;capture-output /&gt;</code>을 사용하여 옵션을 캡쳐한 뒤, 이를 다음 decision node에서 캡쳐된 값을 사용하여 어떠한 액션을 수행할 것인지 결정합니다.</p>
+<h2 id="expression-language-function">Expression Language Function</h2>
+<p>캡쳐된 아웃풋의 경우 <code>${(wf:actionData(&quot;validate&quot;)[&quot;errors&quot;] == &quot;true&quot;)}</code> 형태로 데이터를 꺼내서 확인할 수 있습니다. 이러한 형태의 문법을 우지에서는 EL function이라고 합니다. 이러한 EL function을 통해서 다양한 연산들을 지원하고 있습니다. 자세한 내용은 우지 문서 중에 WorkflowFunctionalSpec을 참고하시기 바랍니다.<br>
+capture-output의 경우 java, ssh, shell action에서 지원합니다. capture-output은 자바의 프로퍼티 파일 포맷이어야 합니다. 위의 워크플로우 액션 중 validate 액션에서 캡쳐할 아웃풋을 어떻게 기록하는 방법에 대해 알아보겠습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">getProperty</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;oozie.action.output.properties&#34;</span><span style="color:#f92672">));</span>
+Properties props <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Properties<span style="color:#f92672">();</span>
+props<span style="color:#f92672">.</span><span style="color:#a6e22e">setProperty</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;errors&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">);</span>
+
+OutputStream os <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span>file<span style="color:#f92672">);</span>
+props<span style="color:#f92672">.</span><span style="color:#a6e22e">store</span><span style="color:#f92672">(</span>os<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">);</span>
+os<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>  
+</code></pre></div><p>위의 자바 예제가 캡쳐할 아웃풋을 저장하는 방법입니다. oozie.action.output.properties 파일에 새로운 properties를 작성하는 것이죠. 그러면 우지에서 해당 프로퍼티를 캡쳐하여 아웃풋으로 가지고 있는 것입니다. 그리고 캡쳐된 아웃풋은 <code>wf:actionData(&quot;_action_name&quot;)[&quot;key&quot;]</code>를 통해 decision node에서 참조하게 되는 것입니다.</p>
+<p>지금까지 총 3편의 포스트를 통해 Oozie에서 많이 사용하는 워크플로우 패턴에 대해 알아보았습니다. 하둡 에코시스템을 이용한 개발을 하고 있는데 액션들 간에 디펜던시 관리가 필요로 하다면 Oozie가 하나의 선택지가 될 것입니다.</p>
+<p><!-- raw HTML omitted --></p>
+<h2 id="reference">Reference</h2>
 <ul>
-    
-        <li><a href="https://eoriented.github.io/tags/adam/">Adam</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/airflow/">airflow</a> 4</li>
-    
-        <li><a href="https://eoriented.github.io/tags/apache-oozie/">apache oozie</a> 3</li>
-    
-        <li><a href="https://eoriented.github.io/tags/broker/">broker</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/cd/">CD</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/ci/">CI</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/cloud/">cloud</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/column-family/">column family</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/combinebykey/">combinebykey</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/combiner/">combiner</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/compiler/">compiler</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/consumer/">consumer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/contianer/">contianer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/cvs/">cvs</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/data-model/">data model</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/deep-learning/">Deep Learning</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/deeplearning/">deeplearning</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/dl/">dl</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/dnn/">dnn</a> 2</li>
-    
-        <li><a href="https://eoriented.github.io/tags/docker/">docker</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gcc/">gcc</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gcc%EC%98%B5%EC%85%98/">gcc옵션</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gd/">GD</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/git/">git</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/git-scm/">git-scm</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gradient-descent/">gradient descent</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/groupbykey/">groupbykey</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/hadoop-scheduler/">hadoop scheduler</a> 3</li>
-    
-        <li><a href="https://eoriented.github.io/tags/hbase/">hbase</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/kafka/">kafka</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/keyvalue/">keyvalue</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/kubenetes/">kubenetes</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/luigi/">luigi</a> 3</li>
-    
-        <li><a href="https://eoriented.github.io/tags/lxc/">lxc</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/machinelearning/">machinelearning</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/message-queue/">message queue</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/ml/">ml</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/neural-network/">neural network</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/neuralnetworl/">neuralnetworl</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/nosql/">nosql</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/oozie/">oozie</a> 4</li>
-    
-        <li><a href="https://eoriented.github.io/tags/optimizer/">Optimizer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/orchestration/">orchestration</a> 5</li>
-    
-        <li><a href="https://eoriented.github.io/tags/overfitting/">overfitting</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/pair-rdd/">pair-rdd</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/producer/">producer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/pubsub/">pubsub</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/reducebykey/">reducebykey</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/relu/">relu</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/sgd/">SGD</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/sigmoid/">sigmoid</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/spark/">spark</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/stochastic-gradient-descent/">Stochastic Gradient descent</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/streaming/">streaming</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/underfitting/">underfitting</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EB%89%B4%EB%9F%B4%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/">뉴럴네트워크</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EB%94%A5%EB%9F%AC%EB%8B%9D/">딥러닝</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EB%A9%94%EC%8B%9C%EC%A7%80%ED%81%90/">메시지큐</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80/">우지</a> 4</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EC%B9%B4%ED%94%84%EC%B9%B4/">카프카</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC/">컴파일</a> 1</li>
-    
+<li><a href="https://oozie.apache.org/docs/4.3.0/">Apache Oozie documentation</a></li>
+<li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=84529661">하둡 애플리케이션 아키텍처</a></li>
 </ul>
 
-<div class="page-footer"></div>
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+            <div style="text-align: left">
+                <a class="left" href="https://eoriented.github.io/post/oozie-workflow-pattern-2/" rel="prev" style="color: #64BEA3">
+                    <i class="fa fa-play fa-rotate-180" aria-hidden="true"></i>&nbsp;&nbsp;<span>Oozie Workflow Pattern - 2</span>
+                </a>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/hadoop-scheduler">#hadoop scheduler</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/apache-oozie">#apache oozie</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/luigi">#luigi</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
+        
+      
+    </div>
+
 
         
         </div>

@@ -374,26 +374,56 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/airflow/</loc>
-    <lastmod>2017-09-23T23:15:56+09:00</lastmod>
+    <lastmod>2017-10-01T11:35:48+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/post/introduction-to-oozie/</loc>
-    <lastmod>2017-09-23T23:15:56+09:00</lastmod>
+    <loc>https://eoriented.github.io/tags/apache-oozie/</loc>
+    <lastmod>2017-10-01T11:35:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/hadoop-scheduler/</loc>
+    <lastmod>2017-10-01T11:35:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/luigi/</loc>
+    <lastmod>2017-10-01T11:35:48+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/oozie/</loc>
-    <lastmod>2017-09-23T23:15:56+09:00</lastmod>
+    <lastmod>2017-10-01T11:35:48+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/subcategories/oozie/</loc>
-    <lastmod>2017-09-23T23:15:56+09:00</lastmod>
+    <lastmod>2017-10-01T11:35:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/oozie-workflow-pattern-3/</loc>
+    <lastmod>2017-10-01T11:35:48+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80/</loc>
+    <lastmod>2017-10-01T11:35:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/oozie-workflow-pattern-2/</loc>
+    <lastmod>2017-09-30T14:19:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/oozie-workflow-pattern-1/</loc>
+    <lastmod>2017-09-24T15:06:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/introduction-to-oozie/</loc>
     <lastmod>2017-09-23T23:15:56+09:00</lastmod>
   </url>
   

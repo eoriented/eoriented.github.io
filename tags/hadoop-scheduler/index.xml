@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>oozie on Smart Tiger&#39;s blog</title>
-    <link>https://eoriented.github.io/tags/oozie/</link>
-    <description>Recent content in oozie on Smart Tiger&#39;s blog</description>
+    <title>hadoop scheduler on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/hadoop-scheduler/</link>
+    <description>Recent content in hadoop scheduler on Smart Tiger&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
     <lastBuildDate>Sun, 01 Oct 2017 11:35:48 +0900</lastBuildDate>
     
-	<atom:link href="https://eoriented.github.io/tags/oozie/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eoriented.github.io/tags/hadoop-scheduler/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -41,16 +41,6 @@ fork-and-join pattern fork-and-join 패턴은 Fan-out 패턴이라고도 합니�
       <guid>https://eoriented.github.io/post/oozie-workflow-pattern-1/</guid>
       <description>Oozie가 무엇인지 궁금한 분들을 Apache Oozie 소개라는 이전 포스트를 참고하시기 바랍니다. 일반적으로 Oozie에서 많이 사용되는 워크플로우 패턴에 대해서 알아봅시다.
 순차적 액션 수행 (Point-to-Point Pattern) 가장 간단한 형태로 수행하는 워크플로우 형태가 되겠습니다. 말그대로 순차적으로 액션을 수행할 때 사용합니다.</description>
-    </item>
-    
-    <item>
-      <title>Apache Oozie 소개</title>
-      <link>https://eoriented.github.io/post/introduction-to-oozie/</link>
-      <pubDate>Sat, 23 Sep 2017 23:15:56 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/introduction-to-oozie/</guid>
-      <description>Oozie 개요 Oozie는 정식 홈페이지에 나와 있듯이 Hadoop ecosystem에서 사용하는 Workflow Scheduler(혹은 orchestration) 프레임워크입니다. Oozie에서 제공하는 기능은 크게 아래의 3가지와 같습니다.
- Scheduling  특정 시간에 액션 수행 주기적인 간격 이후에 액션 수행 이벤트가 발생하면 액션 수행   Coordinating  이전 액션이 성공적으로 끝나면 다음 액션 시작   Managing  액션이 성공하거나 실패했을 때 이메일 발송 액션 수행시간이나 액션의 단계를 저장    Oozie 용어  Action  우지에서 실행할 수 있는 하나의 작업 단위 MapReduce 작업, Spark 작업, Shell script 등   Workflow  Action들의 제어와 의존 관계를 DAG(Directed acyclic graph) 표현   Coordinator  Data sets과 Workflow를 실행하는 스케줄을 정의   Bundle  코디네이터의 모임    Oozie Architecture  우지는 Client-Server Model의 형태입니다.</description>
     </item>
     
   </channel>

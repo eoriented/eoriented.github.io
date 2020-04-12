@@ -96,6 +96,36 @@ Neural Network 복습 기존의 뉴럴 네트워크는 weight parameter들을 �
     </item>
     
     <item>
+      <title>Oozie Workflow Pattern 3</title>
+      <link>https://eoriented.github.io/post/oozie-workflow-pattern-3/</link>
+      <pubDate>Sun, 01 Oct 2017 11:35:48 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/oozie-workflow-pattern-3/</guid>
+      <description>이전 포스트에는 Oozie의 워크플로우 패턴중 하나인 fork-and-join 패턴에 관해서 알아보았습니다. 이번 시간에는 워크플로우 내에 액션의 결과에 조건을 주어 다음 액션을 어디로 수행할 것인지 결정할 수 있는 capture-and-decide 패턴에 대해 알아보도록 하겠습니다.
+capture-and-decide pattern capture-and-decide 패턴이라고 하니까 약간 어려운 느낌이 있지만 실제로는 간단한 패턴이죠.</description>
+    </item>
+    
+    <item>
+      <title>Oozie Workflow Pattern - 2</title>
+      <link>https://eoriented.github.io/post/oozie-workflow-pattern-2/</link>
+      <pubDate>Sat, 30 Sep 2017 14:19:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/oozie-workflow-pattern-2/</guid>
+      <description>이전 포스트에는 Oozie의 워크플로우 패턴중 하나인 Point-to-Point 패턴에 관해서 알아보았습니다. 이번 시간에는 fork-and-join 패턴에 대해 알아보도록 하겠습니다.
+fork-and-join pattern fork-and-join 패턴은 Fan-out 패턴이라고도 합니다. 이와 같은 형태의 워크플로우는 여러 액션들이 나누어 실행한 후 해당 액션들이 다 정상적으로 완료된 후 다음 액션을 수행해야하는 경우 많이 사용합니다.</description>
+    </item>
+    
+    <item>
+      <title>Oozie Workflow Pattern - 1</title>
+      <link>https://eoriented.github.io/post/oozie-workflow-pattern-1/</link>
+      <pubDate>Sun, 24 Sep 2017 15:06:15 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/oozie-workflow-pattern-1/</guid>
+      <description>Oozie가 무엇인지 궁금한 분들을 Apache Oozie 소개라는 이전 포스트를 참고하시기 바랍니다. 일반적으로 Oozie에서 많이 사용되는 워크플로우 패턴에 대해서 알아봅시다.
+순차적 액션 수행 (Point-to-Point Pattern) 가장 간단한 형태로 수행하는 워크플로우 형태가 되겠습니다. 말그대로 순차적으로 액션을 수행할 때 사용합니다.</description>
+    </item>
+    
+    <item>
       <title>Apache Oozie 소개</title>
       <link>https://eoriented.github.io/post/introduction-to-oozie/</link>
       <pubDate>Sat, 23 Sep 2017 23:15:56 +0900</pubDate>

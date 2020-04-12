@@ -30,8 +30,6 @@
     
  
     
-    <link rel="alternate" type="application/rss+xml" href="https://eoriented.github.io/tags/index.xml" title="Smart Tiger's blog" />
-    
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -155,135 +153,170 @@ if (!doNotTrack) {
 </nav>
         <div id="content" class="content-container">
         
+<h1 class="post-title">Oozie Workflow Pattern - 2</h1>
+    
+    <div>
+        <p>
+        <p><a href="https://eoriented.github.io/post/oozie-workflow-pattern-1/">이전 포스트</a>에는 Oozie의 워크플로우 패턴중 하나인 Point-to-Point 패턴에 관해서 알아보았습니다. 이번 시간에는 fork-and-join 패턴에 대해 알아보도록 하겠습니다.</p>
+<h2 id="fork-and-join-pattern">fork-and-join pattern</h2>
+<p>fork-and-join 패턴은 Fan-out 패턴이라고도 합니다. 이와 같은 형태의 워크플로우는 여러 액션들이 나누어 실행한 후 해당 액션들이 다 정상적으로 완료된 후 다음 액션을 수행해야하는 경우 많이 사용합니다. 즉, 다음 액션이 실행되기 전에 모든 선행 액션이 완료되는 것을 전제로 하겠다는 것입니다. 말로 하니까 약간 이해하기 어렵네요. 예제를 통해 알아보도록 하겠습니다.</p>
+<figure >
 
-<h1>Tags</h1>
+  <img src="https://eoriented.github.io/images/oozie-workflow-pattern-2/fork-and-join-pattern.png" width="100%"  style="max-width: 850px" />
+  
+
+</figure>
+<p>워크 플로우 형태는 위와 같습니다. fork를 통해서 여러 액션을 수행하면 fork 된 액션들이 완료될 때까지 join에서 기다립니다. join은 앞서 fork에서 수행되는 액션이 다 종료가 되어야지 다음 액션을 수행합니다. 만일 하나의 액션이라도 실패하게 되면 워크플로우 전체가 종료(kill)됩니다.<br>
+그럼 실제로 위에서 실행되고 있는 것을 workflw.xml로 만든 예제를 살펴봅시다. 하이브 액션이 각각 무엇을 하는지는 중요하지 않고 fork-and-join을 어떤식으로 정의하는지를 중점적으로 보시면 좋을 것 같습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;workflow-app</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;build_reports&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:workflow:0.4&#34;</span><span style="color:#f92672">&gt;</span>
+
+   <span style="color:#f92672">&lt;global&gt;</span>
+         <span style="color:#f92672">&lt;job-tracker&gt;</span>${jobTracker}<span style="color:#f92672">&lt;/job-tracker&gt;</span>
+         <span style="color:#f92672">&lt;name-node&gt;</span>${nameNode}<span style="color:#f92672">&lt;/name-node&gt;</span>
+         <span style="color:#f92672">&lt;job-xml&gt;</span>${hiveSiteXML}<span style="color:#f92672">&lt;/job-xml&gt;</span>
+   <span style="color:#f92672">&lt;/global&gt;</span>
+
+   <span style="color:#f92672">&lt;start</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;preliminary_statistics&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;preliminary_statistics&#34;</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
+         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/stats.hql<span style="color:#f92672">&lt;/script&gt;</span>
+      <span style="color:#f92672">&lt;/hive&gt;</span>
+      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;fork_aggregates&#34;</span> <span style="color:#f92672">/&gt;</span>
+      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#f92672">&lt;/action&gt;</span>
+
+   <span style="color:#75715e">&lt;!-- 여기서 fork가 시작됩니다. --&gt;</span>
+   <span style="color:#f92672">&lt;fork</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fork_aggregates&#34;</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;prescriptions_and_refills&#34;</span> <span style="color:#f92672">/&gt;</span>
+      <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;office_visits&#34;</span> <span style="color:#f92672">/&gt;</span>
+      <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;lab_results&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#f92672">&lt;/fork&gt;</span>
+
+   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;prescriptions_and_refills&#34;</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
+         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/refills.hql<span style="color:#f92672">&lt;/script&gt;</span>
+      <span style="color:#f92672">&lt;/hive&gt;</span>
+      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#f92672">/&gt;</span>
+      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#f92672">&lt;/action&gt;</span>
+
+   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;office_visits&#34;</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
+         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/visits.hql<span style="color:#f92672">&lt;/script&gt;</span>
+      <span style="color:#f92672">&lt;/hive&gt;</span>
+      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#f92672">/&gt;</span>
+      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#f92672">&lt;/action&gt;</span>
+
+   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lab_results&#34;</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
+         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/labs.hql<span style="color:#f92672">&lt;/script&gt;</span>
+      <span style="color:#f92672">&lt;/hive&gt;</span>
+      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#f92672">/&gt;</span>
+      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#f92672">&lt;/action&gt;</span>
+
+   <span style="color:#75715e">&lt;!-- 여기서 join을 하게 되는거죠. --&gt;</span>
+   <span style="color:#f92672">&lt;join</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;summary_report&#34;</span> <span style="color:#f92672">/&gt;</span>
+
+   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;summary_report&#34;</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
+         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/summary_report.hql<span style="color:#f92672">&lt;/script&gt;</span>
+      <span style="color:#f92672">&lt;/hive&gt;</span>
+      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
+      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#f92672">&lt;/action&gt;</span>
+
+   <span style="color:#f92672">&lt;kill</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;kill&#34;</span><span style="color:#f92672">&gt;</span>
+      <span style="color:#f92672">&lt;message&gt;</span> Workflow failed. Error message
+                [${wf:errorMessage(wf:lastErrorNode())}]<span style="color:#f92672">&lt;/message&gt;</span>
+   <span style="color:#f92672">&lt;/kill&gt;</span>
+   <span style="color:#f92672">&lt;end</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;/workflow-app&gt;</span>
+</code></pre></div><p>위의 workflow.xml 파일에서 보듯이 fork를 하는 부분이 생기고, 이후에 fork 안에 액션들이 수행된 후 합쳐지는 join 컨트롤 노드가 존재합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">...
+
+<span style="color:#f92672">&lt;fork</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fork_aggregates&#34;</span><span style="color:#f92672">&gt;</span>
+   <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;prescriptions_and_refills&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;office_visits&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;lab_results&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;/fork&gt;</span>
+
+...
+<span style="color:#f92672">&lt;join</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;summary_report&#34;</span> <span style="color:#f92672">/&gt;</span>
+</code></pre></div><p>위의 구문처럼 액션의 흐름을 제어할 수 있게 됩니다. fork 내에 있는 액션들을 나누어서 수행을 하고 join에서는 fork 내의 액션이 끝났는지 기다려줍니다. fork 내에 액션중 하나라도 실패하면 워크플로우는 실패하게 됩니다.<br>
+다음 포스트에서는 이어서 capture-and-decide(aka switch-case) 패턴에 대해 알아보도록 하겠습니다.</p>
+<p><!-- raw HTML omitted --></p>
+<h2 id="reference">Reference</h2>
 <ul>
-    
-        <li><a href="https://eoriented.github.io/tags/adam/">Adam</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/airflow/">airflow</a> 4</li>
-    
-        <li><a href="https://eoriented.github.io/tags/apache-oozie/">apache oozie</a> 3</li>
-    
-        <li><a href="https://eoriented.github.io/tags/broker/">broker</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/cd/">CD</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/ci/">CI</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/cloud/">cloud</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/column-family/">column family</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/combinebykey/">combinebykey</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/combiner/">combiner</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/compiler/">compiler</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/consumer/">consumer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/contianer/">contianer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/cvs/">cvs</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/data-model/">data model</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/deep-learning/">Deep Learning</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/deeplearning/">deeplearning</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/dl/">dl</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/dnn/">dnn</a> 2</li>
-    
-        <li><a href="https://eoriented.github.io/tags/docker/">docker</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gcc/">gcc</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gcc%EC%98%B5%EC%85%98/">gcc옵션</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gd/">GD</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/git/">git</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/git-scm/">git-scm</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/gradient-descent/">gradient descent</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/groupbykey/">groupbykey</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/hadoop-scheduler/">hadoop scheduler</a> 3</li>
-    
-        <li><a href="https://eoriented.github.io/tags/hbase/">hbase</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/kafka/">kafka</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/keyvalue/">keyvalue</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/kubenetes/">kubenetes</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/luigi/">luigi</a> 3</li>
-    
-        <li><a href="https://eoriented.github.io/tags/lxc/">lxc</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/machinelearning/">machinelearning</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/message-queue/">message queue</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/ml/">ml</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/neural-network/">neural network</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/neuralnetworl/">neuralnetworl</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/nosql/">nosql</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/oozie/">oozie</a> 4</li>
-    
-        <li><a href="https://eoriented.github.io/tags/optimizer/">Optimizer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/orchestration/">orchestration</a> 5</li>
-    
-        <li><a href="https://eoriented.github.io/tags/overfitting/">overfitting</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/pair-rdd/">pair-rdd</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/producer/">producer</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/pubsub/">pubsub</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/reducebykey/">reducebykey</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/relu/">relu</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/sgd/">SGD</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/sigmoid/">sigmoid</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/spark/">spark</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/stochastic-gradient-descent/">Stochastic Gradient descent</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/streaming/">streaming</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/underfitting/">underfitting</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EB%89%B4%EB%9F%B4%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC/">뉴럴네트워크</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EB%94%A5%EB%9F%AC%EB%8B%9D/">딥러닝</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EB%A9%94%EC%8B%9C%EC%A7%80%ED%81%90/">메시지큐</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80/">우지</a> 4</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EC%B9%B4%ED%94%84%EC%B9%B4/">카프카</a> 1</li>
-    
-        <li><a href="https://eoriented.github.io/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC/">컴파일</a> 1</li>
-    
+<li><a href="https://oozie.apache.org/docs/4.3.0/">Apache Oozie documentation</a></li>
+<li><a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=84529661">하둡 애플리케이션 아키텍처</a></li>
 </ul>
 
-<div class="page-footer"></div>
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+            <div style="text-align: left">
+                <a class="left" href="https://eoriented.github.io/post/oozie-workflow-pattern-1/" rel="prev" style="color: #64BEA3">
+                    <i class="fa fa-play fa-rotate-180" aria-hidden="true"></i>&nbsp;&nbsp;<span>Oozie Workflow Pattern - 1</span>
+                </a>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/hadoop-scheduler">#hadoop scheduler</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/apache-oozie">#apache oozie</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/luigi">#luigi</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
+        
+      
+    </div>
+
 
         
         </div>
