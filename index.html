@@ -298,6 +298,64 @@ val words = Array(&#34;one&#34;, &#34;two&#34;, &#34;two&#34;, &#34;three&#34;, 
         
         <article>
             <h2>
+                <a href="https://eoriented.github.io/post/scala-future-and-concurrency-2/">
+                    스칼라 퓨처(Future)와 동시성(Concurrency) - 2
+                </a>
+            </h2>
+            <div><p>이전 포스트에 이어서 스칼라 Future의 다른 사용법에 대해 살펴보도록 하겠습니다.
+4. Future 실패 처리하기 스칼라 Future는 실패한 퓨처를 다룰 수 있는 failed, fallBackTo, recover, recoverWith 메소드를 제공합니다.
+4.1 failed Future[T]에서 실패한 Future를 예외를 저장한 Future[Throwable] 타입의 성공한 Future로 바꿔줍니다.</p></div>
+            <div class="post-footer">
+            <time>August 17, 2019</time>
+
+            
+            
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/future">#Future</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1">#동시성</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0">#비동기</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%B2%98%EB%A6%AC">#비동기처리</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/thread">#thread</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="https://eoriented.github.io/post/scala-future-and-concurrency-1/">
+                    스칼라 퓨처(Future)와 동시성(Concurrency) - 1
+                </a>
+            </h2>
+            <div><p>오늘 멀티 코어 프로세서가 대중화되면서 동시성에 대한 관심도 많이 늘어났습니다. 이러한 동시성 프로그래밍을 위해서 기존의 프로그래밍 언어들을 블로킹을 사용하여 동기화함으로써 동시성을 지원합니다. 자바의 경우도 마찬가지로 공유 메모리와 락을 기반으로 동시성을 지원하고 있습니다. 그러나 이러한 블로킹을 사용한 동기화의 경우 Deadlock이나 Starvation과 같은 문제가 발생할 수 있습니다.</p></div>
+            <div class="post-footer">
+            <time>August 16, 2019</time>
+
+            
+            
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/future">#Future</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1">#동시성</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0">#비동기</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%B2%98%EB%A6%AC">#비동기처리</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/thread">#thread</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
                 <a href="https://eoriented.github.io/post/git-cheat-sheet/">
                     Git 명령어 요약 정리 (Cheat sheet)
                 </a>
@@ -411,72 +469,6 @@ Neural Network 복습 기존의 뉴럴 네트워크는 weight parameter들을 �
 capture-and-decide pattern capture-and-decide 패턴이라고 하니까 약간 어려운 느낌이 있지만 실제로는 간단한 패턴이죠.</p></div>
             <div class="post-footer">
             <time>October 1, 2017</time>
-
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/hadoop-scheduler">#hadoop scheduler</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/apache-oozie">#apache oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/luigi">#luigi</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/oozie-workflow-pattern-2/">
-                    Oozie Workflow Pattern - 2
-                </a>
-            </h2>
-            <div><p>이전 포스트에는 Oozie의 워크플로우 패턴중 하나인 Point-to-Point 패턴에 관해서 알아보았습니다. 이번 시간에는 fork-and-join 패턴에 대해 알아보도록 하겠습니다.
-fork-and-join pattern fork-and-join 패턴은 Fan-out 패턴이라고도 합니다. 이와 같은 형태의 워크플로우는 여러 액션들이 나누어 실행한 후 해당 액션들이 다 정상적으로 완료된 후 다음 액션을 수행해야하는 경우 많이 사용합니다.</p></div>
-            <div class="post-footer">
-            <time>September 30, 2017</time>
-
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/hadoop-scheduler">#hadoop scheduler</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/apache-oozie">#apache oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/luigi">#luigi</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/oozie-workflow-pattern-1/">
-                    Oozie Workflow Pattern - 1
-                </a>
-            </h2>
-            <div><p>Oozie가 무엇인지 궁금한 분들을 Apache Oozie 소개라는 이전 포스트를 참고하시기 바랍니다. 일반적으로 Oozie에서 많이 사용되는 워크플로우 패턴에 대해서 알아봅시다.
-순차적 액션 수행 (Point-to-Point Pattern) 가장 간단한 형태로 수행하는 워크플로우 형태가 되겠습니다. 말그대로 순차적으로 액션을 수행할 때 사용합니다.</p></div>
-            <div class="post-footer">
-            <time>September 24, 2017</time>
 
             
             

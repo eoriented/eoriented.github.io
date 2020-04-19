@@ -223,6 +223,51 @@
   </url>
   
   <url>
+    <loc>https://eoriented.github.io/tags/future/</loc>
+    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/categories/language/</loc>
+    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/scala/</loc>
+    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/thread/</loc>
+    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/</loc>
+    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/</loc>
+    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%B2%98%EB%A6%AC/</loc>
+    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/scala-future-and-concurrency-2/</loc>
+    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/scala-future-and-concurrency-1/</loc>
+    <lastmod>2019-08-16T23:04:42+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eoriented.github.io/tags/cvs/</loc>
     <lastmod>2019-07-27T17:06:56+09:00</lastmod>
   </url>

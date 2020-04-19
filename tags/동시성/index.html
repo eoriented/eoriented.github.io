@@ -2,7 +2,6 @@
 
 <html lang="ko-KR">
     <head>
-	<meta name="generator" content="Hugo 0.67.1" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +30,7 @@
     
  
     
-    <link rel="alternate" type="application/rss+xml" href="https://eoriented.github.io/index.xml" title="Smart Tiger's blog" />
+    <link rel="alternate" type="application/rss+xml" href="https://eoriented.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1/index.xml" title="Smart Tiger's blog" />
     
     
 <script type="application/javascript">
@@ -156,155 +155,48 @@ if (!doNotTrack) {
 </nav>
         <div id="content" class="content-container">
         
-<div class = "article-content">
-        
-        
-        
-        
-        <article>
+
+  <h1>Tagged "동시성"</h1>
+  
+  
+    
+    <article>
             <h2>
-                <a href="https://eoriented.github.io/post/oozie-workflow-pattern-2/">
-                    Oozie Workflow Pattern - 2
+                <a href="https://eoriented.github.io/post/scala-future-and-concurrency-2/">
+                    스칼라 퓨처(Future)와 동시성(Concurrency) - 2
                 </a>
             </h2>
-            <div><p>이전 포스트에는 Oozie의 워크플로우 패턴중 하나인 Point-to-Point 패턴에 관해서 알아보았습니다. 이번 시간에는 fork-and-join 패턴에 대해 알아보도록 하겠습니다.
-fork-and-join pattern fork-and-join 패턴은 Fan-out 패턴이라고도 합니다. 이와 같은 형태의 워크플로우는 여러 액션들이 나누어 실행한 후 해당 액션들이 다 정상적으로 완료된 후 다음 액션을 수행해야하는 경우 많이 사용합니다.</p></div>
+            <div>
+                <p>
+                이전 포스트에 이어서 스칼라 Future의 다른 사용법에 대해 살펴보도록 하겠습니다.
+4. Future 실패 처리하기 스칼라 Future는 실패한 퓨처를 다룰 수 있는 failed, fallBackTo, recover, recoverWith 메소드를 제공합니다.
+4.1 failed Future[T]에서 실패한 Future를 예외를 저장한 Future[Throwable] 타입의 성공한 Future로 바꿔줍니다.
+                </p>
+            </div>
             <div class="post-footer">
-            <time>September 30, 2017</time>
-
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/hadoop-scheduler">#hadoop scheduler</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/apache-oozie">#apache oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/luigi">#luigi</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
-                
-            
+            <time>August 17, 2019</time>
             </div> 
-           
         </article>
-        
-        <article>
+    
+  
+    
+    <article>
             <h2>
-                <a href="https://eoriented.github.io/post/oozie-workflow-pattern-1/">
-                    Oozie Workflow Pattern - 1
+                <a href="https://eoriented.github.io/post/scala-future-and-concurrency-1/">
+                    스칼라 퓨처(Future)와 동시성(Concurrency) - 1
                 </a>
             </h2>
-            <div><p>Oozie가 무엇인지 궁금한 분들을 Apache Oozie 소개라는 이전 포스트를 참고하시기 바랍니다. 일반적으로 Oozie에서 많이 사용되는 워크플로우 패턴에 대해서 알아봅시다.
-순차적 액션 수행 (Point-to-Point Pattern) 가장 간단한 형태로 수행하는 워크플로우 형태가 되겠습니다. 말그대로 순차적으로 액션을 수행할 때 사용합니다.</p></div>
+            <div>
+                <p>
+                오늘 멀티 코어 프로세서가 대중화되면서 동시성에 대한 관심도 많이 늘어났습니다. 이러한 동시성 프로그래밍을 위해서 기존의 프로그래밍 언어들을 블로킹을 사용하여 동기화함으로써 동시성을 지원합니다. 자바의 경우도 마찬가지로 공유 메모리와 락을 기반으로 동시성을 지원하고 있습니다. 그러나 이러한 블로킹을 사용한 동기화의 경우 Deadlock이나 Starvation과 같은 문제가 발생할 수 있습니다.
+                </p>
+            </div>
             <div class="post-footer">
-            <time>September 24, 2017</time>
-
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/hadoop-scheduler">#hadoop scheduler</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/apache-oozie">#apache oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/luigi">#luigi</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
-                
-            
+            <time>August 16, 2019</time>
             </div> 
-           
         </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/introduction-to-oozie/">
-                    Apache Oozie 소개
-                </a>
-            </h2>
-            <div><p>Oozie 개요 Oozie는 정식 홈페이지에 나와 있듯이 Hadoop ecosystem에서 사용하는 Workflow Scheduler(혹은 orchestration) 프레임워크입니다. Oozie에서 제공하는 기능은 크게 아래의 3가지와 같습니다.
- Scheduling  특정 시간에 액션 수행 주기적인 간격 이후에 액션 수행 이벤트가 발생하면 액션 수행   Coordinating  이전 액션이 성공적으로 끝나면 다음 액션 시작   Managing  액션이 성공하거나 실패했을 때 이메일 발송 액션 수행시간이나 액션의 단계를 저장    Oozie 용어  Action  우지에서 실행할 수 있는 하나의 작업 단위 MapReduce 작업, Spark 작업, Shell script 등   Workflow  Action들의 제어와 의존 관계를 DAG(Directed acyclic graph) 표현   Coordinator  Data sets과 Workflow를 실행하는 스케줄을 정의   Bundle  코디네이터의 모임    Oozie Architecture  우지는 Client-Server Model의 형태입니다.</p></div>
-            <div class="post-footer">
-            <time>September 23, 2017</time>
+    
 
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/how-to-compile-using-gcc/">
-                    gcc로 컴파일하는 방법
-                </a>
-            </h2>
-            <div><p>1. gcc 동작 과정   gcc
-원래는 GNU C Compiler를 의미 했지만 1999년부터 GNU Compiler Collection을 의미한다.
-  gcc가 실행시키는 프로그램
-         cpp 전처리기   cc1 컴파일러   as 어셈블러   ld 링커    1) 전처리 단계</p></div>
-            <div class="post-footer">
-            <time>May 15, 2009</time>
-
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/gcc">#gcc</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/compiler">#compiler</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC">#컴파일</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/gcc%EC%98%B5%EC%85%98">#gcc옵션</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-    </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 2 of 2</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="https://eoriented.github.io/">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
-            
-            
-        </div>
-        
-    </div>
 
         
         </div>

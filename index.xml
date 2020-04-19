@@ -66,6 +66,26 @@ val words = Array(&amp;#34;one&amp;#34;, &amp;#34;two&amp;#34;, &amp;#34;two&amp
     </item>
     
     <item>
+      <title>스칼라 퓨처(Future)와 동시성(Concurrency) - 2</title>
+      <link>https://eoriented.github.io/post/scala-future-and-concurrency-2/</link>
+      <pubDate>Sat, 17 Aug 2019 11:11:46 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/scala-future-and-concurrency-2/</guid>
+      <description>이전 포스트에 이어서 스칼라 Future의 다른 사용법에 대해 살펴보도록 하겠습니다.
+4. Future 실패 처리하기 스칼라 Future는 실패한 퓨처를 다룰 수 있는 failed, fallBackTo, recover, recoverWith 메소드를 제공합니다.
+4.1 failed Future[T]에서 실패한 Future를 예외를 저장한 Future[Throwable] 타입의 성공한 Future로 바꿔줍니다.</description>
+    </item>
+    
+    <item>
+      <title>스칼라 퓨처(Future)와 동시성(Concurrency) - 1</title>
+      <link>https://eoriented.github.io/post/scala-future-and-concurrency-1/</link>
+      <pubDate>Fri, 16 Aug 2019 23:04:42 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/scala-future-and-concurrency-1/</guid>
+      <description>오늘 멀티 코어 프로세서가 대중화되면서 동시성에 대한 관심도 많이 늘어났습니다. 이러한 동시성 프로그래밍을 위해서 기존의 프로그래밍 언어들을 블로킹을 사용하여 동기화함으로써 동시성을 지원합니다. 자바의 경우도 마찬가지로 공유 메모리와 락을 기반으로 동시성을 지원하고 있습니다. 그러나 이러한 블로킹을 사용한 동기화의 경우 Deadlock이나 Starvation과 같은 문제가 발생할 수 있습니다.</description>
+    </item>
+    
+    <item>
       <title>Git 명령어 요약 정리 (Cheat sheet)</title>
       <link>https://eoriented.github.io/post/git-cheat-sheet/</link>
       <pubDate>Sat, 27 Jul 2019 17:06:56 +0900</pubDate>
