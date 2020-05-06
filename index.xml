@@ -156,6 +156,15 @@ fork-and-join pattern fork-and-join 패턴은 Fan-out 패턴이라고도 합니�
     </item>
     
     <item>
+      <title>의사 결정 트리(Decision Tree)</title>
+      <link>https://eoriented.github.io/post/decision-tree/</link>
+      <pubDate>Mon, 22 Jun 2015 16:59:44 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/decision-tree/</guid>
+      <description>의사 결정 트리는 분류(Classification) 기술 중 가장 일반적으로 사용되는 방법입니다. 의사 결정 트리의 개념이 익숙하진 않겠지만 대표적으로 예를 들을 수 있는 것이 바로 스무고개라는 게임입니다. 스무고개는 총 20개의 질문만 허락되며, 그에 대한 답변으로 ‘예’ 혹은 ‘아니오’로만 대답하여서 추측하여 답에 도달하는 게임이죠.</description>
+    </item>
+    
+    <item>
       <title>gcc로 컴파일하는 방법</title>
       <link>https://eoriented.github.io/post/how-to-compile-using-gcc/</link>
       <pubDate>Fri, 15 May 2009 10:36:10 +0900</pubDate>

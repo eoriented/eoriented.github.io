@@ -20,7 +20,7 @@
     
     
     
-    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.58d8fb1d0665cc84d66363e10775e6788da13d84f3228d917962491979dcccbd.css"/>
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.8c887d2fff940d31f5396cb7ea968bf64588f4d2befd17012f09049553ce0efe.css"/>
 
     
     
@@ -48,6 +48,29 @@ if (!doNotTrack) {
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
 </head>
     <body>
         
@@ -193,6 +216,24 @@ Neural Network 복습 기존의 뉴럴 네트워크는 weight parameter들을 �
             </div>
             <div class="post-footer">
             <time>October 1, 2017</time>
+            </div> 
+        </article>
+    
+  
+    
+    <article>
+            <h2>
+                <a href="https://eoriented.github.io/post/decision-tree/">
+                    의사 결정 트리(Decision Tree)
+                </a>
+            </h2>
+            <div>
+                <p>
+                의사 결정 트리는 분류(Classification) 기술 중 가장 일반적으로 사용되는 방법입니다. 의사 결정 트리의 개념이 익숙하진 않겠지만 대표적으로 예를 들을 수 있는 것이 바로 스무고개라는 게임입니다. 스무고개는 총 20개의 질문만 허락되며, 그에 대한 답변으로 ‘예’ 혹은 ‘아니오’로만 대답하여서 추측하여 답에 도달하는 게임이죠.
+                </p>
+            </div>
+            <div class="post-footer">
+            <time>June 22, 2015</time>
             </div> 
         </article>
     
