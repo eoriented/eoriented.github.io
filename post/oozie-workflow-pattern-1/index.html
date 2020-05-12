@@ -20,7 +20,7 @@
     
     
     
-    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.8c887d2fff940d31f5396cb7ea968bf64588f4d2befd17012f09049553ce0efe.css"/>
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.a72ffd9940ffe0d37baca976bc2f5746f5a324465ebb022c4aa544afed426f4c.css"/>
 
     
     
@@ -86,8 +86,6 @@ if (!doNotTrack) {
   
     <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
   
-    <a class="color-link nav-link" href="https://eoriented.github.io/about/">About</a>
-  
   
 </div>
 <footer class="footer">
@@ -100,12 +98,6 @@ if (!doNotTrack) {
     </a>
     
 
-    
-    <a class="social-icon" href="https://www.linkedin.com/in/kimminho" target="_blank" rel="noopener" title="LinkedIn">
-        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
-        </svg>
-    </a>
     
 
     
@@ -192,53 +184,53 @@ if (!doNotTrack) {
 
 </figure>
 <p>이와 같은 패턴을 Oozie의 workflow.xml로 나타내면 다음과 같습니다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;workflow-app</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:workflow:0.4&#34;</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;aggregate_and_load&#34;</span><span style="color:#f92672">&gt;</span>
-   <span style="color:#75715e">&lt;!-- 1 --&gt;</span>
-   <span style="color:#f92672">&lt;global&gt;</span>
-         <span style="color:#f92672">&lt;job-tracker&gt;</span>${jobTracker}<span style="color:#f92672">&lt;/job-tracker&gt;</span>
-         <span style="color:#f92672">&lt;name-node&gt;</span>${nameNode}<span style="color:#f92672">&lt;/name-node&gt;</span>
-   <span style="color:#f92672">&lt;/global&gt;</span>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#062873;font-weight:bold">&lt;workflow-app</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:workflow:0.4&#34;</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;aggregate_and_load&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+   <span style="color:#60a0b0;font-style:italic">&lt;!-- 1 --&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;global&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;job-tracker&gt;</span>${jobTracker}<span style="color:#062873;font-weight:bold">&lt;/job-tracker&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;name-node&gt;</span>${nameNode}<span style="color:#062873;font-weight:bold">&lt;/name-node&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/global&gt;</span>
 
-   <span style="color:#75715e">&lt;!-- 2 --&gt;</span>
-   <span style="color:#f92672">&lt;start</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;aggregate&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#60a0b0;font-style:italic">&lt;!-- 2 --&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;start</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;aggregate&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
 
-   <span style="color:#75715e">&lt;!-- 3 --&gt;</span>
-   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;aggregate&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
-         <span style="color:#f92672">&lt;job-xml&gt;</span>hive-site.xml<span style="color:#f92672">&lt;/job-xml&gt;</span>
-         <span style="color:#f92672">&lt;script&gt;</span>populate_agg_table.sql<span style="color:#f92672">&lt;/script&gt;</span>
-      <span style="color:#f92672">&lt;/hive&gt;</span>
-      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;sqoop-export&#34;</span> <span style="color:#f92672">/&gt;</span>
-      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;/action&gt;</span>
+   <span style="color:#60a0b0;font-style:italic">&lt;!-- 3 --&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;aggregate&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;hive</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;job-xml&gt;</span>hive-site.xml<span style="color:#062873;font-weight:bold">&lt;/job-xml&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;script&gt;</span>populate_agg_table.sql<span style="color:#062873;font-weight:bold">&lt;/script&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;/hive&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;sqoop-export&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;kill&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-   <span style="color:#75715e">&lt;!-- 4 --&gt;</span>
-   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;sqoop_export&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;sqoop</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:sqoop-action:0.4&#34;</span><span style="color:#f92672">&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>export<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>--connect<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>jdbc:oracle:thin:@//orahost:1521/oracle<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>--username<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>scott<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>--password<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>tiger<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>--table<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>mytable<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>--export-dir<span style="color:#f92672">&lt;/arg&gt;</span>
-         <span style="color:#f92672">&lt;arg&gt;</span>/etl/BI/clickstream/aggregate-preferences/output<span style="color:#f92672">&lt;/arg&gt;</span>
-      <span style="color:#f92672">&lt;/sqoop&gt;</span>
-      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
-      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;/action&gt;</span>
+   <span style="color:#60a0b0;font-style:italic">&lt;!-- 4 --&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;sqoop_export&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;sqoop</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:sqoop-action:0.4&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>export<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>--connect<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>jdbc:oracle:thin:@//orahost:1521/oracle<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>--username<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>scott<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>--password<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>tiger<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>--table<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>mytable<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>--export-dir<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;arg&gt;</span>/etl/BI/clickstream/aggregate-preferences/output<span style="color:#062873;font-weight:bold">&lt;/arg&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;/sqoop&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;end&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;kill&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-   <span style="color:#75715e">&lt;!-- 5 --&gt;</span>
-   <span style="color:#f92672">&lt;kill</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;kill&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;message&gt;</span> Workflow failed. Error message
-      [${wf:errorMessage(wf:lastErrorNode())}]<span style="color:#f92672">&lt;/message&gt;</span>
-   <span style="color:#f92672">&lt;/kill&gt;</span>
-   <span style="color:#75715e">&lt;!-- 6 --&gt;</span>
-   <span style="color:#f92672">&lt;end</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/workflow-app&gt;</span>
+   <span style="color:#60a0b0;font-style:italic">&lt;!-- 5 --&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;kill</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;kill&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;message&gt;</span> Workflow failed. Error message
+      [${wf:errorMessage(wf:lastErrorNode())}]<span style="color:#062873;font-weight:bold">&lt;/message&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/kill&gt;</span>
+   <span style="color:#60a0b0;font-style:italic">&lt;!-- 6 --&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;end</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;end&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+<span style="color:#062873;font-weight:bold">&lt;/workflow-app&gt;</span>
 </code></pre></div><p>그러면 한번 oozie workflow.xml 파일을 한번 살펴볼까요?<br>
 상세히 알아보기 위해서 주석으로 번호를 달아났습니다. 그럼 번호별로 살펴볼게요.</p>
 <ol>
@@ -380,12 +372,6 @@ End 노드는 워크플로우가 성공적으로 완료되었을 때 수행되�
     </a>
     
 
-    
-    <a class="social-icon" href="https://www.linkedin.com/in/kimminho" target="_blank" rel="noopener" title="LinkedIn">
-        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
-        </svg>
-    </a>
     
 
     

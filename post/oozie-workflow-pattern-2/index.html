@@ -20,7 +20,7 @@
     
     
     
-    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.8c887d2fff940d31f5396cb7ea968bf64588f4d2befd17012f09049553ce0efe.css"/>
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.a72ffd9940ffe0d37baca976bc2f5746f5a324465ebb022c4aa544afed426f4c.css"/>
 
     
     
@@ -86,8 +86,6 @@ if (!doNotTrack) {
   
     <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
   
-    <a class="color-link nav-link" href="https://eoriented.github.io/about/">About</a>
-  
   
 </div>
 <footer class="footer">
@@ -100,12 +98,6 @@ if (!doNotTrack) {
     </a>
     
 
-    
-    <a class="social-icon" href="https://www.linkedin.com/in/kimminho" target="_blank" rel="noopener" title="LinkedIn">
-        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
-        </svg>
-    </a>
     
 
     
@@ -191,83 +183,83 @@ if (!doNotTrack) {
 </figure>
 <p>워크 플로우 형태는 위와 같습니다. fork를 통해서 여러 액션을 수행하면 fork 된 액션들이 완료될 때까지 join에서 기다립니다. join은 앞서 fork에서 수행되는 액션이 다 종료가 되어야지 다음 액션을 수행합니다. 만일 하나의 액션이라도 실패하게 되면 워크플로우 전체가 종료(kill)됩니다.<br>
 그럼 실제로 위에서 실행되고 있는 것을 workflw.xml로 만든 예제를 살펴봅시다. 하이브 액션이 각각 무엇을 하는지는 중요하지 않고 fork-and-join을 어떤식으로 정의하는지를 중점적으로 보시면 좋을 것 같습니다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;workflow-app</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;build_reports&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:workflow:0.4&#34;</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#062873;font-weight:bold">&lt;workflow-app</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;build_reports&#34;</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:workflow:0.4&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
 
-   <span style="color:#f92672">&lt;global&gt;</span>
-         <span style="color:#f92672">&lt;job-tracker&gt;</span>${jobTracker}<span style="color:#f92672">&lt;/job-tracker&gt;</span>
-         <span style="color:#f92672">&lt;name-node&gt;</span>${nameNode}<span style="color:#f92672">&lt;/name-node&gt;</span>
-         <span style="color:#f92672">&lt;job-xml&gt;</span>${hiveSiteXML}<span style="color:#f92672">&lt;/job-xml&gt;</span>
-   <span style="color:#f92672">&lt;/global&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;global&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;job-tracker&gt;</span>${jobTracker}<span style="color:#062873;font-weight:bold">&lt;/job-tracker&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;name-node&gt;</span>${nameNode}<span style="color:#062873;font-weight:bold">&lt;/name-node&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;job-xml&gt;</span>${hiveSiteXML}<span style="color:#062873;font-weight:bold">&lt;/job-xml&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/global&gt;</span>
 
-   <span style="color:#f92672">&lt;start</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;preliminary_statistics&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;start</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;preliminary_statistics&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
 
-   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;preliminary_statistics&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
-         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/stats.hql<span style="color:#f92672">&lt;/script&gt;</span>
-      <span style="color:#f92672">&lt;/hive&gt;</span>
-      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;fork_aggregates&#34;</span> <span style="color:#f92672">/&gt;</span>
-      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;/action&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;preliminary_statistics&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;hive</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;script&gt;</span>${scripts}/stats.hql<span style="color:#062873;font-weight:bold">&lt;/script&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;/hive&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;fork_aggregates&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;kill&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-   <span style="color:#75715e">&lt;!-- 여기서 fork가 시작됩니다. --&gt;</span>
-   <span style="color:#f92672">&lt;fork</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fork_aggregates&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;prescriptions_and_refills&#34;</span> <span style="color:#f92672">/&gt;</span>
-      <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;office_visits&#34;</span> <span style="color:#f92672">/&gt;</span>
-      <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;lab_results&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;/fork&gt;</span>
+   <span style="color:#60a0b0;font-style:italic">&lt;!-- 여기서 fork가 시작됩니다. --&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;fork</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;fork_aggregates&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;path</span> <span style="color:#4070a0">start=</span><span style="color:#4070a0">&#34;prescriptions_and_refills&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;path</span> <span style="color:#4070a0">start=</span><span style="color:#4070a0">&#34;office_visits&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;path</span> <span style="color:#4070a0">start=</span><span style="color:#4070a0">&#34;lab_results&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/fork&gt;</span>
 
-   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;prescriptions_and_refills&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
-         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/refills.hql<span style="color:#f92672">&lt;/script&gt;</span>
-      <span style="color:#f92672">&lt;/hive&gt;</span>
-      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#f92672">/&gt;</span>
-      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;/action&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;prescriptions_and_refills&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;hive</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;script&gt;</span>${scripts}/refills.hql<span style="color:#062873;font-weight:bold">&lt;/script&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;/hive&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;join_reports&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;kill&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;office_visits&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
-         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/visits.hql<span style="color:#f92672">&lt;/script&gt;</span>
-      <span style="color:#f92672">&lt;/hive&gt;</span>
-      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#f92672">/&gt;</span>
-      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;/action&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;office_visits&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;hive</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;script&gt;</span>${scripts}/visits.hql<span style="color:#062873;font-weight:bold">&lt;/script&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;/hive&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;join_reports&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;kill&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lab_results&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
-         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/labs.hql<span style="color:#f92672">&lt;/script&gt;</span>
-      <span style="color:#f92672">&lt;/hive&gt;</span>
-      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#f92672">/&gt;</span>
-      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;/action&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;lab_results&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;hive</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;script&gt;</span>${scripts}/labs.hql<span style="color:#062873;font-weight:bold">&lt;/script&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;/hive&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;join_reports&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;kill&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-   <span style="color:#75715e">&lt;!-- 여기서 join을 하게 되는거죠. --&gt;</span>
-   <span style="color:#f92672">&lt;join</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;summary_report&#34;</span> <span style="color:#f92672">/&gt;</span>
+   <span style="color:#60a0b0;font-style:italic">&lt;!-- 여기서 join을 하게 되는거죠. --&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;join</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;join_reports&#34;</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;summary_report&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
 
-   <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;summary_report&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;hive</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#f92672">&gt;</span>
-         <span style="color:#f92672">&lt;script&gt;</span>${scripts}/summary_report.hql<span style="color:#f92672">&lt;/script&gt;</span>
-      <span style="color:#f92672">&lt;/hive&gt;</span>
-      <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
-      <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;kill&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;/action&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;summary_report&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;hive</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:hive-action:0.5&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;script&gt;</span>${scripts}/summary_report.hql<span style="color:#062873;font-weight:bold">&lt;/script&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;/hive&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;end&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;kill&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-   <span style="color:#f92672">&lt;kill</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;kill&#34;</span><span style="color:#f92672">&gt;</span>
-      <span style="color:#f92672">&lt;message&gt;</span> Workflow failed. Error message
-                [${wf:errorMessage(wf:lastErrorNode())}]<span style="color:#f92672">&lt;/message&gt;</span>
-   <span style="color:#f92672">&lt;/kill&gt;</span>
-   <span style="color:#f92672">&lt;end</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/workflow-app&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;kill</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;kill&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+      <span style="color:#062873;font-weight:bold">&lt;message&gt;</span> Workflow failed. Error message
+                [${wf:errorMessage(wf:lastErrorNode())}]<span style="color:#062873;font-weight:bold">&lt;/message&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/kill&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;end</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;end&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+<span style="color:#062873;font-weight:bold">&lt;/workflow-app&gt;</span>
 </code></pre></div><p>위의 workflow.xml 파일에서 보듯이 fork를 하는 부분이 생기고, 이후에 fork 안에 액션들이 수행된 후 합쳐지는 join 컨트롤 노드가 존재합니다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">...
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">...
 
-<span style="color:#f92672">&lt;fork</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fork_aggregates&#34;</span><span style="color:#f92672">&gt;</span>
-   <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;prescriptions_and_refills&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;office_visits&#34;</span> <span style="color:#f92672">/&gt;</span>
-   <span style="color:#f92672">&lt;path</span> <span style="color:#a6e22e">start=</span><span style="color:#e6db74">&#34;lab_results&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/fork&gt;</span>
+<span style="color:#062873;font-weight:bold">&lt;fork</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;fork_aggregates&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;path</span> <span style="color:#4070a0">start=</span><span style="color:#4070a0">&#34;prescriptions_and_refills&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;path</span> <span style="color:#4070a0">start=</span><span style="color:#4070a0">&#34;office_visits&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;path</span> <span style="color:#4070a0">start=</span><span style="color:#4070a0">&#34;lab_results&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+<span style="color:#062873;font-weight:bold">&lt;/fork&gt;</span>
 
 ...
-<span style="color:#f92672">&lt;join</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;join_reports&#34;</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;summary_report&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="color:#062873;font-weight:bold">&lt;join</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;join_reports&#34;</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;summary_report&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
 </code></pre></div><p>위의 구문처럼 액션의 흐름을 제어할 수 있게 됩니다. fork 내에 있는 액션들을 나누어서 수행을 하고 join에서는 fork 내의 액션이 끝났는지 기다려줍니다. fork 내에 액션중 하나라도 실패하면 워크플로우는 실패하게 됩니다.<br>
 다음 포스트에서는 이어서 capture-and-decide(aka switch-case) 패턴에 대해 알아보도록 하겠습니다.</p>
 <p><!-- raw HTML omitted --></p>
@@ -353,12 +345,6 @@ if (!doNotTrack) {
     </a>
     
 
-    
-    <a class="social-icon" href="https://www.linkedin.com/in/kimminho" target="_blank" rel="noopener" title="LinkedIn">
-        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
-        </svg>
-    </a>
     
 
     

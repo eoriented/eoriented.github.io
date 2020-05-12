@@ -20,7 +20,7 @@
     
     
     
-    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.8c887d2fff940d31f5396cb7ea968bf64588f4d2befd17012f09049553ce0efe.css"/>
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.a72ffd9940ffe0d37baca976bc2f5746f5a324465ebb022c4aa544afed426f4c.css"/>
 
     
     
@@ -86,8 +86,6 @@ if (!doNotTrack) {
   
     <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
   
-    <a class="color-link nav-link" href="https://eoriented.github.io/about/">About</a>
-  
   
 </div>
 <footer class="footer">
@@ -100,12 +98,6 @@ if (!doNotTrack) {
     </a>
     
 
-    
-    <a class="social-icon" href="https://www.linkedin.com/in/kimminho" target="_blank" rel="noopener" title="LinkedIn">
-        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
-        </svg>
-    </a>
     
 
     
@@ -190,74 +182,74 @@ if (!doNotTrack) {
 
 </figure>
 <p>어디서 많이 본 형태의 그림인거 같죠? 순서도(flowchart)에서 참 거짓에 따라 수행하는 로직이 달라지는 형태와 같습니다. 앞의 자바 액션의 검사 결과를 바탕으로 데이터가 있는지 체크 후에 데이터 유무에 따라 서로 다른 액션을 수행하는 경우 사용됩니다. 그럼 workflow.xml을 어떤식으로 작성하는지 알아볼까요?</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;workflow-app</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;validation&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;uri:oozie:workflow:0.4&#34;</span><span style="color:#f92672">&gt;</span>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#062873;font-weight:bold">&lt;workflow-app</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;validation&#34;</span> <span style="color:#4070a0">xmlns=</span><span style="color:#4070a0">&#34;uri:oozie:workflow:0.4&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
 
-   <span style="color:#f92672">&lt;global&gt;</span>
-         <span style="color:#f92672">&lt;job-tracker&gt;</span>${jobTracker}<span style="color:#f92672">&lt;/job-tracker&gt;</span>
-         <span style="color:#f92672">&lt;name-node&gt;</span>${nameNode}<span style="color:#f92672">&lt;/name-node&gt;</span>
-   <span style="color:#f92672">&lt;/global&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;global&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;job-tracker&gt;</span>${jobTracker}<span style="color:#062873;font-weight:bold">&lt;/job-tracker&gt;</span>
+         <span style="color:#062873;font-weight:bold">&lt;name-node&gt;</span>${nameNode}<span style="color:#062873;font-weight:bold">&lt;/name-node&gt;</span>
+   <span style="color:#062873;font-weight:bold">&lt;/global&gt;</span>
 
-    <span style="color:#f92672">&lt;start</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;validate&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;start</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;validate&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
 
-    <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#39;validate&#39;</span><span style="color:#f92672">&gt;</span>
-        <span style="color:#f92672">&lt;java&gt;</span>
-            <span style="color:#f92672">&lt;main-class&gt;</span>com.hadooparchitecturebook.DataValidationRunner
-            <span style="color:#f92672">&lt;/main-class&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#39;validate&#39;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;java&gt;</span>
+            <span style="color:#062873;font-weight:bold">&lt;main-class&gt;</span>com.hadooparchitecturebook.DataValidationRunner
+            <span style="color:#062873;font-weight:bold">&lt;/main-class&gt;</span>
 
-            <span style="color:#75715e">&lt;!-- 중략 --&gt;</span>
+            <span style="color:#60a0b0;font-style:italic">&lt;!-- 중략 --&gt;</span>
 
-            <span style="color:#75715e">&lt;!-- 결과를 캡쳐합니다. 이부분이 중요합니다. --&gt;</span>
-            <span style="color:#f92672">&lt;capture-output</span> <span style="color:#f92672">/&gt;</span>
-        <span style="color:#f92672">&lt;/java&gt;</span>
-        <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;check_for_validation_errors&#34;</span> <span style="color:#f92672">/&gt;</span>
-        <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;fail&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;/action&gt;</span>
+            <span style="color:#60a0b0;font-style:italic">&lt;!-- 결과를 캡쳐합니다. 이부분이 중요합니다. --&gt;</span>
+            <span style="color:#062873;font-weight:bold">&lt;capture-output</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;/java&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;check_for_validation_errors&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;fail&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-    <span style="color:#75715e">&lt;!-- 캡쳐된 결과를 가지고 어떠한 액션을 수행할 것인지 결정합니다. --&gt;</span>
-    <span style="color:#f92672">&lt;decision</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#39;check_for_validation_errors&#39;</span><span style="color:#f92672">&gt;</span>
-        <span style="color:#f92672">&lt;switch&gt;</span>
-            <span style="color:#f92672">&lt;case</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;validation_failure&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#60a0b0;font-style:italic">&lt;!-- 캡쳐된 결과를 가지고 어떠한 액션을 수행할 것인지 결정합니다. --&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;decision</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#39;check_for_validation_errors&#39;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;switch&gt;</span>
+            <span style="color:#062873;font-weight:bold">&lt;case</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;validation_failure&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
                 ${(wf:actionData(&#34;validate&#34;)[&#34;errors&#34;] == &#34;true&#34;)}
-            <span style="color:#f92672">&lt;/case&gt;</span>
-            <span style="color:#f92672">&lt;default</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;process_data&#34;</span> <span style="color:#f92672">/&gt;</span>
-        <span style="color:#f92672">&lt;/switch&gt;</span>
-    <span style="color:#f92672">&lt;/decision&gt;</span>
+            <span style="color:#062873;font-weight:bold">&lt;/case&gt;</span>
+            <span style="color:#062873;font-weight:bold">&lt;default</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;process_data&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;/switch&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;/decision&gt;</span>
 
-    <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#39;process_data&#39;</span><span style="color:#f92672">&gt;</span>
-        <span style="color:#f92672">&lt;java&gt;</span>
-            <span style="color:#f92672">&lt;main-class&gt;</span>com.hadooparchitecturebook.ProcessDataRunner<span style="color:#f92672">&lt;/main-class&gt;</span>
-        <span style="color:#f92672">&lt;/java&gt;</span>
-        <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
-        <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;fail&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;/action&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#39;process_data&#39;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;java&gt;</span>
+            <span style="color:#062873;font-weight:bold">&lt;main-class&gt;</span>com.hadooparchitecturebook.ProcessDataRunner<span style="color:#062873;font-weight:bold">&lt;/main-class&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;/java&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;end&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;fail&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-    <span style="color:#f92672">&lt;action</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;validation_failure&#34;</span><span style="color:#f92672">&gt;</span>
-        <span style="color:#f92672">&lt;java&gt;</span>
-            <span style="color:#f92672">&lt;main-class&gt;</span>com.hadooparchitecturebook.MoveOutputToErrorsAction
-            <span style="color:#f92672">&lt;/main-class&gt;</span>
-        <span style="color:#f92672">&lt;/java&gt;</span>
-        <span style="color:#f92672">&lt;ok</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
-        <span style="color:#f92672">&lt;error</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#34;fail&#34;</span> <span style="color:#f92672">/&gt;</span>
-    <span style="color:#f92672">&lt;/action&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;action</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;validation_failure&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;java&gt;</span>
+            <span style="color:#062873;font-weight:bold">&lt;main-class&gt;</span>com.hadooparchitecturebook.MoveOutputToErrorsAction
+            <span style="color:#062873;font-weight:bold">&lt;/main-class&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;/java&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;ok</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;end&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;error</span> <span style="color:#4070a0">to=</span><span style="color:#4070a0">&#34;fail&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;/action&gt;</span>
 
-    <span style="color:#f92672">&lt;kill</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fail&#34;</span><span style="color:#f92672">&gt;</span>
-        <span style="color:#f92672">&lt;message&gt;</span>Java failed, error message[${wf:errorMessage
-                 (wf:lastErrorNode())}]<span style="color:#f92672">&lt;/message&gt;</span>
-    <span style="color:#f92672">&lt;/kill&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;kill</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;fail&#34;</span><span style="color:#062873;font-weight:bold">&gt;</span>
+        <span style="color:#062873;font-weight:bold">&lt;message&gt;</span>Java failed, error message[${wf:errorMessage
+                 (wf:lastErrorNode())}]<span style="color:#062873;font-weight:bold">&lt;/message&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;/kill&gt;</span>
 
-    <span style="color:#f92672">&lt;end</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;end&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;/workflow-app&gt;</span>
+    <span style="color:#062873;font-weight:bold">&lt;end</span> <span style="color:#4070a0">name=</span><span style="color:#4070a0">&#34;end&#34;</span> <span style="color:#062873;font-weight:bold">/&gt;</span>
+<span style="color:#062873;font-weight:bold">&lt;/workflow-app&gt;</span>
 </code></pre></div><p>여기서 액션을 수행한 후에 <code>&lt;capture-output /&gt;</code>을 사용하여 옵션을 캡쳐한 뒤, 이를 다음 decision node에서 캡쳐된 값을 사용하여 어떠한 액션을 수행할 것인지 결정합니다.</p>
 <h2 id="expression-language-function">Expression Language Function</h2>
 <p>캡쳐된 아웃풋의 경우 <code>${(wf:actionData(&quot;validate&quot;)[&quot;errors&quot;] == &quot;true&quot;)}</code> 형태로 데이터를 꺼내서 확인할 수 있습니다. 이러한 형태의 문법을 우지에서는 EL function이라고 합니다. 이러한 EL function을 통해서 다양한 연산들을 지원하고 있습니다. 자세한 내용은 우지 문서 중에 WorkflowFunctionalSpec을 참고하시기 바랍니다.<br>
 capture-output의 경우 java, ssh, shell action에서 지원합니다. capture-output은 자바의 프로퍼티 파일 포맷이어야 합니다. 위의 워크플로우 액션 중 validate 액션에서 캡쳐할 아웃풋을 어떻게 기록하는 방법에 대해 알아보겠습니다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">getProperty</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;oozie.action.output.properties&#34;</span><span style="color:#f92672">));</span>
-Properties props <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Properties<span style="color:#f92672">();</span>
-props<span style="color:#f92672">.</span><span style="color:#a6e22e">setProperty</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;errors&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">);</span>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">File file <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> File<span style="color:#666">(</span>System<span style="color:#666">.</span><span style="color:#4070a0">getProperty</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;oozie.action.output.properties&#34;</span><span style="color:#666">));</span>
+Properties props <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Properties<span style="color:#666">();</span>
+props<span style="color:#666">.</span><span style="color:#4070a0">setProperty</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;errors&#34;</span><span style="color:#666">,</span> <span style="color:#4070a0">&#34;false&#34;</span><span style="color:#666">);</span>
 
-OutputStream os <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileOutputStream<span style="color:#f92672">(</span>file<span style="color:#f92672">);</span>
-props<span style="color:#f92672">.</span><span style="color:#a6e22e">store</span><span style="color:#f92672">(</span>os<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">);</span>
-os<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><span style="color:#f92672">();</span>  
+OutputStream os <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> FileOutputStream<span style="color:#666">(</span>file<span style="color:#666">);</span>
+props<span style="color:#666">.</span><span style="color:#4070a0">store</span><span style="color:#666">(</span>os<span style="color:#666">,</span> <span style="color:#4070a0">&#34;&#34;</span><span style="color:#666">);</span>
+os<span style="color:#666">.</span><span style="color:#4070a0">close</span><span style="color:#666">();</span>  
 </code></pre></div><p>위의 자바 예제가 캡쳐할 아웃풋을 저장하는 방법입니다. oozie.action.output.properties 파일에 새로운 properties를 작성하는 것이죠. 그러면 우지에서 해당 프로퍼티를 캡쳐하여 아웃풋으로 가지고 있는 것입니다. 그리고 캡쳐된 아웃풋은 <code>wf:actionData(&quot;_action_name&quot;)[&quot;key&quot;]</code>를 통해 decision node에서 참조하게 되는 것입니다.</p>
 <p>지금까지 총 3편의 포스트를 통해 Oozie에서 많이 사용하는 워크플로우 패턴에 대해 알아보았습니다. 하둡 에코시스템을 이용한 개발을 하고 있는데 액션들 간에 디펜던시 관리가 필요로 하다면 Oozie가 하나의 선택지가 될 것입니다.</p>
 <p><!-- raw HTML omitted --></p>
@@ -343,12 +335,6 @@ os<span style="color:#f92672">.</span><span style="color:#a6e22e">close</span><s
     </a>
     
 
-    
-    <a class="social-icon" href="https://www.linkedin.com/in/kimminho" target="_blank" rel="noopener" title="LinkedIn">
-        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
-        </svg>
-    </a>
     
 
     

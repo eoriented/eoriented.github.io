@@ -20,7 +20,7 @@
     
     
     
-    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.8c887d2fff940d31f5396cb7ea968bf64588f4d2befd17012f09049553ce0efe.css"/>
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.a72ffd9940ffe0d37baca976bc2f5746f5a324465ebb022c4aa544afed426f4c.css"/>
 
     
     
@@ -86,8 +86,6 @@ if (!doNotTrack) {
   
     <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
   
-    <a class="color-link nav-link" href="https://eoriented.github.io/about/">About</a>
-  
   
 </div>
 <footer class="footer">
@@ -100,12 +98,6 @@ if (!doNotTrack) {
     </a>
     
 
-    
-    <a class="social-icon" href="https://www.linkedin.com/in/kimminho" target="_blank" rel="noopener" title="LinkedIn">
-        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
-        </svg>
-    </a>
     
 
     
@@ -201,59 +193,59 @@ Deep learning은 대세가 되었습니다. 주변에서 딥러닝이라는 이�
 </li>
 </ul>
 <p>그럼 딥러닝을 이용해서 할 수 있는 것을 한번 볼까요? 딥러닝의 가장 좋은 활용 사례라고 할 수 있는 이미지 인식을 한번 보도록 할게요. 컴퓨터에게 동물의 그림을 보고 맞출 수 있도록 하는 것이 그 예가 되겠습니다. 그럼 코드로 바로 볼까요?</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">VGG16</span>(include_top<span style="color:#f92672">=</span>True, weights<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;imagenet&#39;</span>,
-        input_tensor<span style="color:#f92672">=</span>None, input_shape<span style="color:#f92672">=</span>None,
-        pooling<span style="color:#f92672">=</span>None,
-        classes<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>):
-<span style="color:#75715e"># 중략 ...</span>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">def</span> <span style="color:#06287e">VGG16</span>(include_top<span style="color:#666">=</span>True, weights<span style="color:#666">=</span><span style="color:#4070a0">&#39;imagenet&#39;</span>,
+        input_tensor<span style="color:#666">=</span>None, input_shape<span style="color:#666">=</span>None,
+        pooling<span style="color:#666">=</span>None,
+        classes<span style="color:#666">=</span><span style="color:#40a070">1000</span>):
+<span style="color:#60a0b0;font-style:italic"># 중략 ...</span>
 
-<span style="color:#75715e"># Block 1</span>
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">64</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block1_conv1&#39;</span>)(img_input)
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">64</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block1_conv2&#39;</span>)(x)
-x <span style="color:#f92672">=</span> MaxPooling2D((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), strides<span style="color:#f92672">=</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block1_pool&#39;</span>)(x)
+<span style="color:#60a0b0;font-style:italic"># Block 1</span>
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">64</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block1_conv1&#39;</span>)(img_input)
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">64</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block1_conv2&#39;</span>)(x)
+x <span style="color:#666">=</span> MaxPooling2D((<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), strides<span style="color:#666">=</span>(<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block1_pool&#39;</span>)(x)
 
-<span style="color:#75715e"># Block 2</span>
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">128</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block2_conv1&#39;</span>)(x)
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">128</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block2_conv2&#39;</span>)(x)
-x <span style="color:#f92672">=</span> MaxPooling2D((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), strides<span style="color:#f92672">=</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block2_pool&#39;</span>)(x)
+<span style="color:#60a0b0;font-style:italic"># Block 2</span>
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">128</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block2_conv1&#39;</span>)(x)
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">128</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block2_conv2&#39;</span>)(x)
+x <span style="color:#666">=</span> MaxPooling2D((<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), strides<span style="color:#666">=</span>(<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block2_pool&#39;</span>)(x)
 
-<span style="color:#75715e"># Block 3</span>
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">256</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block3_conv1&#39;</span>)(x)
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">256</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block3_conv2&#39;</span>)(x)
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">256</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block3_conv3&#39;</span>)(x)
-x <span style="color:#f92672">=</span> MaxPooling2D((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), strides<span style="color:#f92672">=</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block3_pool&#39;</span>)(x)
+<span style="color:#60a0b0;font-style:italic"># Block 3</span>
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">256</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block3_conv1&#39;</span>)(x)
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">256</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block3_conv2&#39;</span>)(x)
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">256</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block3_conv3&#39;</span>)(x)
+x <span style="color:#666">=</span> MaxPooling2D((<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), strides<span style="color:#666">=</span>(<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block3_pool&#39;</span>)(x)
 
-<span style="color:#75715e"># Block 4</span>
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">512</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block4_conv1&#39;</span>)(x)
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">512</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block4_conv2&#39;</span>)(x)
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">512</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block4_conv3&#39;</span>)(x)
-x <span style="color:#f92672">=</span> MaxPooling2D((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), strides<span style="color:#f92672">=</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block4_pool&#39;</span>)(x)
+<span style="color:#60a0b0;font-style:italic"># Block 4</span>
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">512</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block4_conv1&#39;</span>)(x)
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">512</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block4_conv2&#39;</span>)(x)
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">512</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block4_conv3&#39;</span>)(x)
+x <span style="color:#666">=</span> MaxPooling2D((<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), strides<span style="color:#666">=</span>(<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block4_pool&#39;</span>)(x)
 
-<span style="color:#75715e"># Block 5</span>
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">512</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block5_conv1&#39;</span>)(x)
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">512</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block5_conv2&#39;</span>)(x)
-x <span style="color:#f92672">=</span> Conv2D(<span style="color:#ae81ff">512</span>, (<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>), activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>, padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;same&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block5_conv3&#39;</span>)(x)
-x <span style="color:#f92672">=</span> MaxPooling2D((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), strides<span style="color:#f92672">=</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>), name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;block5_pool&#39;</span>)(x)
+<span style="color:#60a0b0;font-style:italic"># Block 5</span>
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">512</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block5_conv1&#39;</span>)(x)
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">512</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block5_conv2&#39;</span>)(x)
+x <span style="color:#666">=</span> Conv2D(<span style="color:#40a070">512</span>, (<span style="color:#40a070">3</span>, <span style="color:#40a070">3</span>), activation<span style="color:#666">=</span><span style="color:#4070a0">&#39;relu&#39;</span>, padding<span style="color:#666">=</span><span style="color:#4070a0">&#39;same&#39;</span>, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block5_conv3&#39;</span>)(x)
+x <span style="color:#666">=</span> MaxPooling2D((<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), strides<span style="color:#666">=</span>(<span style="color:#40a070">2</span>, <span style="color:#40a070">2</span>), name<span style="color:#666">=</span><span style="color:#4070a0">&#39;block5_pool&#39;</span>)(x)
 
-<span style="color:#75715e"># 중략...</span>
+<span style="color:#60a0b0;font-style:italic"># 중략...</span>
 
-<span style="color:#75715e"># Create model.</span>
-model <span style="color:#f92672">=</span> Model(inputs, x, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;vgg16&#39;</span>)
+<span style="color:#60a0b0;font-style:italic"># Create model.</span>
+model <span style="color:#666">=</span> Model(inputs, x, name<span style="color:#666">=</span><span style="color:#4070a0">&#39;vgg16&#39;</span>)
 
-<span style="color:#75715e"># load weights</span>
-<span style="color:#66d9ef">if</span> weights <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;imagenet&#39;</span>:
-    <span style="color:#66d9ef">if</span> include_top:
-        weights_path <span style="color:#f92672">=</span> get_file(<span style="color:#e6db74">&#39;vgg16_weights_tf_dim_ordering_tf_kernels.h5&#39;</span>,
+<span style="color:#60a0b0;font-style:italic"># load weights</span>
+<span style="color:#007020;font-weight:bold">if</span> weights <span style="color:#666">==</span> <span style="color:#4070a0">&#39;imagenet&#39;</span>:
+    <span style="color:#007020;font-weight:bold">if</span> include_top:
+        weights_path <span style="color:#666">=</span> get_file(<span style="color:#4070a0">&#39;vgg16_weights_tf_dim_ordering_tf_kernels.h5&#39;</span>,
                                 WEIGHTS_PATH,
-                                cache_subdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;models&#39;</span>)
-    <span style="color:#66d9ef">else</span>:
-        weights_path <span style="color:#f92672">=</span> get_file(<span style="color:#e6db74">&#39;vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5&#39;</span>,
+                                cache_subdir<span style="color:#666">=</span><span style="color:#4070a0">&#39;models&#39;</span>)
+    <span style="color:#007020;font-weight:bold">else</span>:
+        weights_path <span style="color:#666">=</span> get_file(<span style="color:#4070a0">&#39;vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5&#39;</span>,
                                 WEIGHTS_PATH_NO_TOP,
-                                cache_subdir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;models&#39;</span>)
-    model<span style="color:#f92672">.</span>load_weights(weights_path)
+                                cache_subdir<span style="color:#666">=</span><span style="color:#4070a0">&#39;models&#39;</span>)
+    model<span style="color:#666">.</span>load_weights(weights_path)
 
-<span style="color:#75715e"># 중략 ...</span>
-<span style="color:#66d9ef">return</span> model
+<span style="color:#60a0b0;font-style:italic"># 중략 ...</span>
+<span style="color:#007020;font-weight:bold">return</span> model
 </code></pre></div><p>코드를 보니 쉽지 않은 것 같아 보입니다. 참고로 저는 케라스로 코드를 짜보거나 케라스의 문서를 본적도 없습니다. 그러나 앞으로 정리한 내용을 보게 되면 위의 코드가 어떻게 돌아가는지 이해하게 될겁니다.</p>
 <h2 id="neural-network-복습하기">Neural Network 복습하기</h2>
 <figure>
@@ -423,12 +415,6 @@ model <span style="color:#f92672">=</span> Model(inputs, x, name<span style="col
     </a>
     
 
-    
-    <a class="social-icon" href="https://www.linkedin.com/in/kimminho" target="_blank" rel="noopener" title="LinkedIn">
-        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-            <path d="M2,3.654102 C2,2.69908141 2.79442509,1.92397846 3.77383592,1.92397846 L24.2261641,1.92397846 C25.2058917,1.92397846 26,2.69908141 26,3.654102 L26,24.3462148 C26,25.3015521 25.2058917,26.0760215 24.2261641,26.0760215 L3.77383592,26.0760215 C2.79442509,26.0760215 2,25.3015521 2,24.3465315 L2,3.65378524 L2,3.654102 Z M9.27526132,22.1415901 L9.27526132,11.2356668 L5.65030092,11.2356668 L5.65030092,22.1415901 L9.27557808,22.1415901 L9.27526132,22.1415901 Z M7.46341463,9.74691162 C8.72727273,9.74691162 9.51409566,8.90940767 9.51409566,7.86284447 C9.49033893,6.79252455 8.72727273,5.97846056 7.48748812,5.97846056 C6.24675325,5.97846056 5.43649034,6.79252455 5.43649034,7.86284447 C5.43649034,8.90940767 6.22299652,9.74691162 7.4396579,9.74691162 L7.46309788,9.74691162 L7.46341463,9.74691162 Z M11.2815965,22.1415901 L14.9062401,22.1415901 L14.9062401,16.0519481 C14.9062401,15.7263225 14.9299968,15.4000634 15.0256573,15.1675641 C15.2876148,14.5159962 15.8840672,13.8416218 16.8856509,13.8416218 C18.1970225,13.8416218 18.7218879,14.8416218 18.7218879,16.3078872 L18.7218879,22.1415901 L22.3465315,22.1415901 L22.3465315,15.8885017 C22.3465315,12.5388027 20.5584416,10.9800443 18.1735825,10.9800443 C16.2182452,10.9800443 15.3595185,12.072854 14.8824834,12.8172315 L14.9065569,12.8172315 L14.9065569,11.2359835 L11.2819132,11.2359835 C11.3291099,12.2591067 11.2815965,22.1419069 11.2815965,22.1419069 L11.2815965,22.1415901 Z"></path>
-        </svg>
-    </a>
     
 
     
