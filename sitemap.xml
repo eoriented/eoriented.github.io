@@ -3,12 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://eoriented.github.io/categories/bigdata/</loc>
-    <lastmod>2020-04-06T23:01:48+09:00</lastmod>
+    <loc>https://eoriented.github.io/categories/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/categories/</loc>
+    <loc>https://eoriented.github.io/tags/cats/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/functional-programming/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/functor/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/functor-and-monad-1/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/categories/language/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/monad/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/scala/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/scala/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/scalaz/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/</loc>
+    <lastmod>2020-05-10T13:18:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/categories/bigdata/</loc>
     <lastmod>2020-04-06T23:01:48+09:00</lastmod>
   </url>
   
@@ -44,21 +104,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/nosql/</loc>
-    <lastmod>2020-04-06T23:01:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/post/</loc>
-    <lastmod>2020-04-06T23:01:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/subcategories/</loc>
-    <lastmod>2020-04-06T23:01:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/</loc>
     <lastmod>2020-04-06T23:01:48+09:00</lastmod>
   </url>
   
@@ -224,16 +269,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/future/</loc>
-    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/categories/language/</loc>
-    <lastmod>2019-08-17T11:11:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/subcategories/scala/</loc>
     <lastmod>2019-08-17T11:11:46+09:00</lastmod>
   </url>
   

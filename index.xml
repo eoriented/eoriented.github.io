@@ -14,6 +14,15 @@
     
     
     <item>
+      <title>Functor(펑터)와 Monad(모나드) - 1</title>
+      <link>https://eoriented.github.io/post/functor-and-monad-1/</link>
+      <pubDate>Sun, 10 May 2020 13:18:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/functor-and-monad-1/</guid>
+      <description>스칼라 언어를 주로 사용하고 있는 입장에서 펑터나 모나드와 같은 용어를 종종 접하게 됩니다. 그래서 이번 포스트에서는 펑터와 모나드가 무엇인지에 대해 살펴보겠습니다. 일반적으로 대부분의 프로그래머들은, 특히 함수형 언어로 개발을 하지 않는 개발자들은, 모나드란 단어를 보았을 때, 자신과는 무관한 컴퓨터 프로그래밍 개념이고 상관없는 것이라고 생각하고 그냥 지나칠 수 있습니다.</description>
+    </item>
+    
+    <item>
       <title>HBase 데이터 모델</title>
       <link>https://eoriented.github.io/post/hbase-data-model/</link>
       <pubDate>Mon, 06 Apr 2020 23:01:48 +0900</pubDate>

@@ -8,10 +8,64 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Mon, 06 Apr 2020 23:01:48 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 13:18:56 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cats</title>
+      <link>https://eoriented.github.io/tags/cats/</link>
+      <pubDate>Sun, 10 May 2020 13:18:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/cats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional programming</title>
+      <link>https://eoriented.github.io/tags/functional-programming/</link>
+      <pubDate>Sun, 10 May 2020 13:18:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functor</title>
+      <link>https://eoriented.github.io/tags/functor/</link>
+      <pubDate>Sun, 10 May 2020 13:18:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/functor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monad</title>
+      <link>https://eoriented.github.io/tags/monad/</link>
+      <pubDate>Sun, 10 May 2020 13:18:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/monad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scala</title>
+      <link>https://eoriented.github.io/tags/scala/</link>
+      <pubDate>Sun, 10 May 2020 13:18:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scalaz</title>
+      <link>https://eoriented.github.io/tags/scalaz/</link>
+      <pubDate>Sun, 10 May 2020 13:18:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/scalaz/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>column family</title>

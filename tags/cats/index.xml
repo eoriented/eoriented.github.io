@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cats on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/cats/</link>
+    <description>Recent content in cats on Smart Tiger&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
+    <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Sun, 10 May 2020 13:18:56 +0900</lastBuildDate>
+    
+	<atom:link href="https://eoriented.github.io/tags/cats/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Functor(펑터)와 Monad(모나드) - 1</title>
+      <link>https://eoriented.github.io/post/functor-and-monad-1/</link>
+      <pubDate>Sun, 10 May 2020 13:18:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/functor-and-monad-1/</guid>
+      <description>스칼라 언어를 주로 사용하고 있는 입장에서 펑터나 모나드와 같은 용어를 종종 접하게 됩니다. 그래서 이번 포스트에서는 펑터와 모나드가 무엇인지에 대해 살펴보겠습니다. 일반적으로 대부분의 프로그래머들은, 특히 함수형 언어로 개발을 하지 않는 개발자들은, 모나드란 단어를 보았을 때, 자신과는 무관한 컴퓨터 프로그래밍 개념이고 상관없는 것이라고 생각하고 그냥 지나칠 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

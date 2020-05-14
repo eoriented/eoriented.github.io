@@ -8,10 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Mon, 06 Apr 2020 23:01:48 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 13:18:56 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>language</title>
+      <link>https://eoriented.github.io/categories/language/</link>
+      <pubDate>Sun, 10 May 2020 13:18:56 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/categories/language/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>bigdata</title>
@@ -28,15 +37,6 @@
       <pubDate>Sun, 16 Feb 2020 15:21:35 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/categories/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>language</title>
-      <link>https://eoriented.github.io/categories/language/</link>
-      <pubDate>Sat, 17 Aug 2019 11:11:46 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/categories/language/</guid>
       <description></description>
     </item>
     
