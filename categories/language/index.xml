@@ -8,10 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sun, 10 May 2020 13:18:56 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 10:04:25 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/categories/language/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Functor(펑터)와 Monad(모나드) - 2</title>
+      <link>https://eoriented.github.io/post/functor-and-monad-2/</link>
+      <pubDate>Thu, 14 May 2020 10:04:25 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/functor-and-monad-2/</guid>
+      <description>이전 포스트에서는 펑터가 무엇인지에 관해 살펴보았습니다. 펑터는 유용한 추상화이지만 약간의 문제가 존재합니다. 펑터의 map 함수가 일반적인 값을 반환하는 경우에는 문제가 되지 않지만 만약 펑터를 반환하면 어떻게 될까요? 물론 펑터 역시 값이기 때문에 상관은 없겠지만 펑터를 반환하는 경우 결과가 조금 다르게 나올 수 있습니다.</description>
+    </item>
     
     <item>
       <title>Functor(펑터)와 Monad(모나드) - 1</title>
