@@ -30,6 +30,8 @@
     
  
     
+    <link rel="alternate" type="application/rss+xml" href="https://eoriented.github.io/categories/programming/index.xml" title="Smart Tiger's blog" />
+    
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -178,102 +180,83 @@ if (!doNotTrack) {
 </nav>
         <div id="content" class="content-container">
         
-<h1 class="post-title">Spark에서 groupByKey 대신 reduceByKey 사용하기</h1>
+
+  <h1>Category by "programming"</h1>
+  
+  
     
-    <div>
-        <p>
-        <p>이번 포스트에서는 스파크에서 빈번히 사용되는 transformation인 <code>reduceByKey</code>와 <code>groupByKey</code>의 동작에 대해 살펴보겠습니다.
-먼저 스파크에서 <code>reduceByKey</code>와 <code>groupByKey</code>를 사용하여 단어 세기 예제를 작성해보도록 하겠습니다.</p>
-<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#007020;font-weight:bold">val</span> words <span style="color:#007020;font-weight:bold">=</span> <span style="color:#0e84b5;font-weight:bold">Array</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;one&#34;</span><span style="color:#666">,</span> <span style="color:#4070a0">&#34;two&#34;</span><span style="color:#666">,</span> <span style="color:#4070a0">&#34;two&#34;</span><span style="color:#666">,</span> <span style="color:#4070a0">&#34;three&#34;</span><span style="color:#666">,</span> <span style="color:#4070a0">&#34;three&#34;</span><span style="color:#666">,</span> <span style="color:#4070a0">&#34;three&#34;</span><span style="color:#666">)</span>
-<span style="color:#007020;font-weight:bold">val</span> wordPairsRDD <span style="color:#007020;font-weight:bold">=</span> sc<span style="color:#666">.</span>parallelize<span style="color:#666">(</span>words<span style="color:#666">).</span>map<span style="color:#666">(</span>word <span style="color:#007020;font-weight:bold">=&gt;</span> <span style="color:#666">(</span>word<span style="color:#666">,</span> <span style="color:#40a070">1</span><span style="color:#666">))</span>
-
-<span style="color:#007020;font-weight:bold">val</span> wordCountsWithReduce <span style="color:#007020;font-weight:bold">=</span> wordPairsRDD
-  <span style="color:#666">.</span>reduceByKey<span style="color:#666">(</span><span style="color:#007020;font-weight:bold">_</span> <span style="color:#666">+</span> <span style="color:#007020;font-weight:bold">_</span><span style="color:#666">)</span>
-  <span style="color:#666">.</span>collect<span style="color:#666">()</span>
-
-<span style="color:#007020;font-weight:bold">val</span> wordCountsWithGroup <span style="color:#007020;font-weight:bold">=</span> wordPairsRDD
-  <span style="color:#666">.</span>groupByKey<span style="color:#666">()</span>
-  <span style="color:#666">.</span>map<span style="color:#666">(</span>t <span style="color:#007020;font-weight:bold">=&gt;</span> <span style="color:#666">(</span>t<span style="color:#666">.</span>_1<span style="color:#666">,</span> t<span style="color:#666">.</span>_2<span style="color:#666">.</span>sum<span style="color:#666">))</span>
-  <span style="color:#666">.</span>collect<span style="color:#666">()</span>
-</code></pre></div><p>두 방법 모두 정확한 답을 출력합니다. 그러나 <code>reduceByKey</code>가 큰 데이터 셋에서는 더 효율적으로 동작합니다. 그 이유는 <code>reduceByKey</code>의 내부적인 동작의 차이 때문입니다. <code>reduceByKey</code>는 키를 기준으로 셔플링을 하기 전에 미리 각 파티션 내에 있는 데이터들을 먼저 combine을 수행합니다. 맵리듀스의 combiner를 사용하는 것과 동일한 역학을 수행하는 것입니다.</p>
-<p>아래의 그림을 보면 <code>reduceByKey</code>가 어떻게 동작하는지 더 손쉽게 이해할 수 있습니다.</p>
-<figure><a href="https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/images/reduce_by.png" target="#">
-    <img src="https://eoriented.github.io/images/avoid-groupbykey/reduceByKey.png" width="80%"/> </a>
-</figure>
-
-<p>반면에 <code>groupByKey</code>는 모든 키-값 페어에 대해 셔플을 수행합니다. 이러한 동작은 단어 세기 예제와 같은 경우 불필요한 셔플을 발생하여 네트워크 자원을 더 많이 소모하게 됩니다.</p>
-<p>스파크는 하나의 executor가 가진 메모리보다 더 많은 셔플 데이터를 처리해야 하는 경우에는 데이터를 디스크로 저장하게 됩니다. 만일 하나의 키가 가진 키-값 데이터가 executor의 메모리를 넘어가게 되는 경우에는 out of memory 예외가 발생하게 됩니다. 이러한 상황이 발생하지 않도록 애플리케이션을 작성해야 합니다.</p>
-<p><code>groupByKey</code>의 동작은 아래의 그림과 같습니다.</p>
-<figure><a href="https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/images/group_by.png" target="#">
-    <img src="https://eoriented.github.io/images/avoid-groupbykey/groupByKey.png" width="80%"/> </a>
-</figure>
-
-<p>훨씬 큰 데이터 셋에서 <code>reduceByKey</code>와 <code>groupByKey</code>는 셔플링하는 데이터 차이가 극명합니다. <code>groupByKey</code> 대신 사용할 수 있는 다른 함수들도 존재합니다.</p>
-<ul>
-<li><code>combineByKey</code>는 키를 가진 값들을 하나로 병합하는 기능을 수행하지만 병합을 수행하는 과정에서 값의 타입이 바뀔 수 있습니다.</li>
-<li><code>foldByKey</code>는 <code>reduceByKey</code>와 다르게 초기값인 <code>zeroValue</code>를 전달해서 병합 시 사용할 수 있습니다.</li>
-</ul>
-<h3 id="reference">Reference</h3>
-<ul>
-<li><a href="https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/best_practices/prefer_reducebykey_over_groupbykey.html">https://databricks.gitbooks.io/databricks-spark-knowledge-base/content/best_practices/prefer_reducebykey_over_groupbykey.html</a></li>
-</ul>
-
-        </p>
-
-        <br />
-        <br />
-
-        <div class="paging post-paging" style="margin-bottom: 15px;">
-            
-            
-            
-            
-            
-            
-        </div>
-    </div>
-
+    <article>
+            <h2>
+                <a href="https://eoriented.github.io/post/functor-and-monad-2/">
+                    Functor(펑터)와 Monad(모나드) - 2
+                </a>
+            </h2>
+            <div>
+                <p>
+                이전 포스트에서는 펑터가 무엇인지에 관해 살펴보았습니다. 펑터는 유용한 추상화이지만 약간의 문제가 존재합니다. 펑터의 map 함수가 일반적인 값을 반환하는 경우에는 문제가 되지 않지만 만약 펑터를 반환하면 어떻게 될까요? 물론 펑터 역시 값이기 때문에 상관은 없겠지만 펑터를 반환하는 경우 결과가 조금 다르게 나올 수 있습니다.
+                </p>
+            </div>
+            <div class="post-footer">
+            <time>May 14, 2020</time>
+            </div> 
+        </article>
     
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+  
     
+    <article>
+            <h2>
+                <a href="https://eoriented.github.io/post/functor-and-monad-1/">
+                    Functor(펑터)와 Monad(모나드) - 1
+                </a>
+            </h2>
+            <div>
+                <p>
+                스칼라 언어를 주로 사용하고 있는 입장에서 펑터나 모나드와 같은 용어를 종종 접하게 됩니다. 그래서 이번 포스트에서는 펑터와 모나드가 무엇인지에 대해 살펴보겠습니다. 일반적으로 대부분의 프로그래머들은, 특히 함수형 언어로 개발을 하지 않는 개발자들은, 모나드란 단어를 보았을 때, 자신과는 무관한 컴퓨터 프로그래밍 개념이고 상관없는 것이라고 생각하고 그냥 지나칠 수 있습니다.
+                </p>
+            </div>
+            <div class="post-footer">
+            <time>May 10, 2020</time>
+            </div> 
+        </article>
     
+  
     
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <article>
+            <h2>
+                <a href="https://eoriented.github.io/post/scala-future-and-concurrency-2/">
+                    스칼라 퓨처(Future)와 동시성(Concurrency) - 2
+                </a>
+            </h2>
+            <div>
+                <p>
+                이전 포스트에 이어서 스칼라 Future의 다른 사용법에 대해 살펴보도록 하겠습니다.
+4. Future 실패 처리하기 스칼라 Future는 실패한 퓨처를 다룰 수 있는 failed, fallBackTo, recover, recoverWith 메소드를 제공합니다.
+4.1 failed Future[T]에서 실패한 Future를 예외를 저장한 Future[Throwable] 타입의 성공한 Future로 바꿔줍니다.
+                </p>
+            </div>
+            <div class="post-footer">
+            <time>August 17, 2019</time>
+            </div> 
+        </article>
     
-
-    <div class="page-footer">
-        
-        <hr class="footer-divider">
-        
-            <a class="tag" href="https://eoriented.github.io/tags/spark">#spark</a>
-        
-            <a class="tag" href="https://eoriented.github.io/tags/groupbykey">#groupbykey</a>
-        
-            <a class="tag" href="https://eoriented.github.io/tags/reducebykey">#reducebykey</a>
-        
-            <a class="tag" href="https://eoriented.github.io/tags/combiner">#combiner</a>
-        
-            <a class="tag" href="https://eoriented.github.io/tags/combinebykey">#combinebykey</a>
-        
-            <a class="tag" href="https://eoriented.github.io/tags/pair-rdd">#pair-rdd</a>
-        
-      
-    </div>
+  
+    
+    <article>
+            <h2>
+                <a href="https://eoriented.github.io/post/scala-future-and-concurrency-1/">
+                    스칼라 퓨처(Future)와 동시성(Concurrency) - 1
+                </a>
+            </h2>
+            <div>
+                <p>
+                오늘 멀티 코어 프로세서가 대중화되면서 동시성에 대한 관심도 많이 늘어났습니다. 이러한 동시성 프로그래밍을 위해서 기존의 프로그래밍 언어들을 블로킹을 사용하여 동기화함으로써 동시성을 지원합니다. 자바의 경우도 마찬가지로 공유 메모리와 락을 기반으로 동시성을 지원하고 있습니다. 그러나 이러한 블로킹을 사용한 동기화의 경우 Deadlock이나 Starvation과 같은 문제가 발생할 수 있습니다.
+                </p>
+            </div>
+            <div class="post-footer">
+            <time>August 16, 2019</time>
+            </div> 
+        </article>
+    
 
 
         

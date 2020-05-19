@@ -28,17 +28,17 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/categories/language/</loc>
-    <lastmod>2020-05-14T10:04:25+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/monad/</loc>
     <lastmod>2020-05-14T10:04:25+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2020-05-14T10:04:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/categories/programming/</loc>
     <lastmod>2020-05-14T10:04:25+09:00</lastmod>
   </url>
   
