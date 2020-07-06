@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Smart Tiger&#39;s blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.a72ffd9940ffe0d37baca976bc2f5746f5a324465ebb022c4aa544afed426f4c.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-160052384-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/bigdata/">Big data</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/machine-learning/">Machine learning</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/programming/">Programming</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/cloud/">Cloud</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/tools/">Tools</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
+  
+  
+</div>
+<footer class="footer">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">데이터 모델(Data Models)과 질의 언어(Query Languages) - 1</h1>
+    
+    <div>
+        <p>
+        <p>데이터 모델은 소프트웨어 개발에 있어서 가장 중요한 부분 중에 하나입니다. 다양한 종류의 데이터 모델에 대해 이해를 하고 있고, 애플리케이션 요구사항에 가장 적합한 모델을 찾아서 개발을 해야 합니다.<br>
+데이터 모델에 따라 어떤 종류의 사용법은 쉽고 어떤 동작은 지원하지 않습니다. 또한 어떤 연산은 빠르지만 어떤 연산은 매우 느리게 동작할 수 있습니다. 그렇기 때문에 애플리케이션에 맞는 데이터 모델을 사용하는 것이 중요합니다.
+이번 장에서는 다양한 데이터 모델과 질의 언어에 대해 살펴볼 예정입니다.</p>
+<h2 id="관계형-모델relational-model-vs-문서-모델document-model">관계형 모델(Relational Model) vs 문서 모델(Document Model)</h2>
+<p>관계형 모델을 다음과 같이 정의됩니다. 데이터는 관계(relation)(SQL에서 테이블이라고 불리는)로 구성되고 각 관계는 순서 없는 튜플(tuple)(SQL에서 row라고 불리는) 모음입니다. 이러한 관계형 모델은 오늘날 웹에서 볼 수 있는 대부분의 서비스들이 사용하고 있습니다. 이러한 관계형 데이터베이스의 우위는 약 25-30년 정도 지속되었습니다. 관계형 모델의 예를 그림으로 살펴보도록 하겠습니다. 아래의 그림은 관계형 스키마를 사용해 링크드인 프로필을 표현한 것입니다.</p>
+<figure >
+<a href="https://notes.shichao.io/dda/ch2/" target="_blank">
+  <img src="https://eoriented.github.io/images/data-models-and-query-languages-1/relation-linkedin.png" width="100%"  style="max-width: 700px" />
+  </a>
+
+</figure>
+<h2 id="일대다one-to-many-관계">일대다(one-to-many) 관계</h2>
+<p>사용자와 직위, 학력, 연락처 정보는 일대다(one-to-many) 관계입니다. 이러한 관계를 표현하기 위해서 전통적인 SQL 모델에서 가장 일반적인 정규화 표현은 직위, 학력, 연락처 정보를 개별 테이블에 넣고 외래키로 users 테이블을 참조하는 방식을 사용합니다.<br>
+그러나 사실 이력서와 같은 데이터 구조는 모든 내용을 갖추고 있는 문서(document)이기 때문에 JSON으로 표현하는 것이 매우 적합합니다. 즉 아래와 같이 JSON으로 나타낼 수 있습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#4070a0">&#34;user_id&#34;</span><span style="">:</span> <span style="color:#40a070">251</span><span style="">,</span>
+  <span style="color:#4070a0">&#34;first_name&#34;</span><span style="">:</span> <span style="color:#4070a0">&#34;Bill&#34;</span><span style="">,</span>
+  <span style="color:#4070a0">&#34;last_name&#34;</span><span style="">:</span> <span style="color:#4070a0">&#34;Gates&#34;</span><span style="">,</span>
+  <span style="color:#4070a0">&#34;summary&#34;</span><span style="">:</span> <span style="color:#4070a0">&#34;Co-chair of the Bill &amp; Melinda Gates... Active blogger.&#34;</span><span style="">,</span>
+  <span style="color:#4070a0">&#34;region_id&#34;</span><span style="">:</span> <span style="color:#4070a0">&#34;us:91&#34;</span><span style="">,</span>
+  <span style="color:#4070a0">&#34;industry_id&#34;</span><span style="">:</span> <span style="color:#40a070">131</span><span style="">,</span>
+  <span style="color:#4070a0">&#34;photo_url&#34;</span><span style="">:</span> <span style="color:#4070a0">&#34;/p/7/000/253/05b/308dd6e.jpg&#34;</span><span style="">,</span>
+  <span style="color:#4070a0">&#34;positions&#34;</span><span style="">:</span> [
+    {
+      <span style="color:#062873;font-weight:bold">&#34;job_title&#34;</span>: <span style="color:#4070a0">&#34;Co-chair&#34;</span>,
+      <span style="color:#062873;font-weight:bold">&#34;organization&#34;</span>: <span style="color:#4070a0">&#34;Bill &amp; Melinda Gates Foundation&#34;</span>
+    },
+    {
+      <span style="color:#062873;font-weight:bold">&#34;job_title&#34;</span>: <span style="color:#4070a0">&#34;Co-founder, Chairman&#34;</span>,
+      <span style="color:#062873;font-weight:bold">&#34;organization&#34;</span>: <span style="color:#4070a0">&#34;Microsoft&#34;</span>
+    }
+  ]<span style="">,</span>
+  <span style="color:#4070a0">&#34;education&#34;</span><span style="">:</span> [
+    {
+      <span style="color:#062873;font-weight:bold">&#34;school_name&#34;</span>: <span style="color:#4070a0">&#34;Harvard University&#34;</span>,
+      <span style="color:#062873;font-weight:bold">&#34;start&#34;</span>: <span style="color:#40a070">1973</span>,
+      <span style="color:#062873;font-weight:bold">&#34;end&#34;</span>: <span style="color:#40a070">1975</span>
+    },
+    {
+      <span style="color:#062873;font-weight:bold">&#34;school_name&#34;</span>: <span style="color:#4070a0">&#34;Lakeside School, Seattle&#34;</span>,
+      <span style="color:#062873;font-weight:bold">&#34;start&#34;</span>: <span style="color:#007020;font-weight:bold">null</span>,
+      <span style="color:#062873;font-weight:bold">&#34;end&#34;</span>: <span style="color:#007020;font-weight:bold">null</span>
+    }
+  ]<span style="">,</span>
+  <span style="color:#4070a0">&#34;contact_info&#34;</span><span style="">:</span> {
+    <span style="color:#062873;font-weight:bold">&#34;blog&#34;</span>: <span style="color:#4070a0">&#34;http://thegatesnotes.com&#34;</span>,
+    <span style="color:#062873;font-weight:bold">&#34;twitter&#34;</span>: <span style="color:#4070a0">&#34;http://twitter.com/BillGates&#34;</span>
+  }
+<span style="">}</span>
+</code></pre></div><p>이와 같이 이력서를 문서데이터인 JSON으로 표현을 하면 관계형 모델에서 사용하는 다중 테이블 스키마보다 더 나은 locality를 갖는 장점이 있습니다. 즉, 관계형 예제에서와 같이 하나의 프로필을 가져오려면 다중 질의를 수행하고 다중 조인을 수행해야 합니다. 그러나 문서 모델은 모든 정보가 한 곳에 있기 때문에 하나의 질의로 충분합니다.</p>
+<h2 id="다대일many-to-one-관계">다대일(many-to-one) 관계</h2>
+<p>위에서 관계형 모델로 나타낸 이력서를 보게 되면 region_id와 industry_id는 일반 string 값이 아닌 id로 처리하였습니다. 사실 사용자에게 입력을 받을 수 있지만 지역을 나타내거나 업계의 표준 목록과 같은 것들은 드롭 다운이나 자동 완성 기능을 만들어 사용자가 선택하게 하는 게 더 좋습니다. 또한 id를 사용하는 경우 텍스트로 직접 저장하는 것에 비해 정보를 저장할 때 덜 중복되게 저장할 수 있는 장점이 있습니다. 사실 이러한 중복을 제거하는 일이 데이터베이스의 정규화의 핵심입니다.</p>
+<p>중복된 데이터를 정규화 하려면 다대일(many-to-one) 관계가 필요합니다. 예를 들어 &ldquo;많은 사람들은 한 특정 지역에 살고 있고, 많은 사람이 한 회사에서 일한다.&ldquo;와 같은 관계를 말합니다. 이와 같은 다대일 관계는 문서 모델에 적합하지 않습니다. 관계형 DB에서는 조인이 쉽게 때문에 이와 같은 다대일 관계를 처리하고 용이합니다. 그러나 문서 데이터베이스는 일대다 관계를 처리하기 위해서 조인이 필요하지 않은 장점이 있지만 조인에 대한 지원이 약해서 다대일 관계를 처리하는데 어려움이 있습니다.</p>
+<h2 id="다대다many-to-many-관계">다대다(many-to-many) 관계</h2>
+<p>이번엔 다대다 관계입니다. 이력서에 대한 모델에 추가 요구 사항이 생겼다고 가정하겠습니다. 첫번째 요구사항은 organization(사용자가 일하는 회사)과 school_name(사용자가 공부한 학교)는 문자열이었습니다. 그러나 이것을 문자열 대신 entity로 참조하고 싶은 경우입니다. 이러한 요구사항을 반영한 예제는 아래의 그림과 같습니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/data-models-and-query-languages-1/linked-example.png" width="100%"  style="max-width: 500px" />
+  
+
+</figure>
+<p>추가적인 요구사항으로 사용자가 다른 사용자를 위해 추천서를 작성하는 기능을 넣는다고 가정해봅시다. 추천서는 추천받은 사용자의 이력서에 추천인의 이름과 사진이 함께 보입니다. 만약 추천인이 자신의 프로필 사진을 갱신하면 추천인이 작성한 모든 추천서에 새로운 사진을 반영해야 합니다.</p>
+<p>이와 같이 두가지 요구사항과 같은 기능은 다대다(many-to-many) 관계를 나타냅니다. 이와 같은 다대다 관계는 아래의 그림으로 표현할 수 있습니다.</p>
+<figure >
+<a href="https://notes.shichao.io/dda/ch2/" target="_blank">
+  <img src="https://eoriented.github.io/images/data-models-and-query-languages-1/many-to-many.png" width="100%"  style="max-width: 700px" />
+  </a>
+
+</figure>
+<p>위 그림을 보면 점선 내의 데이터는 하나의 문서로 표현할 수 있지만, 회사, 학교, 추천인 사용자와 같은 것은 참조로 표현해야 하며 조인이 필요합니다.</p>
+<h2 id="관계형-데이터베이스와-문서-데이터베이스">관계형 데이터베이스와 문서 데이터베이스</h2>
+<p>관계형 데이터베이스와 문서 데이터베이스를 비교하는 경우는 내결함성과 동시성 처리를 포함해 고려해야 할 사항이 많지만 데이터 모델의 차이점에만 집중을 해봅시다.<br>
+문서 데이터 모델을 선호하는 이유는 스키마 유연성과 지역성에 기인한 더 나은 성능과 애플리케이션에 사용하는 데이터 구조가 더 가깝기 때문입니다. 관계형 모델은 조인, 다대일, 다대다 관계를 더 잘 지원하기 때문에 기존에 많은 애플리케이션들이 많이 사용했습니다.<br>
+위와 같이 애플리케이션에서 사용하는 데이터 구조가 문서와 비슷한 경우 문서 모델을 사용하는 것이 좋으며, 애플리케이션에서 다대다 관계를 사용하는 경우에는 문서 모델보다는 관계형 모델을 사용하는 것이 더 좋습니다.<br>
+상호 연결이 많은 데이터의 경우는 문서 모델은 좀 어려운 면이 있으며, 관계형 모델은 이러한 연결을 충분히 해결해 줍니다. 그러나 상호 연결이 많은 경우에는 그래프형 데이터 모델을 고려해볼 수 있습니다.</p>
+<h2 id="그래프형-데이터-모델">그래프형 데이터 모델</h2>
+<p>앞에서 다대다 관계가 다양한 데이터 모델을 구별할 수 있는 주요 관계임을 살펴보았습니다. 애플리케이션이 주로 일대다 관계(트리 구조 데이터)이거나 레코드 간 관계가 없다면 문서 모델이 적합합니다. 그러나 이와는 다르게 다대다 관계가 일반적으로 사용되는 애플리케이션이라면 어떻게 해야 할까요? 관계형 모델은 단순한 다대다 관계를 다룰 수 있지만, 데이터 간 연결이 복잡해지면 그래프로 데이터를 모델링하는 것이 더 편합니다.<br>
+그래프는 두 가지 객체로 구성됩니다. 하나는 정점(vertex)이고 다른 하나는 간선(edge) 입니다. 다양한 유형의 데이터를 그래프로 모델링할 수 있는데 일반적으로 다음과 같은 것들이 있습니다.</p>
+<ul>
+<li>소셜 그래프
+<ul>
+<li>정점은 사람, 간선은 알고 있는 사람간의 관계</li>
+</ul>
+</li>
+<li>웹 그래프
+<ul>
+<li>정점은 웹페이지, 간선은 다른 페이지의 링크</li>
+</ul>
+</li>
+<li>도로나 철도 네트워크
+<ul>
+<li>정점은 교차로, 간선은 도로나 철로</li>
+</ul>
+</li>
+</ul>
+<p>위의 예제는 그래프의 정점이 모두 같은 유형을 나타내고 있습니다. 그러나 그래프는 이렇게 같은 유형뿐만 아니라 다른 유형의 데이터를 일관성 있게 저장할 수 있는 방법을 제공합니다. 예를 들어 페이스북에서는 정점이 사람, 장소, 이벤트, 체크인, 코멘트 등을 사용합니다. 그리고 간선은 어떤 사람이 서로 친구인지, 어떤 위치에서 체크인이 발생했는지, 누가 어떤 포스트에 코멘트를 했는지, 누가 이벤트에 참석했는지를 나타냅니다. 다음 그림은 그래프 구조 데이터 예제입니다.</p>
+<figure >
+<a href="http://pauldone.blogspot.com/2018/04/mongodb-graph-data-intensive-book.html" target="_blank">
+  <img src="https://eoriented.github.io/images/data-models-and-query-languages-1/graph-model.png" width="100%"  style="max-width: 700px" />
+  </a>
+
+</figure>
+<p>그래프는 속성(Property) 그래프 모델과 트리플 저장소 모델이 있습니다. 각각의 특징에 대해서 간단히 살펴보겠습니다.</p>
+<ul>
+<li>속성 그래프
+<ul>
+<li>정점
+<ul>
+<li>고유한 식별자</li>
+<li>outgoing 간선 집합</li>
+<li>incoming 간선 집합</li>
+<li>속성 컬렉션(키-값 쌍)</li>
+</ul>
+</li>
+<li>간선
+<ul>
+<li>고유한 식별자</li>
+<li>간선이 시작하는 정점(tail vertex)</li>
+<li>간선이 끝나는 정점(head vertex)</li>
+<li>두 정점 간 관계 유형을 설명하는 레이블</li>
+<li>속성 컬렉션(키-값 쌍)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>트리플 저장소
+<ul>
+<li>모든 정보를 주어(subject), 술어(predicate), 목적어(object)의 three-part statements 형식으로 저장</li>
+<li>주어는 그래프의 정점을 의미</li>
+<li>목적어
+<ul>
+<li>서술어와 목적어는 주어 정점에서 속성의 키-값과 동등
+<ul>
+<li>예시 : (루시, 나이, 33)은 lucy가 가진 속성 {&ldquo;나이&rdquo;:33}과 동등</li>
+</ul>
+</li>
+<li>서술어는 그래프의 간선, 주어는 꼬리 정점, 목적어는 머리 정점
+<ul>
+<li>예시 : (루시, 결혼하다, 알랭)은 루시 -&gt; 알랭에 간선 레이블은 결혼하다와 동일</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>이와 같이 그래프 모델의 경우 모든 데이터들이 잠재적으로 연관되어 있는 경우에 사용할 수 있습니다.</p>
+<p>지금까지 다양한 데이터 모델에 대해 간략하게 살펴보았습니다. 애플리케이션에 요구사항에 맞춰 적합한 데이터 모델을 찾고 적용해야 합니다. 이번 장은 다뤄야 할 내용이 많아서 2개의 포스트로 나누어서 작성할 예정입니다.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://wikibook.co.kr/data-intensive-applications/">데이터 중심 애플리케이션 설계</a></li>
+<li><a href="https://notes.shichao.io/dda/ch2/">https://notes.shichao.io/dda/ch2/</a></li>
+<li><a href="http://pauldone.blogspot.com/2018/04/mongodb-graph-data-intensive-book.html">http://pauldone.blogspot.com/2018/04/mongodb-graph-data-intensive-book.html</a></li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+            <div style="text-align: left">
+                <a class="left" href="https://eoriented.github.io/post/reliable-scalable-and-maintainable-applications/" rel="prev" style="color: #64BEA3">
+                    <i class="fa fa-play fa-rotate-180" aria-hidden="true"></i>&nbsp;&nbsp;<span>신뢰성, 확장성, 유지보수성을 가진 애플리케이션</span>
+                </a>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/bigdata">#bigdata</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/desiging-data-intensive-application">#desiging data-intensive application</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/ddia">#ddia</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/reliability">#reliability</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/scalability">#scalability</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/maintainability">#maintainability</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EC%8B%AC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%A4%EA%B3%84">#데이터 중심 애플리케이션 설계</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+		
+		
+		
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>

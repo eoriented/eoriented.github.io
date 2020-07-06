@@ -95,6 +95,16 @@ val words = Array(&amp;#34;one&amp;#34;, &amp;#34;two&amp;#34;, &amp;#34;two&amp
     </item>
     
     <item>
+      <title>데이터 모델(Data Models)과 질의 언어(Query Languages) - 1</title>
+      <link>https://eoriented.github.io/post/data-models-and-query-languages-1/</link>
+      <pubDate>Wed, 31 Jul 2019 15:06:14 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/data-models-and-query-languages-1/</guid>
+      <description>데이터 모델은 소프트웨어 개발에 있어서 가장 중요한 부분 중에 하나입니다. 다양한 종류의 데이터 모델에 대해 이해를 하고 있고, 애플리케이션 요구사항에 가장 적합한 모델을 찾아서 개발을 해야 합니다.
+데이터 모델에 따라 어떤 종류의 사용법은 쉽고 어떤 동작은 지원하지 않습니다.</description>
+    </item>
+    
+    <item>
       <title>Git 명령어 요약 정리 (Cheat sheet)</title>
       <link>https://eoriented.github.io/post/git-cheat-sheet/</link>
       <pubDate>Sat, 27 Jul 2019 17:06:56 +0900</pubDate>
@@ -102,6 +112,15 @@ val words = Array(&amp;#34;one&amp;#34;, &amp;#34;two&amp;#34;, &amp;#34;two&amp
       <guid>https://eoriented.github.io/post/git-cheat-sheet/</guid>
       <description>git은 오늘날 가장 많이 사용하는 버전 관리 시스템 중 하나입니다. 오늘은 git의 자주 사용하는 명령어에 대해서 살펴보고자 합니다. 먼저 각 명령어에 따른 흐름이 어떻게 변하는지 다음 그림을 통해 알 수 있습니다.
   생성하기   새로운 로컬 저장소를 생성하기</description>
+    </item>
+    
+    <item>
+      <title>신뢰성, 확장성, 유지보수성을 가진 애플리케이션</title>
+      <link>https://eoriented.github.io/post/reliable-scalable-and-maintainable-applications/</link>
+      <pubDate>Sun, 14 Jul 2019 18:31:01 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/reliable-scalable-and-maintainable-applications/</guid>
+      <description>Compute-intensive(계산 중심) vs Data-intensive(데이터 중심) 과거에는 CPU 성능이 애플리케이션을 제한하는 요소였지만 오늘날에는 그렇지 않습니다. 최근에는 데이터의 양, 데이터의 복잡도, 데이터의 변화 속도가 애플리케이션을 제한하는 요소가 되었습니다. 이렇게 애플리케이션에서 사용하는 데이터의 특징에 맞춰서 설계를 해야 합니다. 그래서 이러한 애플리케이션을 Data-intensive application(데이터 중심 애플리케이션)이라고 합니다.</description>
     </item>
     
     <item>
