@@ -308,7 +308,22 @@
   </url>
   
   <url>
+    <loc>https://eoriented.github.io/subcategories/ddia/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/data-models-and-query-languages-2/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eoriented.github.io/tags/bigdata/</loc>
+    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/datamodel/</loc>
     <lastmod>2019-07-31T15:06:14+09:00</lastmod>
   </url>
   
@@ -318,27 +333,32 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/subcategories/ddia/</loc>
-    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/desiging-data-intensive-application/</loc>
     <lastmod>2019-07-31T15:06:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/maintainability/</loc>
+    <loc>https://eoriented.github.io/tags/document-db/</loc>
     <lastmod>2019-07-31T15:06:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/reliability/</loc>
+    <loc>https://eoriented.github.io/tags/document-model/</loc>
     <lastmod>2019-07-31T15:06:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/scalability/</loc>
+    <loc>https://eoriented.github.io/tags/query/</loc>
+    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/rdb/</loc>
+    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/relation-model/</loc>
     <lastmod>2019-07-31T15:06:14+09:00</lastmod>
   </url>
   
@@ -380,6 +400,21 @@
   <url>
     <loc>https://eoriented.github.io/categories/tools/</loc>
     <lastmod>2019-07-27T17:06:56+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/maintainability/</loc>
+    <lastmod>2019-07-14T18:31:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/reliability/</loc>
+    <lastmod>2019-07-14T18:31:01+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/scalability/</loc>
+    <lastmod>2019-07-14T18:31:01+09:00</lastmod>
   </url>
   
   <url>

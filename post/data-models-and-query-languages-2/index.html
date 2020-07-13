@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Smart Tiger&#39;s blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.832f51bd8886edde2e4bd3034bec7fb7bb6766151b4f7c83987458ed1481c80f.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-160052384-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/bigdata/">Big data</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/machine-learning/">Machine learning</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/programming/">Programming</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/cloud/">Cloud</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/tools/">Tools</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
+  
+  
+</div>
+<footer class="footer">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">데이터 모델(Data Models)과 질의 언어(Query Languages) - 2</h1>
+    
+    <div>
+        <p>
+        <h2 id="데이터를-위한-질의-언어">데이터를 위한 질의 언어</h2>
+<p>데이터베이스에 데이터를 질의하는 방법은 각각의 데이터 모델마다 조금씩 다릅니다. 일반적으로 알고 있는 관계형 모델의 경우는 SQL을 이용합니다. SQL은 선언형 질의 언어입니다. 그리고 선언형(declarative) 질의와 대조되는 질의 방식은 명령형(imperative) 질의 방식이 있습니다. 그러면 선언형과 명령형을 사용하여 데이터를 조회하는 방법을 한번 살펴보겠습니다.</p>
+<p>동물의 종 목록이 있을 때 목록에서 상어만 반환하는 질의를 비교해보겠습니다. 먼저 명령형 질의 방식으로 상어를 반환하는 방식은 아래와 같습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#007020;font-weight:bold">function</span> getSharks() {
+    <span style="color:#007020;font-weight:bold">var</span> sharks <span style="color:#666">=</span> [];
+    <span style="color:#007020;font-weight:bold">for</span> (<span style="color:#007020;font-weight:bold">var</span> i <span style="color:#666">=</span> <span style="color:#40a070">0</span>; i <span style="color:#666">&lt;</span> animals.length; i<span style="color:#666">++</span>) {
+        <span style="color:#007020;font-weight:bold">if</span> (animals[i].family <span style="color:#666">===</span> <span style="color:#4070a0">&#34;Sharks&#34;</span>) {
+            sharks.push(animals[i]);
+        }
+    }
+    <span style="color:#007020;font-weight:bold">return</span> sharks;
+}
+</code></pre></div><p>명령형 질의의 경우 한줄씩 단계별로 실행하고 조건을 평가하는 변수를 갱신하면서 루프를 반복할 것인지 여부를 결정하면서 데이터를 채우게 됩니다. 이제 SQL을 사용해서 가져오는 구문을 살펴보겠습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#007020;font-weight:bold">SELECT</span> <span style="color:#666">*</span> <span style="color:#007020;font-weight:bold">FROM</span> animals <span style="color:#007020;font-weight:bold">WHERE</span> family <span style="color:#666">=</span> <span style="color:#4070a0">&#39;Sharks&#39;</span>;
+</code></pre></div><p>명령형 질의에 비교하여 굉장히 간단한 방법으로 데이터를 가져올 수 있습니다. SQL과 같이 선언형 질의 언어의 경우 결과가 충족해야 하는 조건과 데이터를 어떻게 변환(예를 들어 정렬, 그룹화, 집계 등)할지 지정해주면 됩니다. 이러한 방식을 사용하게 되면 얻는 이점이 또 있습니다. 선언형 질의 언어를 사용하게 되면 데이터를 얻기 위한 방법을 알려주는 것이 아니기 때문에 어떤 색인과 조인 함수를 사용할지, 어떠한 순서를 실행될지를 데이터베이스의 질의 최적화기가 할 수 있게 되는 장점이 있습니다. 이 경우 질의를 변경하지 않고도 데이터베이스 시스템의 성능을 향상시킬 수도 있습니다. 물론 데이터베이스 시스템의 상세 구현에 변경이 있어야 합니다.</p>
+<p>선언형 질의 언어의 장점은 데이터베이스에만 국한되지 않습니다. 그럼 다른 환경의 예를 살펴보겠습니다.</p>
+<h3 id="웹에서의-선언형-질의">웹에서의 선언형 질의</h3>
+<p>예를 통해서 선언형 질의의 장점을 살펴보겠습니다. 다음과 같은 html 페이지가 있습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#062873;font-weight:bold">ul</span>&gt;
+    &lt;<span style="color:#062873;font-weight:bold">li</span> <span style="color:#4070a0">class</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;selected&#34;</span>&gt;
+        &lt;<span style="color:#062873;font-weight:bold">p</span>&gt;Sharks&lt;/<span style="color:#062873;font-weight:bold">p</span>&gt;
+        &lt;<span style="color:#062873;font-weight:bold">ul</span>&gt;
+            &lt;<span style="color:#062873;font-weight:bold">li</span>&gt;Great White Shark&lt;/<span style="color:#062873;font-weight:bold">li</span>&gt;
+            &lt;<span style="color:#062873;font-weight:bold">li</span>&gt;Tiger Shark&lt;/<span style="color:#062873;font-weight:bold">li</span>&gt;
+            &lt;<span style="color:#062873;font-weight:bold">li</span>&gt;Hammerhead Shark&lt;/<span style="color:#062873;font-weight:bold">li</span>&gt;
+        &lt;/<span style="color:#062873;font-weight:bold">ul</span>&gt;
+    &lt;/<span style="color:#062873;font-weight:bold">li</span>&gt;
+    &lt;<span style="color:#062873;font-weight:bold">li</span>&gt;
+        &lt;<span style="color:#062873;font-weight:bold">p</span>&gt;Whales&lt;/<span style="color:#062873;font-weight:bold">p</span>&gt;
+        &lt;<span style="color:#062873;font-weight:bold">ul</span>&gt;
+            &lt;<span style="color:#062873;font-weight:bold">li</span>&gt;Blue Whale&lt;/<span style="color:#062873;font-weight:bold">li</span>&gt;
+            &lt;<span style="color:#062873;font-weight:bold">li</span>&gt;Humpback Whale&lt;/<span style="color:#062873;font-weight:bold">li</span>&gt;
+            &lt;<span style="color:#062873;font-weight:bold">li</span>&gt;Fin Whale&lt;/<span style="color:#062873;font-weight:bold">li</span>&gt;
+        &lt;/<span style="color:#062873;font-weight:bold">ul</span>&gt;
+    &lt;/<span style="color:#062873;font-weight:bold">li</span>&gt;
+&lt;/<span style="color:#062873;font-weight:bold">ul</span>&gt;
+</code></pre></div><p>이제 현재 선택한 페이지의 제목을 파란색 배경으로 표시하고 싶습니다. 이는 CSS를 사용해서 쉽게 처리할 수 있습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#062873;font-weight:bold">li</span>.<span style="color:#0e84b5;font-weight:bold">selected</span> <span style="color:#666">&gt;</span> <span style="color:#062873;font-weight:bold">p</span> {
+    <span style="color:#007020;font-weight:bold">background-color</span>: <span style="color:#007020;font-weight:bold">blue</span>;
+}
+</code></pre></div><p>그럼 이번엔 자바스크립트를 사용하여 명령형 접급 방식으로 처리해야 하는 것을 살펴보겠습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#007020;font-weight:bold">var</span> liElements <span style="color:#666">=</span> <span style="color:#007020">document</span>.getElementsByTagName(<span style="color:#4070a0">&#34;li&#34;</span>);
+<span style="color:#007020;font-weight:bold">for</span> (<span style="color:#007020;font-weight:bold">var</span> i <span style="color:#666">=</span> <span style="color:#40a070">0</span>; i <span style="color:#666">&lt;</span> liElements.length; i<span style="color:#666">++</span>) {
+    <span style="color:#007020;font-weight:bold">if</span> (liElements[i].className <span style="color:#666">===</span> <span style="color:#4070a0">&#34;selected&#34;</span>) {
+        <span style="color:#007020;font-weight:bold">var</span> children <span style="color:#666">=</span> liElements[i].childNodes;
+        <span style="color:#007020;font-weight:bold">for</span> (<span style="color:#007020;font-weight:bold">var</span> j <span style="color:#666">=</span> <span style="color:#40a070">0</span>; j <span style="color:#666">&lt;</span> children.length; j<span style="color:#666">++</span>) {
+            <span style="color:#007020;font-weight:bold">var</span> child <span style="color:#666">=</span> children[j];
+            <span style="color:#007020;font-weight:bold">if</span> (child.nodeType <span style="color:#666">===</span> Node.ELEMENT_NODE <span style="color:#666">&amp;&amp;</span> child.tagName <span style="color:#666">===</span> <span style="color:#4070a0">&#34;P&#34;</span>) {
+                child.setAttribute(<span style="color:#4070a0">&#34;style&#34;</span>, <span style="color:#4070a0">&#34;background-color: blue&#34;</span>);
+            }
+        }
+    }
+}
+</code></pre></div><p>이 자바스크립트 코드는 위와 동일한 역할을 수행하지만 css 보다 이해하는데 오래 걸리고 어렵습니다. 거기다가 몇 가지 문제를 가지고 있습니다. 첫 번째 문제는 selected class가 삭제된 경우 코드가 재실행되더라도 파란색은 삭제되지 않는 문제가 있습니다. 그와는 다르게 css는 바로 적용됩니다. 두 번째 문제는 성능이 향상된 새로운 API를 가져와서 쓰고 싶은 경우 코드를 재작성해야 하는 문제점이 있습니다. 이렇게 웹 상에서 선언형 질의 언어 방식에 대한 장점을 살펴보았습니다.</p>
+<p>마지막으로 그래프 모델의 질의 언어 방식에 대해 간략히 살펴보겠습니다.</p>
+<h2 id="그래프-질의-언어">그래프 질의 언어</h2>
+<p>먼저 속성 그래프의 대표적인 선언형 질의 언어로는 사이퍼(Cypher)가 있습니다. 이 질의 언어는 Neo4j 그래프 데이터베이스용으로 만들어졌습니다. 간략히 예시를 살펴보면 다음과 같습니다. 다음 질의는 미국에서 유럽으로 이민 온 사람을 찾는 사이퍼 질의입니다. <a href="https://eoriented.github.io/post/data-models-and-query-languages-1/">이전 포스트</a>에 있었던 그래프 구조 데이터 그림을 보면 조금 더 이해하기가 쉽습니다.</p>
+<pre><code class="language-cypher" data-lang="cypher">MATCH
+  (person) -[:BORN_IN]-&gt;  () -[:WITHIN*0..]-&gt; (us:Location {name:'United States'}),
+  (person) -[:LIVES_IN]-&gt; () -[:WITHIN*0..]-&gt; (eu:Location {name:'Europe'})
+RETURN person.name
+</code></pre><p>위 질의는 2가지 조건을 만족하는 정점을 찾으라는 의미입니다.</p>
+<ul>
+<li>person은 어떤 정점을 향하는 BON_IN 유출 간선을 가집니다. 이 정점에서 name 속성이 &ldquo;United States&quot;인 Location 유형에 정점에 도달할 때까지 일련의 WITHIN 유출 간선을 따라갑니다.</li>
+<li>같은 person 정점은 LIVES_IN 유출 간선도 가집니다. 이 간선과 WITHIN 유출 간선을 따라가면 결국 name 속성이 &ldquo;Europe&quot;인 Location 유형의 정점에 도달하게 됩니다.</li>
+</ul>
+<p>위와 같은 정점을 찾는 질의를 SQL로도 할 수 있습니다. 이 경우 질의가 굉장히 복잡할 뿐더러 <code>() -[:WITHIN*0..]-&gt; ()</code>과 같은 간선 순회를 위한 질의를 대체하는 것도 어렵습니다. 이는 다양한 데이터 모델이 서로 다른 사용 사례를 만족하기 위해 설계되었다는 사실을 보여줍니다. 그렇기 때문에 애플리케이션에 적합한 데이터 모델을 선택하는 작업은 굉장히 중요합니다.</p>
+<p>마지막으로는 트리플 저장소의 질의 언어에 대해 살펴보겠습니다. RDF(Resource Description Framework) 데이터 모델을 사용한 트리플 저장소 질의 언어로 가장 대표적인 것인 스파클(SPARQL)입니다. 스파클을 사이퍼와 매우 유사합니다. 사이퍼의 패턴 매칭을 스파클에서 차용했기 때문입니다. 간단히 스파클과 사이퍼 질의를 비교한 예제는 다음과 같습니다.</p>
+<pre><code>(person) -[:BORN_IN]-&gt; () -[:WITHIN*0..]-&gt; (location)   # Cypher
+
+?person :bornIn / :within* ?location.                   # SPARQL
+</code></pre><p>구조는 매우 유사하며 위의 두 표현식의 의미는 같습니다.</p>
+<h2 id="정리">정리</h2>
+<p>지금까지 다양한 데이터 모델과 각 데이터 모델의 질의 언어에 대해 살펴보았습니다. 데이터 모델의 경우 광범위한 주제입니다. 애플리케이션 개발에 있어서 요구사항에 부합하는 데이터 모델을 선택하는 것이 중요합니다. 역사적으로 데이터를 하나의 큰 트리(계층 모델)로 표현하려고 했지만 다대다 관계를 표현하기에는 적절하지 않았습니다. 그래서 이러한 문제를 해결하기 위해 관계형 모델이 나왔습니다. 최근에는 관계형 모델로도 적합하지 않은 애플리케이션이 많이 등장했습니다. 그래서 이러한 새로운 요구사항의 애플리케이션을 만족시키기 위해 비 관계형 데이터 모델인 &ldquo;NoSQL&quot;이 등장했습니다. 이와 같은 데이터 모델은 두 가지 주요 갈래가 있습니다.</p>
+<ul>
+<li>문서 데이터베이스
+<ul>
+<li>데이터가 문서 자체에 포함</li>
+<li>하나의 문서와 다른 문서 간 관계가 거의 없는 사용 사례에 적용</li>
+</ul>
+</li>
+<li>그래프 데이터베이스
+<ul>
+<li>모든 것이 잠재적으로 관련 있는 사용 사례에 적용</li>
+</ul>
+</li>
+</ul>
+<p>현재 세가지 모델이(관계형, 문서, 그래프)가 널리 사용되고 있습니다. 하나의 모델이 다른 모델을 흉내는 낼 수 있지만 대체할 수 있는 없습니다. 하나의 모델이 만능 솔루션이 아닌 목적에 맞춰서 사용해야 합니다.<br>
+또한 각 데이터 모델은 고유한 질의 언어나 프레임워크를 제공하고 있습니다. 이 주요한 3가지 데이터 모델 외에도 다른 데이터 모델이 존재합니다. 예를 들어 게놈 데이터나 전문(full-text) 검색과 같은 것들이 있습니다.<br>
+이렇게 각 데이터 모델의 특성에 대해 알고 목적에 맞춰서 데이터 저장소를 사용해야 합니다. 그러나 최근에는 하나의 데이터 모델만을 사용하는 것이 아닌 다양한 데이터 모델을 혼합하여 사용하는 경우도 많습니다. 각 데이터 모델의 부족한 부분을 보완해 주면서 애플리케이션의 필요에 따라 가장 적합한 기능을 조합해서 사용해야 할 것입니다.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=13483879">https://book.naver.com/bookdb/book_detail.nhn?bid=13483879</a></li>
+<li><a href="https://notes.shichao.io/dda/ch2/">https://notes.shichao.io/dda/ch2/</a></li>
+<li><a href="http://pauldone.blogspot.com/2018/04/mongodb-graph-data-intensive-book.html">http://pauldone.blogspot.com/2018/04/mongodb-graph-data-intensive-book.html</a>﻿</li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+            <div style="text-align: left">
+                <a class="left" href="https://eoriented.github.io/post/data-models-and-query-languages-1/" rel="prev" style="color: #64BEA3">
+                    <i class="fa fa-play fa-rotate-180" aria-hidden="true"></i>&nbsp;&nbsp;<span>데이터 모델(Data Models)과 질의 언어(Query Languages) - 1</span>
+                </a>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/">#</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+		
+		
+		
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>

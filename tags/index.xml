@@ -374,6 +374,15 @@
     </item>
     
     <item>
+      <title>datamodel</title>
+      <link>https://eoriented.github.io/tags/datamodel/</link>
+      <pubDate>Wed, 31 Jul 2019 15:06:14 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/datamodel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ddia</title>
       <link>https://eoriented.github.io/tags/ddia/</link>
       <pubDate>Wed, 31 Jul 2019 15:06:14 +0900</pubDate>
@@ -392,29 +401,47 @@
     </item>
     
     <item>
-      <title>maintainability</title>
-      <link>https://eoriented.github.io/tags/maintainability/</link>
+      <title>Document DB</title>
+      <link>https://eoriented.github.io/tags/document-db/</link>
       <pubDate>Wed, 31 Jul 2019 15:06:14 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/maintainability/</guid>
+      <guid>https://eoriented.github.io/tags/document-db/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>reliability</title>
-      <link>https://eoriented.github.io/tags/reliability/</link>
+      <title>document model</title>
+      <link>https://eoriented.github.io/tags/document-model/</link>
       <pubDate>Wed, 31 Jul 2019 15:06:14 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/reliability/</guid>
+      <guid>https://eoriented.github.io/tags/document-model/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>scalability</title>
-      <link>https://eoriented.github.io/tags/scalability/</link>
+      <title>query</title>
+      <link>https://eoriented.github.io/tags/query/</link>
       <pubDate>Wed, 31 Jul 2019 15:06:14 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/scalability/</guid>
+      <guid>https://eoriented.github.io/tags/query/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RDB</title>
+      <link>https://eoriented.github.io/tags/rdb/</link>
+      <pubDate>Wed, 31 Jul 2019 15:06:14 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/rdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relation model</title>
+      <link>https://eoriented.github.io/tags/relation-model/</link>
+      <pubDate>Wed, 31 Jul 2019 15:06:14 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/relation-model/</guid>
       <description></description>
     </item>
     
@@ -451,6 +478,33 @@
       <pubDate>Sat, 27 Jul 2019 17:06:56 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/git-scm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maintainability</title>
+      <link>https://eoriented.github.io/tags/maintainability/</link>
+      <pubDate>Sun, 14 Jul 2019 18:31:01 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/maintainability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reliability</title>
+      <link>https://eoriented.github.io/tags/reliability/</link>
+      <pubDate>Sun, 14 Jul 2019 18:31:01 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/reliability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scalability</title>
+      <link>https://eoriented.github.io/tags/scalability/</link>
+      <pubDate>Sun, 14 Jul 2019 18:31:01 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/scalability/</guid>
       <description></description>
     </item>
     
