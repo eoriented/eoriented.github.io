@@ -182,8 +182,8 @@ if (!doNotTrack) {
     
     <div>
         <p>
-        <h2 id="데이터를-위한-질의-언어">데이터를 위한 질의 언어</h2>
-<p>데이터베이스에 데이터를 질의하는 방법은 각각의 데이터 모델마다 조금씩 다릅니다. 일반적으로 알고 있는 관계형 모델의 경우는 SQL을 이용합니다. SQL은 선언형 질의 언어입니다. 그리고 선언형(declarative) 질의와 대조되는 질의 방식은 명령형(imperative) 질의 방식이 있습니다. 그러면 선언형과 명령형을 사용하여 데이터를 조회하는 방법을 한번 살펴보겠습니다.</p>
+        <p>데이터를 위한 질의 언어
+데이터베이스에 데이터를 질의하는 방법은 각각의 데이터 모델마다 조금씩 다릅니다. 일반적으로 알고 있는 관계형 모델의 경우는 SQL을 이용합니다. SQL은 선언형 질의 언어입니다. 그리고 선언형(declarative) 질의와 대조되는 질의 방식은 명령형(imperative) 질의 방식이 있습니다. 그러면 선언형과 명령형을 사용하여 데이터를 조회하는 방법을 한번 살펴보겠습니다.</p>
 <p>동물의 종 목록이 있을 때 목록에서 상어만 반환하는 질의를 비교해보겠습니다. 먼저 명령형 질의 방식으로 상어를 반환하는 방식은 아래와 같습니다.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#007020;font-weight:bold">function</span> getSharks() {
     <span style="color:#007020;font-weight:bold">var</span> sharks <span style="color:#666">=</span> [];
@@ -198,8 +198,8 @@ if (!doNotTrack) {
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#007020;font-weight:bold">SELECT</span> <span style="color:#666">*</span> <span style="color:#007020;font-weight:bold">FROM</span> animals <span style="color:#007020;font-weight:bold">WHERE</span> family <span style="color:#666">=</span> <span style="color:#4070a0">&#39;Sharks&#39;</span>;
 </code></pre></div><p>명령형 질의에 비교하여 굉장히 간단한 방법으로 데이터를 가져올 수 있습니다. SQL과 같이 선언형 질의 언어의 경우 결과가 충족해야 하는 조건과 데이터를 어떻게 변환(예를 들어 정렬, 그룹화, 집계 등)할지 지정해주면 됩니다. 이러한 방식을 사용하게 되면 얻는 이점이 또 있습니다. 선언형 질의 언어를 사용하게 되면 데이터를 얻기 위한 방법을 알려주는 것이 아니기 때문에 어떤 색인과 조인 함수를 사용할지, 어떠한 순서를 실행될지를 데이터베이스의 질의 최적화기가 할 수 있게 되는 장점이 있습니다. 이 경우 질의를 변경하지 않고도 데이터베이스 시스템의 성능을 향상시킬 수도 있습니다. 물론 데이터베이스 시스템의 상세 구현에 변경이 있어야 합니다.</p>
 <p>선언형 질의 언어의 장점은 데이터베이스에만 국한되지 않습니다. 그럼 다른 환경의 예를 살펴보겠습니다.</p>
-<h3 id="웹에서의-선언형-질의">웹에서의 선언형 질의</h3>
-<p>예를 통해서 선언형 질의의 장점을 살펴보겠습니다. 다음과 같은 html 페이지가 있습니다.</p>
+<p>웹에서의 선언형 질의
+예를 통해서 선언형 질의의 장점을 살펴보겠습니다. 다음과 같은 html 페이지가 있습니다.</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#062873;font-weight:bold">ul</span>&gt;
     &lt;<span style="color:#062873;font-weight:bold">li</span> <span style="color:#4070a0">class</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;selected&#34;</span>&gt;
         &lt;<span style="color:#062873;font-weight:bold">p</span>&gt;Sharks&lt;/<span style="color:#062873;font-weight:bold">p</span>&gt;
@@ -237,8 +237,8 @@ if (!doNotTrack) {
 }
 </code></pre></div><p>이 자바스크립트 코드는 위와 동일한 역할을 수행하지만 css 보다 이해하는데 오래 걸리고 어렵습니다. 거기다가 몇 가지 문제를 가지고 있습니다. 첫 번째 문제는 selected class가 삭제된 경우 코드가 재실행되더라도 파란색은 삭제되지 않는 문제가 있습니다. 그와는 다르게 css는 바로 적용됩니다. 두 번째 문제는 성능이 향상된 새로운 API를 가져와서 쓰고 싶은 경우 코드를 재작성해야 하는 문제점이 있습니다. 이렇게 웹 상에서 선언형 질의 언어 방식에 대한 장점을 살펴보았습니다.</p>
 <p>마지막으로 그래프 모델의 질의 언어 방식에 대해 간략히 살펴보겠습니다.</p>
-<h2 id="그래프-질의-언어">그래프 질의 언어</h2>
-<p>먼저 속성 그래프의 대표적인 선언형 질의 언어로는 사이퍼(Cypher)가 있습니다. 이 질의 언어는 Neo4j 그래프 데이터베이스용으로 만들어졌습니다. 간략히 예시를 살펴보면 다음과 같습니다. 다음 질의는 미국에서 유럽으로 이민 온 사람을 찾는 사이퍼 질의입니다. <a href="https://eoriented.github.io/post/data-models-and-query-languages-1/">이전 포스트</a>에 있었던 그래프 구조 데이터 그림을 보면 조금 더 이해하기가 쉽습니다.</p>
+<p>그래프 질의 언어
+먼저 속성 그래프의 대표적인 선언형 질의 언어로는 사이퍼(Cypher)가 있습니다. 이 질의 언어는 Neo4j 그래프 데이터베이스용으로 만들어졌습니다. 간략히 예시를 살펴보면 다음과 같습니다. 다음 질의는 미국에서 유럽으로 이민 온 사람을 찾는 사이퍼 질의입니다. <a href="https://eoriented.github.io/post/data-models-and-query-languages-1/">이전 포스트</a>에 있었던 그래프 구조 데이터 그림을 보면 조금 더 이해하기가 쉽습니다.</p>
 <pre><code class="language-cypher" data-lang="cypher">MATCH
   (person) -[:BORN_IN]-&gt;  () -[:WITHIN*0..]-&gt; (us:Location {name:'United States'}),
   (person) -[:LIVES_IN]-&gt; () -[:WITHIN*0..]-&gt; (eu:Location {name:'Europe'})
@@ -250,12 +250,12 @@ RETURN person.name
 </ul>
 <p>위와 같은 정점을 찾는 질의를 SQL로도 할 수 있습니다. 이 경우 질의가 굉장히 복잡할 뿐더러 <code>() -[:WITHIN*0..]-&gt; ()</code>과 같은 간선 순회를 위한 질의를 대체하는 것도 어렵습니다. 이는 다양한 데이터 모델이 서로 다른 사용 사례를 만족하기 위해 설계되었다는 사실을 보여줍니다. 그렇기 때문에 애플리케이션에 적합한 데이터 모델을 선택하는 작업은 굉장히 중요합니다.</p>
 <p>마지막으로는 트리플 저장소의 질의 언어에 대해 살펴보겠습니다. RDF(Resource Description Framework) 데이터 모델을 사용한 트리플 저장소 질의 언어로 가장 대표적인 것인 스파클(SPARQL)입니다. 스파클을 사이퍼와 매우 유사합니다. 사이퍼의 패턴 매칭을 스파클에서 차용했기 때문입니다. 간단히 스파클과 사이퍼 질의를 비교한 예제는 다음과 같습니다.</p>
-<pre><code>(person) -[:BORN_IN]-&gt; () -[:WITHIN*0..]-&gt; (location)   # Cypher
+<pre><code>(person) -[:BORN_IN]-&gt; () -[:WITHIN*0..]-&gt; (location)    Cypher
 
-?person :bornIn / :within* ?location.                   # SPARQL
+?person :bornIn / :within* ?location.                    SPARQL
 </code></pre><p>구조는 매우 유사하며 위의 두 표현식의 의미는 같습니다.</p>
-<h2 id="정리">정리</h2>
-<p>지금까지 다양한 데이터 모델과 각 데이터 모델의 질의 언어에 대해 살펴보았습니다. 데이터 모델의 경우 광범위한 주제입니다. 애플리케이션 개발에 있어서 요구사항에 부합하는 데이터 모델을 선택하는 것이 중요합니다. 역사적으로 데이터를 하나의 큰 트리(계층 모델)로 표현하려고 했지만 다대다 관계를 표현하기에는 적절하지 않았습니다. 그래서 이러한 문제를 해결하기 위해 관계형 모델이 나왔습니다. 최근에는 관계형 모델로도 적합하지 않은 애플리케이션이 많이 등장했습니다. 그래서 이러한 새로운 요구사항의 애플리케이션을 만족시키기 위해 비 관계형 데이터 모델인 &ldquo;NoSQL&quot;이 등장했습니다. 이와 같은 데이터 모델은 두 가지 주요 갈래가 있습니다.</p>
+<p>정리
+지금까지 다양한 데이터 모델과 각 데이터 모델의 질의 언어에 대해 살펴보았습니다. 데이터 모델의 경우 광범위한 주제입니다. 애플리케이션 개발에 있어서 요구사항에 부합하는 데이터 모델을 선택하는 것이 중요합니다. 역사적으로 데이터를 하나의 큰 트리(계층 모델)로 표현하려고 했지만 다대다 관계를 표현하기에는 적절하지 않았습니다. 그래서 이러한 문제를 해결하기 위해 관계형 모델이 나왔습니다. 최근에는 관계형 모델로도 적합하지 않은 애플리케이션이 많이 등장했습니다. 그래서 이러한 새로운 요구사항의 애플리케이션을 만족시키기 위해 비 관계형 데이터 모델인 &ldquo;NoSQL&quot;이 등장했습니다. 이와 같은 데이터 모델은 두 가지 주요 갈래가 있습니다.</p>
 <ul>
 <li>문서 데이터베이스
 <ul>
@@ -272,7 +272,7 @@ RETURN person.name
 <p>현재 세가지 모델이(관계형, 문서, 그래프)가 널리 사용되고 있습니다. 하나의 모델이 다른 모델을 흉내는 낼 수 있지만 대체할 수 있는 없습니다. 하나의 모델이 만능 솔루션이 아닌 목적에 맞춰서 사용해야 합니다.<br>
 또한 각 데이터 모델은 고유한 질의 언어나 프레임워크를 제공하고 있습니다. 이 주요한 3가지 데이터 모델 외에도 다른 데이터 모델이 존재합니다. 예를 들어 게놈 데이터나 전문(full-text) 검색과 같은 것들이 있습니다.<br>
 이렇게 각 데이터 모델의 특성에 대해 알고 목적에 맞춰서 데이터 저장소를 사용해야 합니다. 그러나 최근에는 하나의 데이터 모델만을 사용하는 것이 아닌 다양한 데이터 모델을 혼합하여 사용하는 경우도 많습니다. 각 데이터 모델의 부족한 부분을 보완해 주면서 애플리케이션의 필요에 따라 가장 적합한 기능을 조합해서 사용해야 할 것입니다.</p>
-<h2 id="references">References</h2>
+<p>References</p>
 <ul>
 <li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=13483879">https://book.naver.com/bookdb/book_detail.nhn?bid=13483879</a></li>
 <li><a href="https://notes.shichao.io/dda/ch2/">https://notes.shichao.io/dda/ch2/</a></li>
@@ -325,7 +325,25 @@ RETURN person.name
         
         <hr class="footer-divider">
         
-            <a class="tag" href="https://eoriented.github.io/tags/">#</a>
+            <a class="tag" href="https://eoriented.github.io/tags/cypher">#cypher</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/database">#DATABASE</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/datamodel">#datamodel</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/rdbms">#rdbms</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/sql">#sql</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EA%B4%80%EA%B3%84%ED%98%95%EB%AA%A8%EB%8D%B8">#관계형모델</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EA%B7%B8%EB%9E%98%ED%94%84%EB%AA%A8%EB%8D%B8">#그래프모델</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%AA%A8%EB%8D%B8">#데이터모델</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%AC%B8%EC%84%9C%EB%AA%A8%EB%8D%B8">#문서모델</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%A7%88%EC%9D%98%EC%96%B8%EC%96%B4">#질의언어</a>
         
       
     </div>

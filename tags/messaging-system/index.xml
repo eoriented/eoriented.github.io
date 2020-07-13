@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>messaging system on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/messaging-system/</link>
+    <description>Recent content in messaging system on Smart Tiger&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
+    <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Sun, 05 Jul 2020 23:00:39 +0900</lastBuildDate>
+    
+	<atom:link href="https://eoriented.github.io/tags/messaging-system/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>스트림 프로세싱(Stream Processing) - 1</title>
+      <link>https://eoriented.github.io/post/stream-processing/</link>
+      <pubDate>Sun, 05 Jul 2020 23:00:39 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/stream-processing/</guid>
+      <description>일반적으로 배치 처리의 문제점은 입력의 변화가 특정 기간이 끝나야 반영이 되는 문제가 있습니다. 이러한 지연(Lag)을 줄이려면 더 자주 실행할 수 있도록 해야 합니다. 고정된 타임 슬라이스 별로 처리하는 것이 아닌 이벤트가 발생할 때마다 처리하도록 하는 것입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,8 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://eoriented.github.io/tags/batch/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/categories/bigdata/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/broker/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eoriented.github.io/categories/</loc>
-    <lastmod>2020-05-14T10:04:25+09:00</lastmod>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/ddia/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/ddia/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/desiging-data-intensive-application/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/message/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/messaging-system/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/stream/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/stream-processor/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EC%8B%AC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%A4%EA%B3%84/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/stream-processing/</loc>
+    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
   </url>
   
   <url>
@@ -33,11 +108,6 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/post/</loc>
-    <lastmod>2020-05-14T10:04:25+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/categories/programming/</loc>
     <lastmod>2020-05-14T10:04:25+09:00</lastmod>
   </url>
@@ -58,23 +128,8 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/subcategories/</loc>
-    <lastmod>2020-05-14T10:04:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/</loc>
-    <lastmod>2020-05-14T10:04:25+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/post/functor-and-monad-1/</loc>
     <lastmod>2020-05-10T13:18:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/categories/bigdata/</loc>
-    <lastmod>2020-04-06T23:01:48+09:00</lastmod>
   </url>
   
   <url>
@@ -150,11 +205,6 @@
   <url>
     <loc>https://eoriented.github.io/post/avoid-groupbykey/</loc>
     <lastmod>2020-03-14T22:15:26+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/broker/</loc>
-    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
   </url>
   
   <url>
@@ -308,7 +358,42 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/subcategories/ddia/</loc>
+    <loc>https://eoriented.github.io/tags/cypher/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/database/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/datamodel/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/rdb/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/rdbms/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/sql/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EA%B4%80%EA%B3%84%ED%98%95%EB%AA%A8%EB%8D%B8/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EA%B7%B8%EB%9E%98%ED%94%84%EB%AA%A8%EB%8D%B8/</loc>
     <lastmod>2019-07-31T22:22:45+09:00</lastmod>
   </url>
   
@@ -318,22 +403,22 @@
   </url>
   
   <url>
+    <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%AA%A8%EB%8D%B8/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%AC%B8%EC%84%9C%EB%AA%A8%EB%8D%B8/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EC%A7%88%EC%9D%98%EC%96%B8%EC%96%B4/</loc>
+    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eoriented.github.io/tags/bigdata/</loc>
-    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/datamodel/</loc>
-    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/ddia/</loc>
-    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/desiging-data-intensive-application/</loc>
     <lastmod>2019-07-31T15:06:14+09:00</lastmod>
   </url>
   
@@ -353,22 +438,12 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/rdb/</loc>
-    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/relation-model/</loc>
     <lastmod>2019-07-31T15:06:14+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/post/data-models-and-query-languages-1/</loc>
-    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EC%8B%AC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EC%84%A4%EA%B3%84/</loc>
     <lastmod>2019-07-31T15:06:14+09:00</lastmod>
   </url>
   

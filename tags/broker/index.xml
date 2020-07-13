@@ -8,10 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Thu, 12 Mar 2020 21:07:27 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2020 23:00:39 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/broker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>스트림 프로세싱(Stream Processing) - 1</title>
+      <link>https://eoriented.github.io/post/stream-processing/</link>
+      <pubDate>Sun, 05 Jul 2020 23:00:39 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/stream-processing/</guid>
+      <description>일반적으로 배치 처리의 문제점은 입력의 변화가 특정 기간이 끝나야 반영이 되는 문제가 있습니다. 이러한 지연(Lag)을 줄이려면 더 자주 실행할 수 있도록 해야 합니다. 고정된 타임 슬라이스 별로 처리하는 것이 아닌 이벤트가 발생할 때마다 처리하도록 하는 것입니다.</description>
+    </item>
     
     <item>
       <title>Introduction to Kafka</title>

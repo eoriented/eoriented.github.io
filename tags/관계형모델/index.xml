@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>관계형모델 on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/%EA%B4%80%EA%B3%84%ED%98%95%EB%AA%A8%EB%8D%B8/</link>
+    <description>Recent content in 관계형모델 on Smart Tiger&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
+    <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Wed, 31 Jul 2019 22:22:45 +0900</lastBuildDate>
+    
+	<atom:link href="https://eoriented.github.io/tags/%EA%B4%80%EA%B3%84%ED%98%95%EB%AA%A8%EB%8D%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>데이터 모델(Data Models)과 질의 언어(Query Languages) - 2</title>
+      <link>https://eoriented.github.io/post/data-models-and-query-languages-2/</link>
+      <pubDate>Wed, 31 Jul 2019 22:22:45 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/data-models-and-query-languages-2/</guid>
+      <description>데이터를 위한 질의 언어 데이터베이스에 데이터를 질의하는 방법은 각각의 데이터 모델마다 조금씩 다릅니다. 일반적으로 알고 있는 관계형 모델의 경우는 SQL을 이용합니다. SQL은 선언형 질의 언어입니다. 그리고 선언형(declarative) 질의와 대조되는 질의 방식은 명령형(imperative) 질의 방식이 있습니다. 그러면 선언형과 명령형을 사용하여 데이터를 조회하는 방법을 한번 살펴보겠습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

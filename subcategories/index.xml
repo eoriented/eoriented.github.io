@@ -8,10 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Thu, 14 May 2020 10:04:25 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2020 23:00:39 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/subcategories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ddia</title>
+      <link>https://eoriented.github.io/subcategories/ddia/</link>
+      <pubDate>Sun, 05 Jul 2020 23:00:39 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/subcategories/ddia/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>scala</title>
@@ -55,15 +64,6 @@
       <pubDate>Sun, 16 Feb 2020 15:21:35 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/subcategories/docker-and-kubenetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ddia</title>
-      <link>https://eoriented.github.io/subcategories/ddia/</link>
-      <pubDate>Wed, 31 Jul 2019 22:22:45 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/subcategories/ddia/</guid>
       <description></description>
     </item>
     
