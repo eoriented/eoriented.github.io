@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cep on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/cep/</link>
+    <description>Recent content in cep on Smart Tiger&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
+    <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Sun, 19 Jul 2020 21:49:32 +0900</lastBuildDate>
+    
+	<atom:link href="https://eoriented.github.io/tags/cep/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>스트림 프로세싱(Stream Processing) - 2</title>
+      <link>https://eoriented.github.io/post/stream-processing-2/</link>
+      <pubDate>Sun, 19 Jul 2020 21:49:32 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/stream-processing-2/</guid>
+      <description>데이터베이스와 스트림 메시지 브로커와 데이터베이스는 전혀 다른 범주의 도구로 바라볼 수 있지만 로그 기반 메시지 브로커는 데이터베이스에서 아이디어를 얻어 메시지 시스템에 적용하는데 성공하였습니다. 데이터베이스의 복제 로그(replication log)는 데이터베이스에 쓰는 이벤트 스트림으로 볼 수 있습니다.
+변경 데이터 캡처(CDC, Change Data Capture) 변경 데이터 캡쳐는 데이터베이스에 기록하는 모든 데이터의 변경사항을 관찰해 다른 시스템으로 데이터를 복제할 수 있는 형태로 추출하는 과정을 말합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

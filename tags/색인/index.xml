@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>색인 on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/%EC%83%89%EC%9D%B8/</link>
+    <description>Recent content in 색인 on Smart Tiger&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
+    <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Sun, 18 Aug 2019 22:11:51 +0900</lastBuildDate>
+    
+	<atom:link href="https://eoriented.github.io/tags/%EC%83%89%EC%9D%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>저장소(Storage)와 검색(Retrieval) - 1</title>
+      <link>https://eoriented.github.io/post/storage-and-retrieval-1/</link>
+      <pubDate>Sun, 18 Aug 2019 22:11:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/storage-and-retrieval-1/</guid>
+      <description>이전 포스트에서는 데이터 모델과 질의 언어에 대해 알아보았습니다. 예를 들어 애플리케이션 개발자 관점에서 데이터베이스에 저장하는 데이터 포맷과 데이터를 다시 요청하는 메커니즘과 같은 것들을 살펴보았습니다. 이번 장에서는 데이터베이스 관점에서 데이터를 저장하는 방법과 데이터를 요청했을 때 다시 찾을 수 있는 방법에 대해서 살펴볼 예정입니다.</description>
+    </item>
+    
+  </channel>
+</rss>
