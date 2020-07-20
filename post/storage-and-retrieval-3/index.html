@@ -2,7 +2,6 @@
 
 <html lang="ko-KR">
     <head>
-	<meta name="generator" content="Hugo 0.67.1" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,8 +29,6 @@
     
     
  
-    
-    <link rel="alternate" type="application/rss+xml" href="https://eoriented.github.io/index.xml" title="Smart Tiger's blog" />
     
     
 <script type="application/javascript">
@@ -181,187 +178,101 @@ if (!doNotTrack) {
 </nav>
         <div id="content" class="content-container">
         
-<div class = "article-content">
-        
-        
-        
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/oozie-workflow-pattern-2/">
-                    Oozie Workflow Pattern - 2
-                </a>
-            </h2>
-            <div><p>이전 포스트에는 Oozie의 워크플로우 패턴중 하나인 Point-to-Point 패턴에 관해서 알아보았습니다. 이번 시간에는 fork-and-join 패턴에 대해 알아보도록 하겠습니다.
-fork-and-join pattern fork-and-join 패턴은 Fan-out 패턴이라고도 합니다. 이와 같은 형태의 워크플로우는 여러 액션들이 나누어 실행한 후 해당 액션들이 다 정상적으로 완료된 후 다음 액션을 수행해야하는 경우 많이 사용합니다.</p></div>
-            <div class="post-footer">
-            <time>September 30, 2017</time>
+<h1 class="post-title">저장소(Storage)와 검색(Retrieval) - 3</h1>
+    
+    <div>
+        <p>
+        <p><a href="https://eoriented.github.io/post/storage-and-retrieval-2/">이전 포스트</a>에 이어서 세 번째 포스트입니다. 이전 포스트에서는 SS테이블과 LSM 트리에 관해 알아보았습니다. 이번 포스트에서는 데이터베이스에서 가장 많이 사용하고 일반적인 색인 유형인 B 트리에 대해서 살펴보겠습니다.</p>
+<h2 id="b-트리">B 트리</h2>
+<p>B 트리는 거의 대부분의 관계형 데이터베이스에서 표준 색인 구현으로 사용할 뿐만 아니라 비관계형 데이터에서도 사용합니다. B트리는 SS테이블과 같이 키로 정렬된 key-value 쌍을 유지하지 때문에 key-value 검색과 range query에 효율적입니다. 이와 같이 LSM 트리와는 유사한 점은 이게 다이고 B 트리의 설계 철학은 매우 다릅니다.</p>
+<p>LSM 트리는 일반적으로 수 메가바이트 이상의 가변 크기를 가진 세그먼트를 나누고 순차적으로 세그먼트를 기록합니다. 반면 B 트리는 전통적으로 4KB 크기의 고정 크기 블록이나 페이지로 나누고 한번에 하나의 페이지에 읽기 또는 쓰기를 합니다. 이와 같이 고정 크기 블록을 사용하는 이유는 디스크가 고정 크기 블록으로 배열되어 있기 때문입니다. 즉 하드웨어와의 관련성 때문입니다.</p>
+<p>다음 그림은 B 트리를 이용한 키를 검색하는 방법을 나타내는 그림입니다.</p>
+<figure >
+<a href="https://notes.shichao.io/dda/ch3/" target="_blank">
+  <img src="https://eoriented.github.io/images/storage-and-retrieval-3/b-tree-retrieval.png" width="100%"  style="max-width: 650px" />
+  </a>
 
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/hadoop-scheduler">#hadoop scheduler</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/apache-oozie">#apache oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/luigi">#luigi</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/oozie-workflow-pattern-1/">
-                    Oozie Workflow Pattern - 1
-                </a>
-            </h2>
-            <div><p>Oozie가 무엇인지 궁금한 분들을 Apache Oozie 소개라는 이전 포스트를 참고하시기 바랍니다. 일반적으로 Oozie에서 많이 사용되는 워크플로우 패턴에 대해서 알아봅시다.
-순차적 액션 수행 (Point-to-Point Pattern) 가장 간단한 형태로 수행하는 워크플로우 형태가 되겠습니다. 말그대로 순차적으로 액션을 수행할 때 사용합니다.</p></div>
-            <div class="post-footer">
-            <time>September 24, 2017</time>
+</figure>
+<p>색인에서 원하는 키를 찾으려면 루트에서부터 시작합니다. 위의 그림은 user_id 251을 찾고 있기 때문에 200과 300 사이의 페이지의 참조를 따라갑니다. 그 다음 250과 270 사이에 참조를 따라가서 최종적으로 leaf 페이지에 도달하고 252의 값을 찾습니다.</p>
+<p>B 트리의 하나의 페이지에서 하위 페이지를 참조하는 수를 분기 계수(branching factor)라고 합니다. 위의 그림에서는 분기 계수가 6입니다. 실제로 분기 계수는 보통 수백 개에 달합니다.</p>
+<p>B 트리에 존재하는 키의 값을 update 하려면 리프 페이지까지 검색한 후에 페이지에 있는 값을 변경 후 디스크에 다시 씁니다. 새로운 키를 추가하려면 아래의 그림과 같이 새로운 키를 포함하는 범위의 페이지를 찾아 해당 페이지에 키와 값을 추가합니다. 만일 쓰려고 하는 페이지에 여유 공간이 없으면 페이지를 둘로 나누고 상위 페이지가 새로운 키 범위를 가진 하위 페이지들을 알 수 있게 갱신한 후 추가합니다.</p>
+<figure >
 
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/hadoop-scheduler">#hadoop scheduler</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/apache-oozie">#apache oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/luigi">#luigi</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/introduction-to-oozie/">
-                    Apache Oozie 소개
-                </a>
-            </h2>
-            <div><p>Oozie 개요 Oozie는 정식 홈페이지에 나와 있듯이 Hadoop ecosystem에서 사용하는 Workflow Scheduler(혹은 orchestration) 프레임워크입니다. Oozie에서 제공하는 기능은 크게 아래의 3가지와 같습니다.
- Scheduling  특정 시간에 액션 수행 주기적인 간격 이후에 액션 수행 이벤트가 발생하면 액션 수행   Coordinating  이전 액션이 성공적으로 끝나면 다음 액션 시작   Managing  액션이 성공하거나 실패했을 때 이메일 발송 액션 수행시간이나 액션의 단계를 저장    Oozie 용어  Action  우지에서 실행할 수 있는 하나의 작업 단위 MapReduce 작업, Spark 작업, Shell script 등   Workflow  Action들의 제어와 의존 관계를 DAG(Directed acyclic graph) 표현   Coordinator  Data sets과 Workflow를 실행하는 스케줄을 정의   Bundle  코디네이터의 모임    Oozie Architecture  우지는 Client-Server Model의 형태입니다.</p></div>
-            <div class="post-footer">
-            <time>September 23, 2017</time>
+  <img src="https://eoriented.github.io/images/storage-and-retrieval-3/split-b-tree.png" width="100%"  style="max-width: 650px" />
+  
 
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/decision-tree/">
-                    의사 결정 트리(Decision Tree)
-                </a>
-            </h2>
-            <div><p>의사 결정 트리는 분류(Classification) 기술 중 가장 일반적으로 사용되는 방법입니다. 의사 결정 트리의 개념이 익숙하진 않겠지만 대표적으로 예를 들을 수 있는 것이 바로 스무고개라는 게임입니다. 스무고개는 총 20개의 질문만 허락되며, 그에 대한 답변으로 ‘예’ 혹은 ‘아니오’로만 대답하여서 추측하여 답에 도달하는 게임이죠.</p></div>
-            <div class="post-footer">
-            <time>June 22, 2015</time>
+</figure>
+<p>이 알고리즘은 트리가 계속 균형을 유지하는 것을 보장합니다. 대부분의 데이터베이스는 B 트리의 깊이가 4단계 정도면 충분하므로 검색하려는 페이지를 찾기 위해 많은 페이지 참조를 따라가지 않아도 됩니다. 분기 계수가 500이고 페이지 크기가 4KB이면서 깊이가 4단계인 트리는 256TB(500^4 * 4096 = 256TB)까지 저장할 수 있습니다.</p>
+<h2 id="신뢰할-수-있는-b-트리-만들기">신뢰할 수 있는 B 트리 만들기</h2>
+<p>B 트리의 기본적인 쓰기 동작은 새로운 데이터를 디스크에 덮어쓰는 것입니다. 그러나 삽입 때문에 페이지가 너무 많아져 페이지를 나눠야 한다면 분할된 두 페이지를 기록하고 두 하위 페이지의 참조를 갱신하도록 상위 페이지를 덮어써야 합니다. 만일 일부 페이지만 기록하고 데이터베이스에 장애가 발생한다면 색인이 훼손됩니다. 이렇게 색인이 훼손되면 고아 페이지(orphan page)가 발생할 수 있습니다. 고아 페이지란 어떤 페이지와도 부모 관계가 없는 페이지를 이야기합니다.</p>
+<p>이렇게 데이터베이스의 장애가 발생한 상황에서도 스스로 복구할 수 있도록 하기 위해서 일반적으로 디스크에 write-ahead log(WAL)라고 하는 데이터 구조를 추가해 B 트리를 구현합니다. WAL은 트리 페이지에 변경된 내용을 적용하기 전에 모든 B 트리의 변경사항을 기록하는 append-only 파일입니다. 이 로그를 통해 데이터베이스 장애 이후 복구될 때 일관성있는 상태로 B 트리를 다시 복원합니다.</p>
+<p>또한 다중 스레드가 동시에 B 트리에 접근한다면 주의 깊게 동시성 제어를 해야 합니다. 그렇지 않다면 스레드가 일관성이 깨진 상태의 트리에 접근할 수도 있기 때문입니다. 동시성 제어는 보통 latch(가벼운 잠금(lock))으로 트리 데이터 구조를 보호합니다.</p>
+<h2 id="b-트리와-lsm-트리-비교">B 트리와 LSM 트리 비교</h2>
+<p>경험적으로 LSM 트리는 보통 쓰기에서 더 빠른 반면 B 트리는 읽기에서 더 빠릅니다. LSM 트리가 읽기가 더 느린 이유는 각 컴팩션 단계에 여러 데이터 구조와 SS 테이블을 확인해야 하기 때문입니다.</p>
+<h2 id="lsm-트리의-장단점">LSM 트리의 장단점</h2>
+<p>데이터베이스에 쓰기 한 번이 디스크에 여러번 쓰는 효과를 write amplification이라고 합니다. 상대적으로 LSM 트리가 상대적으로 쓰기 증폭이 B 트리보다 낮고 트리에서 여러 페이지를 덮어 쓰는 것이 아닌 순차적으로 컴팩션된 SS 테이블 파일을 쓰기 때문에 더 높은 쓰기 처리량을 유지할 수 있습니다. 또한 압축률이 더 좋습니다.</p>
+<p>단점으로는 컴팩션 과정으로 인해 읽기와 쓰기 성능에 영향을 줄 수 있다는 점입니다. 쓰기 처리량이 높아도 디스크의 쓰기 대역폭은 유한하기 때문입니다. 또한 B 트리의 경우 각 키가 색인의 한 곳에만 정확히 존재하지만 로그 구조화 저장소 엔진은 다른 세그먼트에 같은 키를 가지는 여러 복사본이 존재할 수 있습니다. 이러한 이유 때문에 강력한 트랜잭션을 제공하는 데이터베이스에는 B 트리가 매력적입니다.</p>
+<p>이번 포스트에서는 B 트리를 통한 색인 방법과 B트리와 LSM 트리를 비교하여 살펴보았습니다. 다음 포스트에서는 이어서 온라인 트랜잭션 처리(OLTP)와 온라인 분석 처리(OLAP)을 비교하여 살펴볼 예정입니다.</p>
 
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D">#머신러닝</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%ED%8A%B8%EB%A6%AC">#의사결정트리</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/machine-learning">#machine learning</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/decision-tree">#decision tree</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/id3">#id3</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/cart">#cart</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/c4.5">#c4.5</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/how-to-compile-using-gcc/">
-                    gcc로 컴파일하는 방법
-                </a>
-            </h2>
-            <div><p>1. gcc 동작 과정   gcc
-원래는 GNU C Compiler를 의미 했지만 1999년부터 GNU Compiler Collection을 의미한다.
-  gcc가 실행시키는 프로그램
-         cpp 전처리기   cc1 컴파일러   as 어셈블러   ld 링커    1) 전처리 단계</p></div>
-            <div class="post-footer">
-            <time>May 15, 2009</time>
+        </p>
 
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
             
             
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/gcc">#gcc</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/compiler">#compiler</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%BB%B4%ED%8C%8C%EC%9D%BC">#컴파일</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/gcc%EC%98%B5%EC%85%98">#gcc옵션</a>
-                
+            <div style="text-align: left">
+                <a class="left" href="https://eoriented.github.io/post/storage-and-retrieval-2/" rel="prev" style="color: #64BEA3">
+                    <i class="fa fa-play fa-rotate-180" aria-hidden="true"></i>&nbsp;&nbsp;<span>저장소(Storage)와 검색(Retrieval) - 2</span>
+                </a>
+            </div>
             
-            </div> 
-           
-        </article>
-        
-    </div>
-        
-        <div class="paginator">
-        
-        
-        <p>Page 3 of 3</p>
-        <div class="paginator-group">
-            
-            <a class="color-link" href="https://eoriented.github.io/page/2/">
-                    <svg width="13px" height="9px" viewBox="0 0 13 9" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g class="color-arrow" fill="#63BDA2" fill-rule="nonzero">
-                            <polygon id="Path" points="1.75929935 4.50000282 5.3292523 7.62371165 4.6707477 8.37628835 0.240700645 4.49999718 4.67081049 0.623709205 5.32930951 1.37629079"></polygon>
-                            <polygon id="Path" points="13 4 13 5 1 5 1 4"></polygon>
-                        </g>
-                </svg>  
-                Newer          
-            </a>
             
             
         </div>
-        
     </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/b-tree">#b-tree</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/lsm-tree">#LSM tree</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4">#데이터베이스</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%83%89%EC%9D%B8">#색인</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%80%EC%9E%A5%EC%86%8C">#데이터저장소</a>
+        
+      
+    </div>
+
 
         
         </div>
