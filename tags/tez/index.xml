@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>batch on Smart Tiger&#39;s blog</title>
-    <link>https://eoriented.github.io/tags/batch/</link>
-    <description>Recent content in batch on Smart Tiger&#39;s blog</description>
+    <title>tez on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/tez/</link>
+    <description>Recent content in tez on Smart Tiger&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
     <lastBuildDate>Fri, 02 Oct 2020 22:28:51 +0900</lastBuildDate>
     
-	<atom:link href="https://eoriented.github.io/tags/batch/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eoriented.github.io/tags/tez/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -29,15 +29,6 @@
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/post/batch-processing-1/</guid>
       <description>배치 처리는 컴퓨터 연산의 오래된 형태 중에 하나입니다. 이미 배치 처리는 예전 부터 사용했습니다. 2004년에 발표된 구글의 맵리듀스는 과거 미국 인구 조사에서 천공 카드 집계기를 이용한 집계 처리와 유사합니다. 이와 같이 배치 처리는 입력 데이터로 집계 처리해서 결과를 보여줍니다.</description>
-    </item>
-    
-    <item>
-      <title>스트림 프로세싱(Stream Processing) - 1</title>
-      <link>https://eoriented.github.io/post/stream-processing/</link>
-      <pubDate>Sun, 05 Jul 2020 23:00:39 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/stream-processing/</guid>
-      <description>일반적으로 배치 처리의 문제점은 입력의 변화가 특정 기간이 끝나야 반영이 되는 문제가 있습니다. 이러한 지연(Lag)을 줄이려면 더 자주 실행할 수 있도록 해야 합니다. 고정된 타임 슬라이스 별로 처리하는 것이 아닌 이벤트가 발생할 때마다 처리하도록 하는 것입니다.</description>
     </item>
     
   </channel>

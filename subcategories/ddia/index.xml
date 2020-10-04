@@ -8,10 +8,28 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sun, 19 Jul 2020 21:49:32 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 22:28:51 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/subcategories/ddia/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>배치 프로세싱(Batch processing) - 2</title>
+      <link>https://eoriented.github.io/post/batch-procession-2/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/batch-procession-2/</guid>
+      <description>조인 여러 데이터셋에서 한 레코드가 다른 레코드와 연관되어 있는 것은 일반적입니다. 관계형 모델에서는 외래키, 문서 모델에서는 문서 참조, 그래프 모델에서는 간선이라고 부릅니다. 비정규화를 통해서 이러한 조인을 줄일 수는 있지만 완전한 제거는 어렵습니다. 배치 처리에서의 조인은 데이터셋 내의 모든 연관 관계를 다루는 것을 의미합니다.</description>
+    </item>
+    
+    <item>
+      <title>배치 프로세싱(Batch processing) - 1</title>
+      <link>https://eoriented.github.io/post/batch-processing-1/</link>
+      <pubDate>Mon, 20 Jul 2020 23:06:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/batch-processing-1/</guid>
+      <description>배치 처리는 컴퓨터 연산의 오래된 형태 중에 하나입니다. 이미 배치 처리는 예전 부터 사용했습니다. 2004년에 발표된 구글의 맵리듀스는 과거 미국 인구 조사에서 천공 카드 집계기를 이용한 집계 처리와 유사합니다. 이와 같이 배치 처리는 입력 데이터로 집계 처리해서 결과를 보여줍니다.</description>
+    </item>
     
     <item>
       <title>스트림 프로세싱(Stream Processing) - 2</title>

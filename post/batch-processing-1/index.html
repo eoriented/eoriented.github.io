@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Smart Tiger&#39;s blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.832f51bd8886edde2e4bd3034bec7fb7bb6766151b4f7c83987458ed1481c80f.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-160052384-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/bigdata/">Big data</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/machine-learning/">Machine learning</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/programming/">Programming</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/cloud/">Cloud</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/tools/">Tools</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
+  
+  
+</div>
+<footer class="footer">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">배치 프로세싱(Batch processing) - 1</h1>
+    
+    <div>
+        <p>
+        <p>배치 처리는 컴퓨터 연산의 오래된 형태 중에 하나입니다. 이미 배치 처리는 예전 부터 사용했습니다. 2004년에 발표된 구글의 맵리듀스는 과거 미국 인구 조사에서 천공 카드 집계기를 이용한 집계 처리와 유사합니다. 이와 같이 배치 처리는 입력 데이터로 집계 처리해서 결과를 보여줍니다. 이와 같은 것들은 유닉스의 설계 철학을 통해 다시 한번 살펴볼 수 있습니다. 유닉스 설계 철학이 최근 데이터 프레임워크에 어떻게 반영되었는지 살펴보기 위해 간단히 유닉스 툴들로 배치 처리하는 방법을 간단히 살펴보겠습니다.</p>
+<h2 id="유닉스-툴로-배치-처리하기">유닉스 툴로 배치 처리하기</h2>
+<p>유닉스 툴로 nginx의 엑세스 로그를 분석하는 예를 살펴보겠습니다. nginx의 로그의 예는 다음과 같습니다.</p>
+<pre><code>216.58.210.78 - - [27/Feb/2015:17:55:11 +0000] &quot;GET /css/typography.css HTTP/1.1&quot; 200 3377 &quot;http://martin.kleppmann.com/&quot; &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36&quot;
+</code></pre><p>로그가 의미하는 바는 다음과 같습니다.</p>
+<pre><code>$remote_addr - $remote_user [$time_local] &quot;$request&quot; $status $body_bytes_sent &quot;$http_referer&quot; &quot;$http_user_agent&quot;
+</code></pre><p>로그에 대한 자세한 설명은 생략하도록 하겠습니다.</p>
+<p>이제 엑세스 로그를 활용해서 웹사이트 트래픽에 관한 보고서를 만들 수 있습니다. 유닉스 툴을 이용하여 웹사이트에서 가장 인기 높은 페이지 5개를 뽑는 방법은 다음과 같습니다. 유닉스의 설계 철학은 <a href="https://en.wikipedia.org/wiki/Unix_philosophy">위키피디아</a>에서 확인할 수 있습니다.</p>
+<pre><code>cat /var/log/nginx/access.log |
+  awk '{print $7}' |
+  sort             |
+  uniq -c          |
+  sort -r -n       |
+  head -n 5         
+</code></pre><ul>
+<li>로그를 읽습니다.</li>
+<li>한 줄마다 공백으로 나누어 7번째 필드만 출력합니다. 위 예제에서는 <code>/css/typography.css</code>가 되겠습니다.</li>
+<li>요청 url을 알파벳 순서로 정렬합니다. 동일한 url이 n번 요청되면 url은 연속으로 n번 반복되서 출력됩니다.</li>
+<li>uniq 명령은 인접한 두 줄이 같은지 확인해서 중복을 제거합니다. -c 옵션은 중복 횟수를 출력하는 옵션입니다. 즉 url이 몇 번 요청되었는지 세는 역할을 수행합니다.</li>
+<li>정렬을 하는데 -r 옵션은 내림차순 정렬이고, -n 옵션은 한 줄에 처음 나오는 숫자를 기준으로 정렬하라는 옵션입니다.</li>
+<li>마지막으로 head 명령어는 앞에서 5줄만을 출력하라는 의미입니다.</li>
+</ul>
+<p>위와 같은 유닉스 툴을 이용하면 수 기가바이트의 로그 파일을 수 초내로 처리가 가능합니다. 이와 같이 명령의 조합을 통해 쉽게 로그 파일을 분석할 수 이유는 유닉스 설계 철학에 있습니다. <a href="https://en.wikipedia.org/wiki/Unix_philosophy">유닉스 설계 철학</a>은 아래와 같습니다.</p>
+<ol>
+<li>각 프로그램이 한 가지 일만 하도록 만들어라. 새로운 작업을 위해 기존 프로그램을 수정하여 기능을 추가해 프로그램을 복잡하게 만들기 보다는 새 프로그램을 만들어라.</li>
+<li>모든 프로그램의 출력은 아직 알려지지 않은 다른 프로그램의 입력으로 쓰일 수 있다는 것을 예상하라. 불필요한 정보로 출력을 어지르지 마라. 엄격한 컬럼 형식이나 이진 입력 포맷의 사용을 피하라. 대화형 입력을 고집하지 마라.</li>
+<li>소프트웨어를 빠르게 써볼 수 있도록 설계하고 구축하라. 심지어 운영체제도 마찬가지다. 수 주이내에 마치는 것이 이상적이다. 거슬리는 부분을 과감히 버리고 다시 구축하는 것을 주저하지 마라.</li>
+<li>프로그래밍 작업을 줄일려면 미숙한 도움보다는 툴을 사용하라. 도구를 빌드하기 위해 우회해야 하고 사용 후 바로 버려야할 지라도 말이다.</li>
+</ol>
+<p>위의 유닉스 설계 철학에는 자동화, 빠른 프로토타이핑, 증분 반복, 실험 친화, 큰 프로젝트를 처리가능한 청크 단위로 처리하기와 같은 방법을 살펴볼 수 있습니다. 이것은 오늘날 애자일과 데브옵스(DevOps)와 같은 방식과 굉장히 유사합니다. 이러한 유닉스 툴을 이용하면 작은 여러 프로그램으로 강력한 데이터 처리 작업을 쉽게 구성할 수 있습니다. 이것은 프로그램 사이에 동일한 인터페이스를 사용하도록 했기 때문입니다. 유닉스에서의 인터페이스는 파일(좀 더 정확히는 파일 디스크립터)입니다. 파일은 단지 순서대로 정렬된 바이트의 연속입니다. 그래서 위의 로그 분석 예제에서는 파일로부터 연속된 바이트를 아스키 텍스트로 취급하여 동일하게 처리하였습니다.</p>
+<h2 id="맵리듀스와-분산-파일-시스템">맵리듀스와 분산 파일 시스템</h2>
+<p>하나의 맵리듀스 잡은 하나 이상의 입력을 받아 하나 이상의 출력을 만들어 낸다는 점에 하나의 유닉스 프로세스와 유사합니다. 그러나 맵리듀스는 수천 대의 장비로 분산해서 실행 가능한 것이 차이점입니다. 유닉스 툴들은 주로 stdin과 stdout을 입력과 출력으로 사용하지만 맵리듀스는 분산 파일 시스템의 파일에 입출력을 사용합니다. 하둡 맵리듀스의 경우 분산 파일 시스템을 HDFS(Hadoop Distributed File System)이라고 합니다.</p>
+<h2 id="맵리듀스-잡-실행">맵리듀스 잡 실행</h2>
+<p>맵리듀스는 HDFS에 있는 대용량 데이터셋을 처리하는 코드를 작성하는 프로그래밍 프레임워크입니다. 앞서 설명한 예제인 로그 분석의 예제는 맵리듀스의 데이터 처리 패턴과 상당히 유사합니다. 웹 서버 로그 분석하는 예제를 맵리듀스로 처리하는 과정은 다음과 같습니다.</p>
+<ol>
+<li>입력 파일을 읽고 레코드로 쪼갠다.</li>
+<li>각 입력 레코드마다 매퍼 함수를 호출해 키와 값을 호출한다.</li>
+<li>키를 기준으로 키-값 쌍을 모두 정렬한다.</li>
+<li>정렬된 키-값 쌍을 대상으로 리듀스 함수를 호출한다.</li>
+</ol>
+<p>맵리듀스 잡의 경우 4단계로 수행이되는데 2단계(맵)와 4단계(리듀스)는 사용자가 직접 데이터 처리를 어떻게 할 것인지 지정하며, 1단계는 파일을 나누어 레코드를 만드는 인풋 포맷을 사용하고 3단계는 정렬 단계 인데 셔플 단계라고도 하고 맵리듀스 프레임워크에서 처리하는 단계입니다.</p>
+<h2 id="맵리듀스의-분산-실행">맵리듀스의 분산 실행</h2>
+<figure >
+
+  <img src="https://eoriented.github.io/images/batch-processing-1/mapreduce-job.png" width="100%"  style="max-width: 650px" />
+  
+
+</figure>
+<p>위 그림은 하둡 맵리듀스 잡에서 데이터 처리가 어떻게 이루어지는지 보여줍니다. 맵리듀스 잡은 파티셔닝 기반의 분산 처리를 수행합니다. 입력 데이터는 HDFS에 있는 데이터를 사용하는 것이 일반적입니다. 맵 태스크의 수는 입력 파일의 블록 개수로 결정되며 리듀스 태스크 수는 사용자가 설정할 수 있습니다.</p>
+<p>맵리듀스에서는 같은 키를 가진 모든 키-값 쌍을 같은 리듀서에서 처리하는 것을 보장합니다. 키-값 쌍이 어느 리듀스 태스크에서 실행될 지 경정하기 위해 키의 해시값을 사용합니다. 그리고 리듀서에 전달되기 전에 키-값 쌍은 정렬되어 있어야 합니다. 주로 맵리듀스에서 처리되는 태스크의 경우 데이터가 매우 크기 때문에 단계를 나누어서 정렬을 수행합니다. 이와 같이 리듀서를 기준으로 파티셔닝을 하고 정렬한 뒤 매퍼로부터 데이터를 복사하는 과정을 <strong>셔플</strong>이라고 합니다. 그리고 처리된 출력 레코드는 HDFS에 기록됩니다.</p>
+<h2 id="맵리듀스-워크플로우">맵리듀스 워크플로우</h2>
+<p>하나의 맵리듀스 잡으로 해결할 수 있는 문제는 한정적입니다. 그렇기 때문에 여러 맵리듀스 잡을 연결해서 워크플로우(workflow) 방식으로 구성해서 사용합니다. 이러한 워크플로우는 하나의 잡이 완료되어 나온 출력 디렉토리가 다음 맵리듀스의 입력 디렉토리로 설정하여 처리합니다. 이와 같이 맵리듀스 작업 간의 의존성 관리를 위해 다양한 스케줄러가 개발되었는데 대표적인 것들이 우지(Oozie), 아즈카반(Azkaban), 루이지(Luigi), 에어플로우(Airflow), 핀볼(Pinball) 등이 있습니다.</p>
+<h2 id="정리">정리</h2>
+<p>이번 포스트에서는 배치 처리에 관해 살펴보았습니다. 유닉스 툴을 살펴보면서 이러한 도구들의 설계 철학이 어떻게 맵리듀스에 영향을 끼쳤는지 살펴보았습니다. 이 설계 원리의 대표적인 것을 살펴보면 먼저 입력은 불변이고 출력은 다른 프로그램의 입력으로 사용하는 것입니다. 그리고 복잡한 문제도 한가지 일을 잘하는 작은 툴을 엮어서 해결하는 것입니다. 유닉스 환경에서 프로그램과 다른 프로그램을 연결하는 단일 인터페이스는 파일과 파이프입니다. 맵리듀스의 인터페이스는 분산 파일 시스템입니다.
+다음 포스트는 이어서 맵리듀스에서 사용되는 조인 알고리즘에 관해 살펴보고, 맵리듀스와 MPP 데이터베이스를 비교해서 살펴보고, 맵리듀스를 넘어 데이터 플로우 엔진에 관해 살펴보겠습니다.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.codebycase.com/bigdata/data-intensive-applications#c10-batch-processing">https://www.codebycase.com/bigdata/data-intensive-applications#c10-batch-processing</a></li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/mapreduce">#mapreduce</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/batch">#batch</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/data-flow">#data flow</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/batch-processing">#batch processing</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/hadoop">#hadoop</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/hdfs">#hdfs</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/spark">#spark</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/flink">#flink</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/tez">#tez</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+		
+		
+		
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>

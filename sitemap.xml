@@ -3,17 +3,92 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://eoriented.github.io/categories/bigdata/</loc>
-    <lastmod>2020-07-19T21:49:32+09:00</lastmod>
+    <loc>https://eoriented.github.io/tags/batch/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/broker/</loc>
-    <lastmod>2020-07-19T21:49:32+09:00</lastmod>
+    <loc>https://eoriented.github.io/tags/batch-processing/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/categories/bigdata/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/categories/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/data-flow/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/ddia/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/flink/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/hadoop/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/hdfs/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/mapreduce/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/spark/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/tez/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/batch-procession-2/</loc>
+    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/batch-processing-1/</loc>
+    <lastmod>2020-07-20T23:06:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/broker/</loc>
     <lastmod>2020-07-19T21:49:32+09:00</lastmod>
   </url>
   
@@ -43,22 +118,12 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/subcategories/ddia/</loc>
-    <lastmod>2020-07-19T21:49:32+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/event-sourcing/</loc>
     <lastmod>2020-07-19T21:49:32+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/messaging-system/</loc>
-    <lastmod>2020-07-19T21:49:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/post/</loc>
     <lastmod>2020-07-19T21:49:32+09:00</lastmod>
   </url>
   
@@ -73,16 +138,6 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/subcategories/</loc>
-    <lastmod>2020-07-19T21:49:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/</loc>
-    <lastmod>2020-07-19T21:49:32+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/window/</loc>
     <lastmod>2020-07-19T21:49:32+09:00</lastmod>
   </url>
@@ -90,11 +145,6 @@
   <url>
     <loc>https://eoriented.github.io/post/stream-processing-2/</loc>
     <lastmod>2020-07-19T21:49:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/batch/</loc>
-    <lastmod>2020-07-05T23:00:39+09:00</lastmod>
   </url>
   
   <url>
@@ -234,11 +284,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/reducebykey/</loc>
-    <lastmod>2020-03-14T22:15:26+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/spark/</loc>
     <lastmod>2020-03-14T22:15:26+09:00</lastmod>
   </url>
   

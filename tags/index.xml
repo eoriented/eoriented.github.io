@@ -8,10 +8,91 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sun, 19 Jul 2020 21:49:32 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 22:28:51 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>batch</title>
+      <link>https://eoriented.github.io/tags/batch/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/batch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>batch processing</title>
+      <link>https://eoriented.github.io/tags/batch-processing/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/batch-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data flow</title>
+      <link>https://eoriented.github.io/tags/data-flow/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/data-flow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flink</title>
+      <link>https://eoriented.github.io/tags/flink/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/flink/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hadoop</title>
+      <link>https://eoriented.github.io/tags/hadoop/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/hadoop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hdfs</title>
+      <link>https://eoriented.github.io/tags/hdfs/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/hdfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mapreduce</title>
+      <link>https://eoriented.github.io/tags/mapreduce/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/mapreduce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spark</title>
+      <link>https://eoriented.github.io/tags/spark/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/spark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tez</title>
+      <link>https://eoriented.github.io/tags/tez/</link>
+      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/tez/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>broker</title>
@@ -109,15 +190,6 @@
       <pubDate>Sun, 19 Jul 2020 21:49:32 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/window/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>batch</title>
-      <link>https://eoriented.github.io/tags/batch/</link>
-      <pubDate>Sun, 05 Jul 2020 23:00:39 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/batch/</guid>
       <description></description>
     </item>
     
@@ -307,15 +379,6 @@
       <pubDate>Sat, 14 Mar 2020 22:15:26 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/reducebykey/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spark</title>
-      <link>https://eoriented.github.io/tags/spark/</link>
-      <pubDate>Sat, 14 Mar 2020 22:15:26 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/spark/</guid>
       <description></description>
     </item>
     
