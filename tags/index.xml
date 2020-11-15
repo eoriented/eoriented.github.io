@@ -8,10 +8,64 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Fri, 02 Oct 2020 22:28:51 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2020 21:04:28 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>index</title>
+      <link>https://eoriented.github.io/tags/index/</link>
+      <pubDate>Sat, 14 Nov 2020 21:04:28 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>partitioning</title>
+      <link>https://eoriented.github.io/tags/partitioning/</link>
+      <pubDate>Sat, 14 Nov 2020 21:04:28 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/partitioning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>secondary index</title>
+      <link>https://eoriented.github.io/tags/secondary-index/</link>
+      <pubDate>Sat, 14 Nov 2020 21:04:28 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/secondary-index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>보조 색인</title>
+      <link>https://eoriented.github.io/tags/%EB%B3%B4%EC%A1%B0-%EC%83%89%EC%9D%B8/</link>
+      <pubDate>Sat, 14 Nov 2020 21:04:28 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EB%B3%B4%EC%A1%B0-%EC%83%89%EC%9D%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>색인</title>
+      <link>https://eoriented.github.io/tags/%EC%83%89%EC%9D%B8/</link>
+      <pubDate>Sat, 14 Nov 2020 21:04:28 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EC%83%89%EC%9D%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>파티셔닝</title>
+      <link>https://eoriented.github.io/tags/%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D/</link>
+      <pubDate>Sat, 14 Nov 2020 21:04:28 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>batch</title>
@@ -226,6 +280,15 @@
       <pubDate>Sun, 05 Jul 2020 23:00:39 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/stream-processor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>데이터 중심 애플리케이션</title>
+      <link>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EC%8B%AC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/</link>
+      <pubDate>Sun, 05 Jul 2020 23:00:39 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A4%91%EC%8B%AC-%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98/</guid>
       <description></description>
     </item>
     
@@ -518,6 +581,60 @@
     </item>
     
     <item>
+      <title>Datastore</title>
+      <link>https://eoriented.github.io/tags/datastore/</link>
+      <pubDate>Fri, 20 Dec 2019 22:19:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/datastore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Designing data-intensive application</title>
+      <link>https://eoriented.github.io/tags/designing-data-intensive-application/</link>
+      <pubDate>Fri, 20 Dec 2019 22:19:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/designing-data-intensive-application/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>REPLICA</title>
+      <link>https://eoriented.github.io/tags/replica/</link>
+      <pubDate>Fri, 20 Dec 2019 22:19:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/replica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>replication</title>
+      <link>https://eoriented.github.io/tags/replication/</link>
+      <pubDate>Fri, 20 Dec 2019 22:19:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/replication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>고가용성</title>
+      <link>https://eoriented.github.io/tags/%EA%B3%A0%EA%B0%80%EC%9A%A9%EC%84%B1/</link>
+      <pubDate>Fri, 20 Dec 2019 22:19:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EA%B3%A0%EA%B0%80%EC%9A%A9%EC%84%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>복제</title>
+      <link>https://eoriented.github.io/tags/%EB%B3%B5%EC%A0%9C/</link>
+      <pubDate>Fri, 20 Dec 2019 22:19:26 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EB%B3%B5%EC%A0%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>b-tree</title>
       <link>https://eoriented.github.io/tags/b-tree/</link>
       <pubDate>Mon, 26 Aug 2019 22:56:19 +0900</pubDate>
@@ -550,15 +667,6 @@
       <pubDate>Mon, 26 Aug 2019 22:56:19 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%80%EC%9E%A5%EC%86%8C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>색인</title>
-      <link>https://eoriented.github.io/tags/%EC%83%89%EC%9D%B8/</link>
-      <pubDate>Mon, 26 Aug 2019 22:56:19 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/%EC%83%89%EC%9D%B8/</guid>
       <description></description>
     </item>
     

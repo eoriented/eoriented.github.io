@@ -188,6 +188,67 @@ if (!doNotTrack) {
         
         <article>
             <h2>
+                <a href="https://eoriented.github.io/post/partitioning-2/">
+                    파티셔닝(Partitioning) - 2
+                </a>
+            </h2>
+            <div><p>이전 포스트에 이어서 파티셔닝에서 사용하는 리밸런싱 기법에 관해 살펴보고, 클라이언트에서 질의 요청을 어떻게 처리할 것인지에 관해 알아보겠습니다.
+파티션 리밸런싱 리밸런싱이란 클러스터에서 한 노드가 담당하던 부하를 다른 노드를 옮기는 과정입니다. 이러한 리밸런싱이 필요한 경우는 시간이 지나면서 데이터베이스에 변화가 생기기 때문입니다.</p></div>
+            <div class="post-footer">
+            <time>November 14, 2020</time>
+
+            
+            
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/partitioning">#partitioning</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D">#파티셔닝</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/secondary-index">#secondary index</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%B3%B4%EC%A1%B0-%EC%83%89%EC%9D%B8">#보조 색인</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EC%83%89%EC%9D%B8">#색인</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/index">#index</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
+                <a href="https://eoriented.github.io/post/partitioning-1/">
+                    파티셔닝(Partitioning) - 1
+                </a>
+            </h2>
+            <div><p>데이터셋이 매우 크거나 질의 처리량이 매우 높은 경우 데이터를 파티션으로 쪼개야 합니다. 이번 포스트에서 이야기하는 파티셔닝은 대용량 데이터베이스에서 데이터를 작은 단위로 쪼개는 방법을 말합니다. 몽고DB, 엘라스틱서치, 솔라에서는 샤드라고 하며 HBase에서는 리전, 빅테이블에서는 태블릿(tablet), 카산드라와 리악에서는 vnode, 카우치베이스에서 vBucker이라고 부릅니다.</p></div>
+            <div class="post-footer">
+            <time>November 14, 2020</time>
+
+            
+            
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/partitioning">#partitioning</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D">#파티셔닝</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/secondary-index">#secondary index</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%B3%B4%EC%A1%B0-%EC%83%89%EC%9D%B8">#보조 색인</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EC%83%89%EC%9D%B8">#색인</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/index">#index</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
                 <a href="https://eoriented.github.io/post/batch-procession-2/">
                     배치 프로세싱(Batch processing) - 2
                 </a>
@@ -455,85 +516,12 @@ val words = Array(&#34;one&#34;, &#34;two&#34;, &#34;two&#34;, &#34;three&#34;, 
            
         </article>
         
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/introduction-to-kafka/">
-                    Introduction to Kafka
-                </a>
-            </h2>
-            <div><p>1. Apache Kafka 아파치 카프카(이하 카프카)는 여러 대의 분산 서버에서 대량의 데이터를 처리하는 분산 메시징 시스템입니다.
-  카프카는 여러 시스템과 장치를 연결하는 중요한 역할을 수행합니다. 카프카는 높은 처리량과 실시간 처리를 할 수 있습니다. 이러한 카프카는 다음의 4가지 특징을 가지고 있습니다.</p></div>
-            <div class="post-footer">
-            <time>March 12, 2020</time>
-
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/kafka">#kafka</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%B9%B4%ED%94%84%EC%B9%B4">#카프카</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/message-queue">#message queue</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EB%A9%94%EC%8B%9C%EC%A7%80%ED%81%90">#메시지큐</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/pubsub">#pubsub</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/streaming">#streaming</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/broker">#broker</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/producer">#producer</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/consumer">#consumer</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/docker-and-container/">
-                    Docker and Container
-                </a>
-            </h2>
-            <div><p>Container 먼저 컨테이너란 무엇일까요? 컨테이너는 Docker의 정식 홈페이지에서 다음과 같이 정의하고 있습니다.
- Package Software into Standardized Units for Development, Shipment and Deployment
- 컨테이너는 애플리케이션에게 격리된 실행 환경을 제공해주는 가상화 기술입니다. 컨테이너 단위로 OS, Library, Application을 패키징 할 수 있습니다.</p></div>
-            <div class="post-footer">
-            <time>February 16, 2020</time>
-
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/cloud">#cloud</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/contianer">#contianer</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/docker">#docker</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/kubenetes">#kubenetes</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/lxc">#lxc</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/cd">#CD</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/ci">#CI</a>
-                
-            
-            </div> 
-           
-        </article>
-        
     </div>
         
         <div class="paginator">
         
         
-        <p>Page 1 of 3</p>
+        <p>Page 1 of 4</p>
         <div class="paginator-group">
             
             
