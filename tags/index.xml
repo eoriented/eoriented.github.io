@@ -8,10 +8,46 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Wed, 18 Nov 2020 10:12:53 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2020 13:56:42 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>algorithm</title>
+      <link>https://eoriented.github.io/tags/algorithm/</link>
+      <pubDate>Sun, 22 Nov 2020 13:56:42 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programing</title>
+      <link>https://eoriented.github.io/tags/programing/</link>
+      <pubDate>Sun, 22 Nov 2020 13:56:42 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/programing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>알고리즘 공부법</title>
+      <link>https://eoriented.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%B5%EB%B6%80%EB%B2%95/</link>
+      <pubDate>Sun, 22 Nov 2020 13:56:42 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B3%B5%EB%B6%80%EB%B2%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>프로그래밍 공부법</title>
+      <link>https://eoriented.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B3%B5%EB%B6%80%EB%B2%95/</link>
+      <pubDate>Sun, 22 Nov 2020 13:56:42 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B3%B5%EB%B6%80%EB%B2%95/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>nosql</title>
