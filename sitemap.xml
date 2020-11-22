@@ -4,12 +4,72 @@
   
   <url>
     <loc>https://eoriented.github.io/categories/bigdata/</loc>
-    <lastmod>2020-11-14T21:04:28+09:00</lastmod>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/categories/</loc>
-    <lastmod>2020-11-14T21:04:28+09:00</lastmod>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/nosql/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/nosql/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/nosql-dimensions/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/rdb/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/rdbms/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%AA%A8%EB%8D%B8/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%84%A0%EC%A0%95/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EC%8A%A4%ED%85%9C/</loc>
+    <lastmod>2020-11-18T10:12:53+09:00</lastmod>
   </url>
   
   <url>
@@ -28,22 +88,7 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/post/</loc>
-    <lastmod>2020-11-14T21:04:28+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/secondary-index/</loc>
-    <lastmod>2020-11-14T21:04:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/subcategories/</loc>
-    <lastmod>2020-11-14T21:04:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/</loc>
     <lastmod>2020-11-14T21:04:28+09:00</lastmod>
   </url>
   
@@ -303,11 +348,6 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/nosql/</loc>
-    <lastmod>2020-04-06T23:01:48+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/combinebykey/</loc>
     <lastmod>2020-03-14T22:15:26+09:00</lastmod>
   </url>
@@ -503,11 +543,6 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/</loc>
-    <lastmod>2019-08-26T22:56:19+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%80%EC%9E%A5%EC%86%8C/</loc>
     <lastmod>2019-08-26T22:56:19+09:00</lastmod>
   </url>
@@ -628,16 +663,6 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/rdb/</loc>
-    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/rdbms/</loc>
-    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/sql/</loc>
     <lastmod>2019-07-31T22:22:45+09:00</lastmod>
   </url>
@@ -654,11 +679,6 @@
   
   <url>
     <loc>https://eoriented.github.io/post/data-models-and-query-languages-2/</loc>
-    <lastmod>2019-07-31T22:22:45+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%AA%A8%EB%8D%B8/</loc>
     <lastmod>2019-07-31T22:22:45+09:00</lastmod>
   </url>
   

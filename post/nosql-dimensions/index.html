@@ -30,8 +30,6 @@
     
  
     
-    <link rel="alternate" type="application/rss+xml" href="https://eoriented.github.io/subcategories/index.xml" title="Smart Tiger's blog" />
-    
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -180,389 +178,124 @@ if (!doNotTrack) {
 </nav>
         <div id="content" class="content-container">
         
-<h1>Categories</h1>
-<div class="categories">
-  <ul>
+<h1 class="post-title">NoSQL 데이터베이스 선정 기준</h1>
     
-    
-    
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/ddia">
-        Ddia - 14 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
+    <div>
+        <p>
+        <p>이번 포스트에서는 애플리케이션을 개발할 때 관계형 데이터베이스가 아닌 NoSQL 데이터베이스를 선택할 때 참고할 수 있는 기준들을 살펴보면 도움이 될 것입니다. RDBMS와 NoSQL 데이터베이스의 대표적인 차이점은 스키마와 트랜잭션 속성이나 실제로 데이터를 저장하는 구조에서 살펴볼 수 있습니다. 애플리케이션을 개발할 때 애플리케이션이 가진 특징을 명확히 이해하고 있으면 다양한 데이터베이스 중에 알맞는 데이터베이스를 선택할 수 있을 것입니다.</p>
+<h3 id="데이터-모델">데이터 모델</h3>
+<p>데이터를 저장하는 방식에 따라 구분할 수 있습니다. 데이터를 저장하는 방식은 다음과 같은 것들이 있습니다.</p>
+<ul>
+<li>키/값 방식(일종의 거대한 해시맵 구조)</li>
+<li>반구조적(semistructed 방식)</li>
+<li>컬럼 지향 방식</li>
+<li>문서 지향 방식</li>
+</ul>
+<p>물론 이외에 다양한 방식들이 존재합니다. 애플리케이션에서 데이터를 어떻게 접근할 것인지 고민하고, 스키마가 시간이 지남에 따라 변할 수 있는지 생각해보고 데이터 모델을 결정할 수 있을 것입니다.</p>
+<h3 id="저장storage-모델">저장(Storage) 모델</h3>
+<p>일반적으로 데이터는 물리적인 디스크에 영구적으로 저장해서 사용하는 경우가 많습니다. 기존에 가장 많이 사용하고 있는 RDBMS 역시 데이터를 디스크에 영구 보관합니다. 마찬가지로 NoSQL 데이터베이스에서도 주로 데이터를 영구적으로 보관하지만 애플리케이션 특성에 따라 인메모리 방식의 솔루션이 필요할 수 있습니다. 이렇게 저장 방식에 따라 인메모리 방식인지 영구저장 방식인지 달라질 수 있으며 이러한 저장 모델이 데이터 접근 방식에 어떻게 영향을 끼칠 수 있는지 고려가 필요합니다.</p>
+<h3 id="일관성consistency-모델">일관성(Consistency) 모델</h3>
+<p>일관성이란 데이터베이스가 항상 클라이언트에서 동일한 값을 보장하는지 나타내는 개념입니다. 이러한 일관성 수준의 강도에 따라 다음과 같이 구별 될 수 있습니다.</p>
+<ul>
+<li>엄격한(Strict) 일관성
+<ul>
+<li>데이터에 가해지는 변경 사항은 원자성을 가지며 즉시 반영되는 것으로 보입니다. 가장 강력한 형태의 일관성입니다.</li>
+</ul>
+</li>
+<li>순차적(Sequential) 일관성
+<ul>
+<li>모든 클라이언트들은 변경 사항이 적용한 순서대로 변화를 바라봅니다.</li>
+</ul>
+</li>
+<li>인과적(Casual) 일관성
+<ul>
+<li>인과적으로 연관된 변경 사항에 한해 모든 클라이언트가 순서대로 동일하게 바라봅니다.</li>
+</ul>
+</li>
+<li>결과적(Eventual) 일관성
+<ul>
+<li>일정기간 동안 업데이트가 발생하지 않으면 결과적으로 모든 업데이트 내역이 시스템 전체에 전파되어 모든 복제본이 동일한 내용을 갖습니다.</li>
+</ul>
+</li>
+<li>약한(Weak) 일관성)
+<ul>
+<li>모든 업데이트 내역이 전파되지 않을 수 있으며, 업데이트 사항이 클라이언트 별로 다르게 표시될 수 있습니다.</li>
+</ul>
+</li>
+</ul>
+<p>이러한 일관성 정책은 애플리케이션의 요구사항에 따라 만족해야 하는 부분이 다르기 때문이 애플리케이션의 요구사항에 맞춰서 선택해야 합니다. 일관성 모델의 선택에 따라 읽기 및 쓰기 요청에 대한 응답 시간에 영향을 끼칠 수 있습니다.</p>
+<h3 id="물리적physical-모델">물리적(Physical) 모델</h3>
+<p>시스템 구성이 어떠한 상태인지를 고려하는 것입니다. 시스템 구성이 분산 기반인지 아니면 하나의 머신으로 구성되어 있고 클라이언트가 분산 구조인지와 같은 것입니다. 확장을 하려고 할 때 확장이 용이한지 고려해야 한다. 한번에 하나의 머신만 추가하는 방법이 가능한 경우가 있고 가상 샤드를 지원하지 않는 경우에는 모든 파티션이 동일하게 기능하도록 일제히 샤드를 증가시켜야 할 수 있습니다.</p>
+<h3 id="읽기--쓰기-성능">읽기 / 쓰기 성능</h3>
+<p>애플리케이션의 데이터에 대한 접근 양상을 미리 파악하고 있어야 합니다. 설계 중인 애플리케이션이 쓰기에 비해 읽기가 훨씬 많은지, 혹은 읽기와 쓰기가 비슷한지, 쓰기가 많을 지를 고려해야 합니다. 그리고 애플리케이션에 범위 검색을 지원해야 하는지, 랜덤 엑세스 위주의 애플리케이션인지 개발자는 애플리케이션의 특징을 명확히 이해하고 있어야 합니다. 그리고 이러한 특성을 토대로 NoSQL 데이터베이스 중에 적합한 데이터베이스를 선택할 수 있습니다. 데이터베이스마다 특성이 다르므로 한가지 기능만 특화된 것이 있는가 하면 모든 요구사항을 만족하는 데이터베이스도 있을 것입니다.</p>
+<h3 id="세컨더리-인덱스">세컨더리 인덱스</h3>
+<p>세컨더리 인덱스는 다양한 필드 및 정렬 순서를 기반으로 테이블을 정렬하고 데이터에 접근할 수 있도록 해줍니다. 일반적으로 데이터베이스는 세컨더리 인덱스를 전혀 지원하지 않고 정렬 순서를 보장하지 않는(일반적으로 해시 맵에서 키를 알아야하는 것과 같이 동작하는) 시스템부터 세컨더리 인덱스를 외부 프로젝트에서 제공하는 형태로 지원하는 시스템까지 다양한 데이터베이스가 존재합니다. 이에 애플리케이션을 개발할 때 세컨더리 인덱스 기능이 없어도 상관 없거나 자체적으로 애플리케이션 레벨에서 지원할 수 있는지가 고려사항이 됩니다.</p>
+<h3 id="장애-처리">장애 처리</h3>
+<p>서버는 고장나기 마련입니다. 이러한 고장에 대해 계획을 세워둬야 합니다. 애플리케이션에서는 고장이 나서 장애가 발생해도 시스템이 계속 동작하는지 그리고 장애가 난 서버를 고체하는 경우 다시 원상태로 회복하기 용이한지와 같은 것들도 함께 고려해야 합니다.</p>
+<h3 id="압축">압축</h3>
+<p>테라바이트 규모의 데이터를 저장할 때 텍스트로 되어 있는 경우 압축을 통해 상당한 양의 저장 공간을 절약할 수 있습니다. 데이터베이스에서 이러한 압축 기능을 제공하는지 여부와 다양한 종류의 압축 기능을 제공하는지 확인해야 합니다.</p>
+<h2 id="원자적-읽기-수정-쓰기">원자적 읽기, 수정, 쓰기</h2>
+<p>RDBMS에서는 다양한 원자적 연산을 제공해줍니다. 그러나 분산 시스템 기반의 데이터베이스에서는 원자적 연산을 제공하기가 어려울 수 있습니다. 원자적 연산은 멀티 스레드나 비공유(shared-nothing) 애플리케이션 서버에서 race condition을 예방할 수 있게 해줍니다. 만약 데이터베이스에서 원자적 연산인 CAS(compare and swa)이나 check and set과 같은 연산을 제공해주면 클라이언트 쪽에서 개발시 복잡성을 줄일 수 있습니다.</p>
+<h3 id="락-대기-데드락">락, 대기, 데드락</h3>
+<p>2-phase commit과 같은 복잡한 트랙잭션 작업이 다른 클라이언트가 특정 리소스에 접근하는 경우 대기하게 만들 가능성을 높일 수 있습니다. 최악의 경우에는 데드락에 걸릴 수 있습니다. 데이터 시스템에서 어떤 유형의 락 모델을 제공하는지 살펴볼 필요가 있습니다. 만약 무제한 대기를 허용하는 경우 데드락에 빠질 수 있으므로 사전에 어떠한 락모델을 지원하는지 살펴볼 필요가 있습니다.</p>
+<h3 id="정리">정리</h3>
+<p>지금까지 NoSQL 데이터베이스를 선택할 때 고려해야 할 사항들에 관해 살펴보았습니다. 애플리케이션을 개발할 때 현재 겪고 있는 문제를 해결할 때 가장 적합한 기준을 선택함에 있어 신중을 기해야 합니다. RDBMS가 적합하지 앟는 경우 NoSQL이 고려사항이 될 순 있지만 완벽한 해결책이 될 수는 없습니다. 선택할 수 있는 범위를 잘 살펴 보고 현명하게 고를 필요가 있으며 하나의 솔루션만을 고집하지 말고 다양한 솔루션을 사용할 수 있는 것도 항상 생각해보아야 합니다.</p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=7112520">HBase 완벽가이드</a></li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+        </div>
     </div>
+
     
-    <li>
-      <a href="https://eoriented.github.io/subcategories/deep-learning">
-        Deep learning - 2 posts
-      </a>
-    </li>
-    <div class="subcategories">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/nosql">#nosql</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/rdbms">#rdbms</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%AA%A8%EB%8D%B8">#데이터모델</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EC%8A%A4%ED%85%9C">#데이터시스템</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%84%A0%EC%A0%95">#데이터베이스 선정</a>
+        
       
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
     </div>
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/docker-and-kubenetes">
-        Docker and kubenetes - 1 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
-    </div>
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/gcc">
-        Gcc - 1 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
-    </div>
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/git">
-        Git - 1 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
-    </div>
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/hbase">
-        Hbase - 1 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
-    </div>
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/kafka">
-        Kafka - 1 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
-    </div>
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/nosql">
-        Nosql - 1 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
-    </div>
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/oozie">
-        Oozie - 4 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
-    </div>
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/scala">
-        Scala - 4 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
-    </div>
-    
-    <li>
-      <a href="https://eoriented.github.io/subcategories/spark">
-        Spark - 1 posts
-      </a>
-    </li>
-    <div class="subcategories">
-      
-      <ul>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </ul>
-    </div>
-    
-  </ul>
-</div>
+
 
         
         </div>

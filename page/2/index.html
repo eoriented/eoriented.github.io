@@ -188,6 +188,37 @@ if (!doNotTrack) {
         
         <article>
             <h2>
+                <a href="https://eoriented.github.io/post/avoid-groupbykey/">
+                    Spark에서 groupByKey 대신 reduceByKey 사용하기
+                </a>
+            </h2>
+            <div><p>이번 포스트에서는 스파크에서 빈번히 사용되는 transformation인 reduceByKey와 groupByKey의 동작에 대해 살펴보겠습니다. 먼저 스파크에서 reduceByKey와 groupByKey를 사용하여 단어 세기 예제를 작성해보도록 하겠습니다.
+val words = Array(&#34;one&#34;, &#34;two&#34;, &#34;two&#34;, &#34;three&#34;, &#34;three&#34;, &#34;three&#34;) val wordPairsRDD = sc.parallelize(words).map(word =&gt; (word, 1)) val wordCountsWithReduce = wordPairsRDD .</p></div>
+            <div class="post-footer">
+            <time>March 14, 2020</time>
+
+            
+            
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/spark">#spark</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/groupbykey">#groupbykey</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/reducebykey">#reducebykey</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/combiner">#combiner</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/combinebykey">#combinebykey</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/pair-rdd">#pair-rdd</a>
+                
+            
+            </div> 
+           
+        </article>
+        
+        <article>
+            <h2>
                 <a href="https://eoriented.github.io/post/introduction-to-kafka/">
                     Introduction to Kafka
                 </a>
@@ -474,44 +505,6 @@ SS 테이블과 LSM 트리   위 그림과 같이 log-structured 저장소 세�
                     <a class="tag" href="https://eoriented.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%B2%98%EB%A6%AC">#비동기처리</a>
                 
                     <a class="tag" href="https://eoriented.github.io/tags/thread">#thread</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/data-models-and-query-languages-2/">
-                    데이터 모델(Data Models)과 질의 언어(Query Languages) - 2
-                </a>
-            </h2>
-            <div><p>데이터를 위한 질의 언어 데이터베이스에 데이터를 질의하는 방법은 각각의 데이터 모델마다 조금씩 다릅니다. 일반적으로 알고 있는 관계형 모델의 경우는 SQL을 이용합니다. SQL은 선언형 질의 언어입니다. 그리고 선언형(declarative) 질의와 대조되는 질의 방식은 명령형(imperative) 질의 방식이 있습니다. 그러면 선언형과 명령형을 사용하여 데이터를 조회하는 방법을 한번 살펴보겠습니다.</p></div>
-            <div class="post-footer">
-            <time>July 31, 2019</time>
-
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/cypher">#cypher</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/database">#DATABASE</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/datamodel">#datamodel</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/rdbms">#rdbms</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/sql">#sql</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EA%B4%80%EA%B3%84%ED%98%95%EB%AA%A8%EB%8D%B8">#관계형모델</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EA%B7%B8%EB%9E%98%ED%94%84%EB%AA%A8%EB%8D%B8">#그래프모델</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%AA%A8%EB%8D%B8">#데이터모델</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EB%AC%B8%EC%84%9C%EB%AA%A8%EB%8D%B8">#문서모델</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%A7%88%EC%9D%98%EC%96%B8%EC%96%B4">#질의언어</a>
                 
             
             </div> 
