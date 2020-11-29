@@ -21,7 +21,7 @@
     
     
     
-    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.832f51bd8886edde2e4bd3034bec7fb7bb6766151b4f7c83987458ed1481c80f.css"/>
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.dd568c6dd83d023b8b55f4ca7cf388dc6ce3b3ae5a182c7532b74b8b9570e4ca.css"/>
 
     
     
@@ -185,6 +185,36 @@ if (!doNotTrack) {
         
         
         
+        
+        <article>
+            <h2>
+                <a href="https://eoriented.github.io/post/scala-future-and-concurrency-2/">
+                    스칼라 퓨처(Future)와 동시성(Concurrency) - 2
+                </a>
+            </h2>
+            <div><p>이전 포스트에 이어서 스칼라 Future의 다른 사용법에 대해 살펴보도록 하겠습니다.
+4. Future 실패 처리하기 스칼라 Future는 실패한 퓨처를 다룰 수 있는 failed, fallBackTo, recover, recoverWith 메소드를 제공합니다.
+4.1 failed Future[T]에서 실패한 Future를 예외를 저장한 Future[Throwable] 타입의 성공한 Future로 바꿔줍니다.</p></div>
+            <div class="post-footer">
+            <time>August 17, 2019</time>
+
+            
+            
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/future">#Future</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%8F%99%EC%8B%9C%EC%84%B1">#동시성</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0">#비동기</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%B2%98%EB%A6%AC">#비동기처리</a>
+                
+                    <a class="tag" href="https://eoriented.github.io/tags/thread">#thread</a>
+                
+            
+            </div> 
+           
+        </article>
         
         <article>
             <h2>
@@ -471,39 +501,6 @@ capture-and-decide pattern capture-and-decide 패턴이라고 하니까 약간 �
 fork-and-join pattern fork-and-join 패턴은 Fan-out 패턴이라고도 합니다. 이와 같은 형태의 워크플로우는 여러 액션들이 나누어 실행한 후 해당 액션들이 다 정상적으로 완료된 후 다음 액션을 수행해야하는 경우 많이 사용합니다.</p></div>
             <div class="post-footer">
             <time>September 30, 2017</time>
-
-            
-            
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/oozie">#oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/airflow">#airflow</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/hadoop-scheduler">#hadoop scheduler</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/apache-oozie">#apache oozie</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/luigi">#luigi</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/orchestration">#orchestration</a>
-                
-                    <a class="tag" href="https://eoriented.github.io/tags/%EC%9A%B0%EC%A7%80">#우지</a>
-                
-            
-            </div> 
-           
-        </article>
-        
-        <article>
-            <h2>
-                <a href="https://eoriented.github.io/post/oozie-workflow-pattern-1/">
-                    Oozie Workflow Pattern - 1
-                </a>
-            </h2>
-            <div><p>Oozie가 무엇인지 궁금한 분들을 Apache Oozie 소개라는 이전 포스트를 참고하시기 바랍니다. 일반적으로 Oozie에서 많이 사용되는 워크플로우 패턴에 대해서 알아봅시다.
-순차적 액션 수행 (Point-to-Point Pattern) 가장 간단한 형태로 수행하는 워크플로우 형태가 되겠습니다. 말그대로 순차적으로 액션을 수행할 때 사용합니다.</p></div>
-            <div class="post-footer">
-            <time>September 24, 2017</time>
 
             
             

@@ -20,7 +20,7 @@
     
     
     
-    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.832f51bd8886edde2e4bd3034bec7fb7bb6766151b4f7c83987458ed1481c80f.css"/>
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.dd568c6dd83d023b8b55f4ca7cf388dc6ce3b3ae5a182c7532b74b8b9570e4ca.css"/>
 
     
     
@@ -246,22 +246,14 @@ if (!doNotTrack) {
 <p>위와 같이 세 개의 타임스탬프가 존재한다고 하면 네트워크 지연으로 인한 시간은 무시할 만하다고 가정했을 때, 서버에서 실제로 발생한 이벤트 시간을 추정할 수 있게 됩니다.</p>
 <h4 id="윈도우-종류">윈도우 종류</h4>
 <p>윈도우는 이벤트 수를 세거나 윈도우 내의 평균값을 구하는 등의 집계 연산을 위해 사용하는데 그 윈도우의 종류은 다음과 같습니다.</p>
-<ul>
-<li>텀블링 윈도우(Tumbling window)
-<ul>
-<li>윈도우 크기는 고정</li>
-<li>윈도우 중첩 불가. 모든 이벤트가 하나의 윈도우에 속함(여러 윈도우에 포함될 수 없음)</li>
-</ul>
-</li>
-</ul>
 <figure >
-<a href="https://docs.microsoft.com/en-us/stream-analytics-query/tumbling-window-azure-stream-analytics" target="_blank">
-  <img src="https://eoriented.github.io/images/stream-processing-2/tumbling-window.png" alt="텀블링 윈도우(Tumbling window)" width="100%"  style="max-width: 700px" />
-  </a>
+
+  <img src="https://eoriented.github.io/images/stream-processing-2/window.png" alt="윈도우 종류" width="100%"  style="max-width: 700px" />
+  
 
 <figcaption>
   <p>
-    텀블링 윈도우(Tumbling window)
+    윈도우 종류
     
     
     
@@ -270,57 +262,23 @@ if (!doNotTrack) {
 
 </figure>
 <ul>
-<li>홉핑 윈도우(Hopping window)
+<li>
+<p>고정(Fixed) / 텀블링(Tumbling) 윈도우</p>
+<ul>
+<li>윈도우 크기는 고정</li>
+<li>윈도우 중첩 불가. 모든 이벤트가 하나의 윈도우에 속함(여러 윈도우에 포함될 수 없음)</li>
+</ul>
+</li>
+<li>
+<p>슬라이딩(Sliding) / 홉핑(Hopping) 윈도우</p>
 <ul>
 <li>윈도우 크기는 고정</li>
 <li>윈도우 중첩 가능</li>
 <li>윈도우 사이즈와 홉 사이즈가 같으면 텀블링 윈도우와 같음</li>
 </ul>
 </li>
-</ul>
-<figure >
-<a href="https://docs.microsoft.com/en-us/stream-analytics-query/tumbling-window-azure-stream-analytics" target="_blank">
-  <img src="https://eoriented.github.io/images/stream-processing-2/hopping-window.png" alt="홉핑 윈도우(Hopping window)" width="100%"  style="max-width: 700px" />
-  </a>
-
-<figcaption>
-  <p>
-    홉핑 윈도우(Hopping window)
-    
-    
-    
-  </p> 
-</figcaption>
-
-</figure>
-<ul>
-<li>슬라이딩 윈도우(Sliding window)
-<ul>
-<li>윈도우 크기는 고정</li>
-<li>이벤트가 발생한 경우에 출력을 생성</li>
-<li>각 시간 간격 사이에 발생한 모든 이벤트를 포함</li>
-<li>모든 윈도우에는 하나 이상의 이벤트가 존재</li>
-<li>슬라이딩 윈도우는 시간 기준으로 정렬한 이벤트를 버퍼에 유지하고 오래된 이벤트는 제거 하는 방식으로 구현</li>
-</ul>
-</li>
-</ul>
-<figure >
-<a href="https://docs.microsoft.com/en-us/stream-analytics-query/tumbling-window-azure-stream-analytics" target="_blank">
-  <img src="https://eoriented.github.io/images/stream-processing-2/sliding-window.png" alt="슬라이딩 윈도우(Sliding window)" width="100%"  style="max-width: 700px" />
-  </a>
-
-<figcaption>
-  <p>
-    슬라이딩 윈도우(Sliding window)
-    
-    
-    
-  </p> 
-</figcaption>
-
-</figure>
-<ul>
-<li>세션 윈도우(Session window)
+<li>
+<p>세션 윈도우(Session window)</p>
 <ul>
 <li>윈도우 크기는 고정되지 않음</li>
 <li>세션 별로 윈도우 생성
@@ -331,22 +289,6 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<figure >
-<a href="https://ci.apache.org/projects/flink/flink-docs-stable/dev/stream/operators/windows.html#window-assigners" target="_blank">
-  <img src="https://eoriented.github.io/images/stream-processing-2/session-window.svg" alt="세션 윈도우(Session window)" width="100%"  style="max-width: 700px" />
-  </a>
-
-<figcaption>
-  <p>
-    세션 윈도우(Session window)
-    
-    
-    
-  </p> 
-</figcaption>
-
-</figure>
-<p>몇몇 분산 스트림 처리 프레임 워크에서는 홉핑 윈도우라는 용어 대신 슬라이딩 윈도우라는 용어를 사용하기도 합니다.</p>
 <h3 id="스트림-조인">스트림 조인</h3>
 <p>스트림 처리에서도 배치 처리와 마찬가지로 조인이 필요합니다. 스트림 처리에서 조인의 유형은 다음 3가지로 구분합니다.</p>
 <h4 id="스트림-스트림-조인윈도우-조인">스트림-스트림 조인(윈도우 조인)</h4>

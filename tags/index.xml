@@ -8,10 +8,109 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sun, 22 Nov 2020 13:56:42 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Nov 2020 10:35:22 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>event time</title>
+      <link>https://eoriented.github.io/tags/event-time/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/event-time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ingestion time</title>
+      <link>https://eoriented.github.io/tags/ingestion-time/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/ingestion-time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lateness</title>
+      <link>https://eoriented.github.io/tags/lateness/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/lateness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prcessing time</title>
+      <link>https://eoriented.github.io/tags/prcessing-time/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/prcessing-time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sliding window</title>
+      <link>https://eoriented.github.io/tags/sliding-window/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/sliding-window/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>storage time</title>
+      <link>https://eoriented.github.io/tags/storage-time/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/storage-time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tumbling window</title>
+      <link>https://eoriented.github.io/tags/tumbling-window/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/tumbling-window/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>watermark</title>
+      <link>https://eoriented.github.io/tags/watermark/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/watermark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>window</title>
+      <link>https://eoriented.github.io/tags/window/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/window/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>워터마크</title>
+      <link>https://eoriented.github.io/tags/%EC%9B%8C%ED%84%B0%EB%A7%88%ED%81%AC/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EC%9B%8C%ED%84%B0%EB%A7%88%ED%81%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>플링크</title>
+      <link>https://eoriented.github.io/tags/%ED%94%8C%EB%A7%81%ED%81%AC/</link>
+      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%ED%94%8C%EB%A7%81%ED%81%AC/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithm</title>
@@ -334,15 +433,6 @@
       <pubDate>Sun, 19 Jul 2020 21:49:32 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/stream-join/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>window</title>
-      <link>https://eoriented.github.io/tags/window/</link>
-      <pubDate>Sun, 19 Jul 2020 21:49:32 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/window/</guid>
       <description></description>
     </item>
     
