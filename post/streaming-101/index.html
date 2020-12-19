@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Smart Tiger&#39;s blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.94139811df55095d1a6820b4d1744cb3485107ea6355ed62e56340b05b421e86.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-160052384-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/bigdata/">Big data</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/machine-learning/">Machine learning</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/programming/">Programming</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/cloud/">Cloud</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/tools/">Tools</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
+  
+  
+</div>
+<footer class="footer">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">스트리밍의 첫걸음 - 데이터 스트리밍 처리의 개념 정리</h1>
+    
+    <div>
+        <p>
+        <p>스트리밍 처리의 중요성이 점점 중요해지고 있습니다. Apache Spark Streaming부터 새로운 스트림 처리의 강자인 Apache Flink와 같은 스트리밍 처리 엔진 등의 사용 사례가 많아지고 있습니다. 그래서 이번 기회에 스트리밍 처리에 대한 기본 개념들에 대해 정리해보고자 합니다.</p>
+<p><strong>스트리밍</strong>의 정의는 무엇일까요? 스트리밍은 다양한 의미가 있을 수 있습니다. 그러나 데이터 처리의 관점에서 보았을 때 <a href="https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/">Streaming 101</a>에 나와있는 문구가 잘 정의되어 있는 것 같습니다.</p>
+<blockquote>
+<p>a type of data processing engine that is designed with infinite data sets in mind.</p>
+</blockquote>
+<p>위의 정의된 대로 &ldquo;무한의 데이터 셋을 염두에 두고 설계된 데이터 처리 엔진의 유형&quot;이라고 생각됩니다. 앞으로 &ldquo;스트리밍&quot;이라는 용어를 사용할 때는 Unbounded data를 처리하기 위해 설계된 실행 엔진을 의미합니다.
+그럼 이제 이 스트리밍 처리에서 사용되는 기본 용어들에 관해 살펴보도록 하겠습니다.</p>
+<h2 id="unbounded-data-vs-bounded-data">Unbounded data vs Bounded data</h2>
+<ul>
+<li>Unbounded data
+<ul>
+<li>데이터가 끊임없이 계속 생성되는 무한의 데이터 셋</li>
+<li>스트리밍 데이터라고 함</li>
+</ul>
+</li>
+<li>Bounded data
+<ul>
+<li>유한한 데이터 셋이며 &ldquo;배치&rdquo; 데이터라고 함</li>
+</ul>
+</li>
+</ul>
+<h2 id="event-time-vs-processing-time">Event time vs Processing time</h2>
+<p>데이터 처리 시스템에서는 일반적으로 대표적인 두가지 시간이 있습니다. 바로 이벤트 시간과 처리 시간입니다. 이번 포스트에서는 이벤트 시간과 처리 시간에 관해서는 간단히 설명하겠습니다. 이벤트 타임과 처리 시간과 관련해서는 본 블로그에 <a href="https://eoriented.github.io/post/event-time-processing-and-watermark/">이벤트 시간 처리와 워터마크</a>에서 상세히 설명하고 있습니다.</p>
+<ul>
+<li>Event time
+<ul>
+<li>이벤트가 실제로 발생한 시간</li>
+</ul>
+</li>
+<li>Processing time
+<ul>
+<li>시스템에서 이벤트를 처리한 시간</li>
+</ul>
+</li>
+</ul>
+<p>이상적인 경우에 이벤트 시간과 처리 시간이 동시에 처리됩니다. 그러나 일반적으로 다양한 요소들에 의해서 두 시간 사이에 차이가 발생합니다. 다음 그림은 이벤트 시간과 처리 시간의 관계를 나타내는 그래프입니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/event-time-and-processing-time-graph.jpg" width="100%"  style="max-width: 450px" />
+  
+
+</figure>
+<p>실제 처리 되는 시간의 경우 이상적인 경우와 차이가 나는 것을 볼 수 있습니다. 주로 이벤트 시간과 처리 시간의 차이를 skew라고 표현합니다. 이렇게 skew 발생하는 원인들은 네트워크 지연과 관련된 이슈나 실행 엔진, 하드웨어 이슈, 분산 시스템 로직 문제 등 굉장히 다양합니다.</p>
+<h2 id="데이터-처리-패턴">데이터 처리 패턴</h2>
+<h3 id="bounded-data-processing">Bounded data processing</h3>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/bounded-data-processing.jpg" width="100%"  style="max-width: 550px" />
+  
+
+</figure>
+<p>Bounded data processing은 우리가 흔히 알고 있는 MapReduce와 같은 데이터 처리 엔진을 통해 데이터를 처리하고 정제된 데이터 셋을 만드는 것입니다. 제한된 데이터를 전부 읽어서 처리하는 것입니다.</p>
+<h3 id="unbounded-data-processing">Unbounded data processing</h3>
+<p>Unbounded data processing의 경우 Batch와 Streaming 2가지 방식으로 처리합니다.</p>
+<h4 id="batch">Batch</h4>
+<p>배치에서 Unbounded data를 처리하는 경우 데이터를 배치 처리에 적합하게 데이터를 분할해야 합니다. 데이터를 분할하는 방법은 다음과 같이 2가지 방법이 있습니다.</p>
+<ul>
+<li>Fixed window
+<ul>
+<li>배치 처리에서 일반적으로 사용되는 방법으로 고정된 크기의 window로 나누고 각 window를 bounded data 소스로 처리하는 것입니다.</li>
+</ul>
+</li>
+</ul>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/unbounded-data-processing-fixed-window.jpg" width="100%"  style="max-width: 550px" />
+  
+
+</figure>
+<ul>
+<li>Sessions
+<ul>
+<li>세션은 일반적으로 특정 사용자의 활동 기간과 같은 것을 나타냅니다. 주로 사용자가 일정 시간 이상 활동을 하지 않는 경우 데이터를 분할합니다.</li>
+<li>배치에서 세션 기반으로 처리하는 경우에는 그림과 같이 특정 사용자 세션이 잘리는 문제가 발생합니다. 뒤에서 스트리밍에서 세션 처리를 어떻게 하는지 살펴보겠습니다.</li>
+</ul>
+</li>
+</ul>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/unbounded-data-processing-session.jpg" width="100%"  style="max-width: 550px" />
+  
+
+</figure>
+<h4 id="streaming">Streaming</h4>
+<p>Unbounded data는 배치 처리와 다르게 스트리밍 처리에서 더 잘 처리할 수 있습니다. 스트리밍 처리에서 데이터를 처리하는 방법은 다음과 같습니다.</p>
+<ul>
+<li>
+<p>Time-agnostic</p>
+<ul>
+<li>일반적으로 시간에 구애 받지 않는 데이터를 처리하는 것입니다. 즉, 시간과 상관 없이 처리되는 데이터입니다. 그렇기 때문에 데이터가 들어오는대로 처리하면 됩니다.</li>
+</ul>
+</li>
+<li>
+<p>Filtering</p>
+<ul>
+<li>time-agnostic 처리의 가장 기본적인 형태입니다. 필터링은 들어오는 데이터 중 특정 데이터만 필터링해서 처리하는 구조입니다.</li>
+</ul>
+</li>
+</ul>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/filtering.jpg" width="100%"  style="max-width: 550px" />
+  
+
+</figure>
+<ul>
+<li>Inner-joins
+<ul>
+<li>time-agnostic 처리 방법응 또 다른 예입니다. 두 개의 unbounded data 소스에서 일치하는 값이 있으면 조인이 됩니다.</li>
+<li>두 소스로 부터 일치하는 데이터가 언제 도착할지 모르기 때문에 버퍼가 필요로 하고, 조인이 된 결과를 버퍼에서 삭제하도록 해야 합니다. 또한 한쪽의 소스의 데이터가 도착하지 않을 수 있기 때문에 버퍼를 삭제하는 정책이 필요로 합니다.</li>
+</ul>
+</li>
+</ul>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/inner-join.jpg" width="100%"  style="max-width: 550px" />
+  
+
+</figure>
+<ul>
+<li>Approximation algorithms(근사 알고리즘)
+<ul>
+<li>근사 알고리즘은 대략적인 데이터의 근사값만을 구하는 알고리즘입니다. 이 방식은 실시간 데이터 분석에서 많이 사용됩니다. 전체 데이터를 분석하지 않고 일부만 분석하거나 대략적인 데이터의 근사값만을 구하여 빠르게 결과를 보여줍니다. 이러한 근사 알고리즘은 시간 정보에 구애 받지 않고 처리됩니다.</li>
+<li>대표적인 근사 알고리즘은 approximate Top-N, K-means와 같은 것들이 있습니다.</li>
+</ul>
+</li>
+</ul>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/approximation.jpg" width="100%"  style="max-width: 550px" />
+  
+
+</figure>
+<ul>
+<li>
+<p>Windowing</p>
+<ul>
+<li>윈도우는 데이터 소스로부터 처리를 위해 시간에 따라 경계를 나누고 유한한 청크로 분할하는 개념입니다. 스트리밍 처리에서 중요한 개념입니다. 다음 그림은 세가지 다른 windowing 패턴을 보여줍니다.</li>
+</ul>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/windowing.jpg" width="100%"  style="max-width: 550px" />
+  
+
+</figure>
+<ul>
+<li>Fixed windows
+<ul>
+<li>Fixed windows는 고정된 크기의 시간으로 분할하는 방식입니다. 위의 그림에서 처럼 고정된 시간으로 분할하되 겹치지는 않습니다.</li>
+</ul>
+</li>
+<li>Sliding windows
+<ul>
+<li>Fixed windows와 같이 고정된 길이로 분할이 됩니다. Fixed window랑 다른 점은 바로 기간인데 이 기간이 길이보다 작으면 윈도우가 겹치게 됩니다. 그리고 기간과 길이가 같으면 Fixed windows와 같습니다. 즉 고정된 윈도우 크기가 설정되고 윈도우가 사용자가 정한 기간 후에 이동하는 것입니다.</li>
+</ul>
+</li>
+<li>Sessions
+<ul>
+<li>세션 윈도우는 사용자가 활동을 시작해서 일정 시간 동안 사용자가 행동을 하지 않을 때까지(이벤트가 발생하지 않을 때까지)를 하나의 세션으로 묶어 처리하는 방법입니다. 자료 사용자의 행동을 분석하는데 많이 사용합니다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="시간에-따른-윈도우-처리-방법">시간에 따른 윈도우 처리 방법</h4>
+<ul>
+<li>
+<p>처리 시간(Processing time)에 따른 윈도우 처리</p>
+<ul>
+<li>처리 시간을 기준으로 처리하는 경우에는 간단합니다. 스트림 처리 엔진에서 윈도우를 만들 때 일정 처리 시간이 경과할 때까지(윈도우 크기 만큼) 들어오는 데이터를 윈도우에 버퍼링을 한 다음에 처리합니다. 이 방법은 굉장히 심플합니다. 또한 지연된 데이터를 처리하는 것을 고민할 필요가 없습니다. 이런 방식은 주로 관찰하는 소스의 데이터를 기반으로 특정 정보를 추론할 떄 많이 사용합니다. 다양한 모니터링 시나리오가 이에 해당됩니다.</li>
+</ul>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/processing-time-windowing.jpg" width="100%"  style="max-width: 550px" />
+  
+
+</figure>
+</li>
+<li>
+<p>이벤트 시간(Event time)에 따른 윈도우 처리</p>
+<ul>
+<li>이벤트 시간에 따른 윈도우 처리는 이벤트가 실제로 발생한 시간을 기준으로 윈도우를 만들어서 처리하는 것입니다. 이벤트 시간을 기준으로 처리하는 경우에 데이터가 순서대로 들어오지 않고 데이터 도착 시간이 지연될 수 있는 등의 예외 상황이 발생할 수 있습니다.</li>
+<li>아래의 그림을 예를 들어보겠습니다. 왼쪽 화살표에 나와있는 데이터의 경우 처리 시스템에 도착한 시간이 12:00-13:00 사이지만 이벤트 시간은 11:00-12:00 사이의 데이터입니다. 이러한 경우 11:00-12:00의 윈도우에 데이터를 반영해줘야 합니다. 그럼 이러한 지연된 데이터를 반영해주는 방법과 고려사항은 어떤 것이 있을까요?
+<ul>
+<li>버퍼링(Buffering) : 지연된 데이터를 반영하기 위해서 윈도우의 수명을 더 늘려주는 방식입니다. 즉, 윈도우를 버퍼링해두는 것입니다.</li>
+<li>완료(Completeness) : 버퍼링을 적용하는 경우 얼마나 버퍼링을 유지해야 할까요? 데이터의 지연을 언제까지 허용할 것인지 정해야 합니다. 버퍼가 모든 지연된 데이터를 처리할 정도로 크게 만드는 것은 현실적으로 어렵기 때문입니다. 그래서 데이터가 언제쯤 도착할 것인지 휴리스틱하게 처리하는 방법이 있습니다(예를 들어 워터마크와 같은 기법입니다).</li>
+</ul>
+</li>
+</ul>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-101/event-time-windowing.jpg" width="100%"  style="max-width: 550px" />
+  
+
+</figure>
+</li>
+</ul>
+<h2 id="정리">정리</h2>
+<p>지금까지 스트리밍에서 사용되는 개념들에 대해 살펴보았습니다. 이벤트 시간과 처리 시간의 차이를 설명하고 데이터 별로 배치와 스트리밍의 차이를 알아보았습니다. 이번 포스트를 통해서 데이터 스트리밍 처리의 기본 개념에 대해 익히셨을 것이라 생각됩니다.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/">Streaming 101: The world beyond batch</a></li>
+<li><a href="https://bcho.tistory.com/1123?category=633903">https://bcho.tistory.com/1123?category=633903</a></li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/bigdata">#bigdata</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/streaming">#streaming</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/batch">#batch</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/lambda-architecture">#lambda architecture</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/window">#window</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/unbounded-data">#unbounded data</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/event-time-processing">#event time processing</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+		
+		
+		
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>

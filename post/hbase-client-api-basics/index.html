@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Smart Tiger&#39;s blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.94139811df55095d1a6820b4d1744cb3485107ea6355ed62e56340b05b421e86.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-160052384-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/bigdata/">Big data</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/machine-learning/">Machine learning</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/programming/">Programming</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/cloud/">Cloud</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/tools/">Tools</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
+  
+  
+</div>
+<footer class="footer">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">HBase client API</h1>
+    
+    <div>
+        <p>
+        <p>HBase에 접근하기 위한 주요 인터페이스는 org.apache.hadoop.hbase.client의 HTable 클래스입니다. HTable 클래스를 통해서 HBase에 데이터를 저장하고 삭제하는 등 사용자 작업에 필요한 기능을 제공합니다. HBase에서 데이터를 변경하는 로우 단위의 모든 작업은 원자성(Atomic)이 보장됩니다. 원자성이 보장된다는 말은 무슨 의미일까요? 하나의 로우에 읽기나 쓰기 작업이 수행되는 동일 다른 클라이언트나 스레드에서 동일한 로우에 읽기나 쓰기를 시도해도 아무런 문제가 발생하지 않는다는 의미입니다. 읽기를 시도하는 클라이언트나 스레드는 일관성 있는 최종 변경 내용을 읽을 것이고, 쓰기의 경우는 데이터를 수정할 수 있게 될 때까지 기다려야 합니다.</p>
+<p>주로 읽기 작업과 쓰기 작업의 충돌은 거의 무시해도 되지만, 많은 클라이언트가 하나의 로우를 동시에 업데이트하는 경우에는 문제가 됩니다. 이러한 경우는 나누어져있는 업데이트 작업을 일괄처리를 통해 가능한 한 줄여야 합니다.</p>
+<p>HTable 인스턴스를 생성하는 일은 비용을 수반합니다. HTable을 인스턴스화할 때 메타(.META.) 테이블을 스캔하여 테이블 존재 유무를 파악하고, 활성화 여부를 체크합니다. 그리고 그 외 다른 작업을 수행하기 때문에 입니다. 따라서 HTable 인스턴스는 단 한번(스레드 당) 생성하고 클라이언트 애플리케이션의 생명 주기가 끝날때 까지 재사용하는 편이 좋습니다. HTable의 인스턴스가 여러 개 필요하면 Connection 클래스를 사용해야 합니다.</p>
+<p>데이터베이스에서는 데이터를 저장하고 읽고 변경하고 삭제하는 것이 기본 기능입니다. 주로 이러한 기능을 CRUD라고 합니다. Create, Read, Update, Delete의 앞글자를 따서 만든 단어입니다. HBase에서 역시 이러한 기능들 제공합니다. 이제 HBase 데이터를 저장하고 읽어오는 방법에 관해서 살펴보도록 하겠습니다.</p>
+<h3 id="put-method">Put method</h3>
+<p>HBase에 데이터를 저장하는 메소드입니다. put 메소드의 경우 하나의 로우를 대상으로 동작하거나 여러 개의 대상으로 동작하는 2가지 유형이 있습니다. 하나씩 예제를 통해 살펴보도록 하겠습니다.</p>
+<h4 id="single-put">Single Put</h4>
+<p>put 메소드에 Put 객체 하나를 전달하여 데이터를 저장하는 방식입니다. 예제를 통해 살펴보겠습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Configuration conf <span style="color:#666">=</span> HBaseConfiguration<span style="color:#666">.</span><span style="color:#4070a0">create</span><span style="color:#666">();</span> <span style="color:#60a0b0;font-style:italic">// 1
+</span><span style="color:#60a0b0;font-style:italic"></span>
+HTable table <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> HTable<span style="color:#666">(</span>conf<span style="color:#666">,</span> <span style="color:#4070a0">&#34;testtable&#34;</span><span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 2
+</span><span style="color:#60a0b0;font-style:italic"></span>
+Put put <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Put<span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row1&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 3
+</span><span style="color:#60a0b0;font-style:italic"></span>
+put<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual1&#34;</span><span style="color:#666">),</span>
+  Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;val1&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 4
+</span><span style="color:#60a0b0;font-style:italic"></span>put<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual2&#34;</span><span style="color:#666">),</span>
+  Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;val2&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 5
+</span><span style="color:#60a0b0;font-style:italic"></span>
+table<span style="color:#666">.</span><span style="color:#4070a0">put</span><span style="color:#666">(</span>put<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 6
+</span></code></pre></div><ol>
+<li>HBase 설정을 위한 객체를 생성합니다.</li>
+<li>새로운 클라이언트 인스턴스를 생성합니다.</li>
+<li>특정 로우를 갖는 Put 객체를 생성합니다.</li>
+<li>생성한 Put 객체에 &lsquo;colfam1:qual1&rsquo; 이름을 갖는 컬럼을 추가합니다.</li>
+<li>Put 객체에 &lsquo;colfam1:qual2&rsquo; 이름을 갖는 컬럼을 추가합니다.</li>
+<li>HBase 테이블에 저장합니다.</li>
+</ol>
+<h4 id="put-리스트">Put 리스트</h4>
+<p>Put 리스트는 여러 개의 Put 인스턴스 일괄 처리하는 방식입니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#666">&lt;</span>Put<span style="color:#666">&gt;</span> puts <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> ArrayList<span style="color:#666">&lt;</span>Put<span style="color:#666">&gt;();</span> <span style="color:#60a0b0;font-style:italic">// 1
+</span><span style="color:#60a0b0;font-style:italic"></span>
+Put put1 <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Put<span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row1&#34;</span><span style="color:#666">));</span>
+put1<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual1&#34;</span><span style="color:#666">),</span>
+    Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;val1&#34;</span><span style="color:#666">));</span>
+puts<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>put1<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 2
+</span><span style="color:#60a0b0;font-style:italic"></span>
+Put put2 <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Put<span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row2&#34;</span><span style="color:#666">));</span>
+put2<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual1&#34;</span><span style="color:#666">),</span>
+    Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;val2&#34;</span><span style="color:#666">));</span>
+puts<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>put2<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 3
+</span><span style="color:#60a0b0;font-style:italic"></span>
+Put put3 <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Put<span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row2&#34;</span><span style="color:#666">));</span>
+put3<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual2&#34;</span><span style="color:#666">),</span>
+    Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;val3&#34;</span><span style="color:#666">));</span>
+puts<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>put3<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 4
+</span><span style="color:#60a0b0;font-style:italic"></span>
+table<span style="color:#666">.</span><span style="color:#4070a0">put</span><span style="color:#666">(</span>puts<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 5
+</span></code></pre></div><ol>
+<li>Put 인스턴스를 저장할 리스트를 생성합니다.</li>
+<li>리스트에 Put 하나를 추가합니다.</li>
+<li>다른 Put을 하나 더 리스트에 추가합니다.</li>
+<li>세 번째 Put을 추가합니다.</li>
+<li>컬럼을 가진 로우 여러 개를 한번에 HBase에 저장합니다.</li>
+</ol>
+<h3 id="get-method">Get method</h3>
+<p>HBase의 저장한 데이터를 반환받는 클라이언트 API입니다.</p>
+<h4 id="single-get">Single Get</h4>
+<p>HBase에서 Get을 이용하여 데이터를 읽어들이는 예제입니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Configuration conf <span style="color:#666">=</span> HBaseConfiguration<span style="color:#666">.</span><span style="color:#4070a0">create</span><span style="color:#666">();</span> <span style="color:#60a0b0;font-style:italic">// 1
+</span><span style="color:#60a0b0;font-style:italic"></span>HTable table <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> HTable<span style="color:#666">(</span>conf<span style="color:#666">,</span> <span style="color:#4070a0">&#34;testtable&#34;</span><span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 2
+</span><span style="color:#60a0b0;font-style:italic"></span>Get get <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Get<span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row1&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 3
+</span><span style="color:#60a0b0;font-style:italic"></span>get<span style="color:#666">.</span><span style="color:#4070a0">addColumn</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual1&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 4
+</span><span style="color:#60a0b0;font-style:italic"></span>Result result <span style="color:#666">=</span> table<span style="color:#666">.</span><span style="color:#4070a0">get</span><span style="color:#666">(</span>get<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 5
+</span><span style="color:#60a0b0;font-style:italic"></span><span style="color:#902000">byte</span><span style="color:#666">[]</span> val <span style="color:#666">=</span> result<span style="color:#666">.</span><span style="color:#4070a0">getValue</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">),</span>
+    Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual1&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 6
+</span><span style="color:#60a0b0;font-style:italic"></span>System<span style="color:#666">.</span><span style="color:#4070a0">out</span><span style="color:#666">.</span><span style="color:#4070a0">println</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;Value: &#34;</span> <span style="color:#666">+</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toString</span><span style="color:#666">(</span>val<span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 7
+</span></code></pre></div><ol>
+<li>설정 인스턴스를 생성합니다.</li>
+<li>새로운 테이블 참조 인스턴스를 생성합니다.</li>
+<li>특정 로우를 지정하는 Get 인스턴스를 생성합니다.</li>
+<li>Get 인스턴스에 컬럼을 추가합니다.</li>
+<li>HBase에서 해당 로우의 선택된 컬럼을 읽어들입니다.</li>
+<li>특정 컬럼의 값을 얻습니다.</li>
+<li>읽은 값을 원래의 데이터 타입으로 변환하여 출력합니다.</li>
+</ol>
+<p>받환 받는 결과의 개수는 기본 값인 1을 사용하고 있습니다. HBase에서는 버저닝을 지원하기 때문에 컬럼값을 여러 개 저장할 수 있습니다. setMaxVersions() 메소드를 이용하여 반환할 버전 개수를 설정하여 여러 버전 개수를 반환 받을 수 있습니다.</p>
+<h4 id="get-리스트">Get 리스트</h4>
+<p>put() 메소드와 마찬가지로 한번의 요청으로 여러 로우를 요청할 수 있습니다. 이 기능을 사용하여 여러 데이터를 좀 더 빠르게 읽어들일 수 있습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#902000">byte</span><span style="color:#666">[]</span> cf1 <span style="color:#666">=</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">);</span>
+<span style="color:#902000">byte</span><span style="color:#666">[]</span> qf1 <span style="color:#666">=</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual1&#34;</span><span style="color:#666">);</span>
+<span style="color:#902000">byte</span><span style="color:#666">[]</span> qf2 <span style="color:#666">=</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual2&#34;</span><span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 1
+</span><span style="color:#60a0b0;font-style:italic"></span><span style="color:#902000">byte</span><span style="color:#666">[]</span> row1 <span style="color:#666">=</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row1&#34;</span><span style="color:#666">);</span>
+<span style="color:#902000">byte</span><span style="color:#666">[]</span> row2 <span style="color:#666">=</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row2&#34;</span><span style="color:#666">);</span>
+
+List<span style="color:#666">&lt;</span>Get<span style="color:#666">&gt;</span> gets <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> ArrayList<span style="color:#666">&lt;</span>Get<span style="color:#666">&gt;();</span>  <span style="color:#60a0b0;font-style:italic">// 2
+</span><span style="color:#60a0b0;font-style:italic"></span>
+Get get1 <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Get<span style="color:#666">(</span>row1<span style="color:#666">);</span>
+get1<span style="color:#666">.</span><span style="color:#4070a0">addColumn</span><span style="color:#666">(</span>cf1<span style="color:#666">,</span> qf1<span style="color:#666">);</span>
+gets<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>get1<span style="color:#666">);</span>
+
+Get get2 <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Get<span style="color:#666">(</span>row2<span style="color:#666">);</span>
+get2<span style="color:#666">.</span><span style="color:#4070a0">addColumn</span><span style="color:#666">(</span>cf1<span style="color:#666">,</span> qf1<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 3
+</span><span style="color:#60a0b0;font-style:italic"></span>gets<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>get2<span style="color:#666">);</span>
+
+Get get3 <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Get<span style="color:#666">(</span>row2<span style="color:#666">);</span>
+get3<span style="color:#666">.</span><span style="color:#4070a0">addColumn</span><span style="color:#666">(</span>cf1<span style="color:#666">,</span> qf2<span style="color:#666">);</span>
+gets<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>get3<span style="color:#666">);</span>
+
+Result<span style="color:#666">[]</span> results <span style="color:#666">=</span> table<span style="color:#666">.</span><span style="color:#4070a0">get</span><span style="color:#666">(</span>gets<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 4
+</span><span style="color:#60a0b0;font-style:italic"></span>
+System<span style="color:#666">.</span><span style="color:#4070a0">out</span><span style="color:#666">.</span><span style="color:#4070a0">println</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;First iteration...&#34;</span><span style="color:#666">);</span>
+<span style="color:#007020;font-weight:bold">for</span> <span style="color:#666">(</span>Result result <span style="color:#666">:</span> results<span style="color:#666">)</span> <span style="color:#666">{</span>
+    String row <span style="color:#666">=</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toString</span><span style="color:#666">(</span>result<span style="color:#666">.</span><span style="color:#4070a0">getRow</span><span style="color:#666">());</span>
+    System<span style="color:#666">.</span><span style="color:#4070a0">out</span><span style="color:#666">.</span><span style="color:#4070a0">print</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;Row: &#34;</span> <span style="color:#666">+</span> row <span style="color:#666">+</span> <span style="color:#4070a0">&#34; &#34;</span><span style="color:#666">);</span>
+    <span style="color:#902000">byte</span><span style="color:#666">[]</span> val <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">null</span><span style="color:#666">;</span>
+    <span style="color:#007020;font-weight:bold">if</span> <span style="color:#666">(</span>result<span style="color:#666">.</span><span style="color:#4070a0">containsColumn</span><span style="color:#666">(</span>cf1<span style="color:#666">,</span> qf1<span style="color:#666">))</span> <span style="color:#666">{</span> <span style="color:#60a0b0;font-style:italic">// 5
+</span><span style="color:#60a0b0;font-style:italic"></span>    val <span style="color:#666">=</span> result<span style="color:#666">.</span><span style="color:#4070a0">getValue</span><span style="color:#666">(</span>cf1<span style="color:#666">,</span> qf1<span style="color:#666">);</span>
+    System<span style="color:#666">.</span><span style="color:#4070a0">out</span><span style="color:#666">.</span><span style="color:#4070a0">println</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;Value: &#34;</span> <span style="color:#666">+</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toString</span><span style="color:#666">(</span>val<span style="color:#666">));</span>
+    <span style="color:#666">}</span>
+    <span style="color:#007020;font-weight:bold">if</span> <span style="color:#666">(</span>result<span style="color:#666">.</span><span style="color:#4070a0">containsColumn</span><span style="color:#666">(</span>cf1<span style="color:#666">,</span> qf2<span style="color:#666">))</span> <span style="color:#666">{</span>
+    val <span style="color:#666">=</span> result<span style="color:#666">.</span><span style="color:#4070a0">getValue</span><span style="color:#666">(</span>cf1<span style="color:#666">,</span> qf2<span style="color:#666">);</span>
+    System<span style="color:#666">.</span><span style="color:#4070a0">out</span><span style="color:#666">.</span><span style="color:#4070a0">println</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;Value: &#34;</span> <span style="color:#666">+</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toString</span><span style="color:#666">(</span>val<span style="color:#666">));</span>
+    <span style="color:#666">}</span>
+<span style="color:#666">}</span>
+
+System<span style="color:#666">.</span><span style="color:#4070a0">out</span><span style="color:#666">.</span><span style="color:#4070a0">println</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;Second iteration...&#34;</span><span style="color:#666">);</span>
+<span style="color:#007020;font-weight:bold">for</span> <span style="color:#666">(</span>Result result <span style="color:#666">:</span> results<span style="color:#666">)</span> <span style="color:#666">{</span>
+    <span style="color:#007020;font-weight:bold">for</span> <span style="color:#666">(</span>KeyValue kv <span style="color:#666">:</span> result<span style="color:#666">.</span><span style="color:#4070a0">raw</span><span style="color:#666">())</span> <span style="color:#666">{</span>
+    System<span style="color:#666">.</span><span style="color:#4070a0">out</span><span style="color:#666">.</span><span style="color:#4070a0">println</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;Row: &#34;</span> <span style="color:#666">+</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toString</span><span style="color:#666">(</span>kv<span style="color:#666">.</span><span style="color:#4070a0">getRow</span><span style="color:#666">())</span> <span style="color:#666">+</span> <span style="color:#60a0b0;font-style:italic">// 6
+</span><span style="color:#60a0b0;font-style:italic"></span>        <span style="color:#4070a0">&#34; Value: &#34;</span> <span style="color:#666">+</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toString</span><span style="color:#666">(</span>kv<span style="color:#666">.</span><span style="color:#4070a0">getValue</span><span style="color:#666">()));</span>
+    <span style="color:#666">}</span>
+<span style="color:#666">}</span>
+</code></pre></div><ol>
+<li>공통적으로 사용할 바이트 배열을 준비합니다.</li>
+<li>Get 리스트를 생성합니다.</li>
+<li>리스트에 Get을 추가합니다.</li>
+<li>컬럼이 선택된 로우를 리턴합니다.</li>
+<li>결과를 이터레이트 하면서 어떤 값이 반환됐는지 확인합니다.</li>
+<li>결과를 다시 한 번 이터레이트하면서 모든 값을 출력합니다.</li>
+</ol>
+<h3 id="delete-method">Delete method</h3>
+<p>앞에서 HBase 테이블의 데이터를 생성(create)하고, 읽고(read), 갱신(update)하는 방법에 대해 살펴보았습니다. 이제 남은 것은 바로 삭제(delete)입니다.</p>
+<h4 id="single-delete">Single Delete</h4>
+<p>삭제도 마찬가지로 단일 Delete가 있습니다. 바로 예제를 통해 살펴보겠습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Delete delete <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Delete<span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row1&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 1
+</span><span style="color:#60a0b0;font-style:italic"></span>
+delete<span style="color:#666">.</span><span style="color:#4070a0">setTimestamp</span><span style="color:#666">(</span>1<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 2
+</span><span style="color:#60a0b0;font-style:italic"></span>
+delete<span style="color:#666">.</span><span style="color:#4070a0">deleteColumn</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual1&#34;</span><span style="color:#666">),</span> 1<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 3
+</span><span style="color:#60a0b0;font-style:italic"></span>
+delete<span style="color:#666">.</span><span style="color:#4070a0">deleteColumns</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam2&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual1&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 4
+</span><span style="color:#60a0b0;font-style:italic"></span>delete<span style="color:#666">.</span><span style="color:#4070a0">deleteColumns</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam2&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual3&#34;</span><span style="color:#666">),</span> 15<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 5
+</span><span style="color:#60a0b0;font-style:italic"></span>
+delete<span style="color:#666">.</span><span style="color:#4070a0">deleteFamily</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam3&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 6
+</span><span style="color:#60a0b0;font-style:italic"></span>delete<span style="color:#666">.</span><span style="color:#4070a0">deleteFamily</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam3&#34;</span><span style="color:#666">),</span> 3<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 7
+</span><span style="color:#60a0b0;font-style:italic"></span>
+table<span style="color:#666">.</span><span style="color:#4070a0">delete</span><span style="color:#666">(</span>delete<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 8
+</span><span style="color:#60a0b0;font-style:italic"></span>
+table<span style="color:#666">.</span><span style="color:#4070a0">close</span><span style="color:#666">();</span>
+</code></pre></div><ol>
+<li>특정 row를 가리키는 Delete 객체를 생성합니다.</li>
+<li>로우 삭제를 위한 타임스탬프를 지정합니다.</li>
+<li>컬럼 하나의 특정 버전을 삭제합니다.</li>
+<li>컬럼 하나의 모든 버전을 삭제합니다.</li>
+<li>컬럼 하나의 특정 버전과 그 이전 버전을 모두 삭제합니다.</li>
+<li>전체 컬럼 패밀리 및 그에 속한 모든 컬럼 및 버전을 삭제합니다.</li>
+<li>전체 컬럼 패밀리에 속함 모든 컬럼에서 지정한 버전 및 그 이전 버전을 모두 삭제합니다.</li>
+<li>HBase 테이블에서 데이터를 삭제합니다.</li>
+</ol>
+<p>위의 예제를 보면 <code>deleteColumn</code> 메소드와 <code>deleteColumns</code> 메소드 2가지를 사용하고 있습니다. deleteColumn의 경우 지정한 컬럼에서 지정한 타임스탬프와 정확히 일치하는 버전만 삭제하고 버전이 없으면 아무일도 일어나지 않습니다. deleteColumns의 경우 지정한 컬럼에서 타임스탬프가 일치하거나 그보다 오래된 버전을 삭제합니다.</p>
+<h4 id="delete-리스트">Delete 리스트</h4>
+<p>Delete 리스트는 Put 리스트와 유사하게 동작합니다. Delete 리스트의 예제를 살펴보겠습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">List<span style="color:#666">&lt;</span>Delete<span style="color:#666">&gt;</span> deletes <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> ArrayList<span style="color:#666">&lt;</span>Delete<span style="color:#666">&gt;();</span> <span style="color:#60a0b0;font-style:italic">// 1
+</span><span style="color:#60a0b0;font-style:italic"></span>
+Delete delete1 <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Delete<span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row1&#34;</span><span style="color:#666">));</span>
+delete1<span style="color:#666">.</span><span style="color:#4070a0">setTimestamp</span><span style="color:#666">(</span>4<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 2
+</span><span style="color:#60a0b0;font-style:italic"></span>deletes<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>delete1<span style="color:#666">);</span>
+
+Delete delete2 <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Delete<span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row2&#34;</span><span style="color:#666">));</span>
+delete2<span style="color:#666">.</span><span style="color:#4070a0">deleteColumn</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual1&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 3
+</span><span style="color:#60a0b0;font-style:italic"></span>delete2<span style="color:#666">.</span><span style="color:#4070a0">deleteColumns</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam2&#34;</span><span style="color:#666">),</span> Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;qual3&#34;</span><span style="color:#666">),</span> 5<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 4
+</span><span style="color:#60a0b0;font-style:italic"></span>deletes<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>delete2<span style="color:#666">);</span>
+
+Delete delete3 <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> Delete<span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;row3&#34;</span><span style="color:#666">));</span>
+delete3<span style="color:#666">.</span><span style="color:#4070a0">deleteFamily</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam1&#34;</span><span style="color:#666">));</span> <span style="color:#60a0b0;font-style:italic">// 5
+</span><span style="color:#60a0b0;font-style:italic"></span>delete3<span style="color:#666">.</span><span style="color:#4070a0">deleteFamily</span><span style="color:#666">(</span>Bytes<span style="color:#666">.</span><span style="color:#4070a0">toBytes</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;colfam2&#34;</span><span style="color:#666">),</span> 3<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 6
+</span><span style="color:#60a0b0;font-style:italic"></span>deletes<span style="color:#666">.</span><span style="color:#4070a0">add</span><span style="color:#666">(</span>delete3<span style="color:#666">);</span>
+
+table<span style="color:#666">.</span><span style="color:#4070a0">delete</span><span style="color:#666">(</span>deletes<span style="color:#666">);</span> <span style="color:#60a0b0;font-style:italic">// 7
+</span><span style="color:#60a0b0;font-style:italic"></span>
+table<span style="color:#666">.</span><span style="color:#4070a0">close</span><span style="color:#666">();</span>
+</code></pre></div><ol>
+<li>리스트를 생성합니다.</li>
+<li>로우 삭제 타임스탬프를 설정합니다.</li>
+<li>한 컬럼의 최신 버전만 삭제합니다.</li>
+<li>또 다른 컬럼의 지정하 버전과 이전 버전들을 삭제합니다.</li>
+<li>모든 컬럼 및 버전을 포함한 컬럼 패밀리 하나를 삭제합니다.</li>
+<li>컬럼 패밀리 안의 모든 컬럼에서 지정한 버전 및 그 이전 버전들을 삭제합니다.</li>
+<li>HBase 테이블에 여러 로우를 삭제합니다.</li>
+</ol>
+<h3 id="정리">정리</h3>
+<p>HBase에서 생성, 읽기, 갱신, 삭제하는 클라이언트 API에 관해 살펴보았습니다. 그리고 하나의 로우가 아닌 여러 로우를 리스트에 담아서 처리하는 방법에 대해서도 알아보았습니다. HBase의 기본적인 클라이언트 API를 이용해서 애플리케이션의 필요한 데이터를 저장하고 갱신하고 읽고 삭제할 수 있을 것입니다.</p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=7112520">HBase 완벽 가이드</a></li>
+<li><a href="https://github.com/larsgeorge/hbase-book">https://github.com/larsgeorge/hbase-book</a></li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/hbase">#hbase</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/crud">#crud</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/put">#put</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/get">#get</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/delete">#delete</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/client">#client</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/api">#api</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%A0%80%EC%9E%A5">#저장</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%82%AD%EC%A0%9C">#삭제</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EA%B0%B1%EC%8B%A0">#갱신</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%9D%BD%EA%B8%B0">#읽기</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+		
+		
+		
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>

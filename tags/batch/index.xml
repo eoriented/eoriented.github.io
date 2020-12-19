@@ -8,10 +8,28 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Fri, 02 Oct 2020 22:28:51 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Dec 2020 15:06:33 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/batch/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>스트리밍의 첫걸음 - 데이터 스트리밍 처리의 개념 정리</title>
+      <link>https://eoriented.github.io/post/streaming-101/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/streaming-101/</guid>
+      <description>스트리밍 처리의 중요성이 점점 중요해지고 있습니다. Apache Spark Streaming부터 새로운 스트림 처리의 강자인 Apache Flink와 같은 스트리밍 처리 엔진 등의 사용 사례가 많아지고 있습니다. 그래서 이번 기회에 스트리밍 처리에 대한 기본 개념들에 대해 정리해보고자 합니다.</description>
+    </item>
+    
+    <item>
+      <title>[HBase] Scanner Caching vs Batching</title>
+      <link>https://eoriented.github.io/post/hbase-caching-vs-batching/</link>
+      <pubDate>Tue, 08 Dec 2020 22:35:38 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/hbase-caching-vs-batching/</guid>
+      <description>HBase는 데이터베이스 시스템에서의 커서와 유사한 스캔 기능을 제공합니다. 스캔은 HBase에서 순차적이고 정렬된 저장 구조를 활용하는 방식입니다. 스캔을 사용하면 로우 키를 기반으로 하여 여러 데이터를 가져올 수 있습니다. 스캔은 로우 키가 정확히 일치하지 않아도 사용이 가능합니다.</description>
+    </item>
     
     <item>
       <title>배치 프로세싱(Batch processing) - 2</title>

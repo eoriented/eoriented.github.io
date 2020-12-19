@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Smart Tiger&#39;s blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.94139811df55095d1a6820b4d1744cb3485107ea6355ed62e56340b05b421e86.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-160052384-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/bigdata/">Big data</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/machine-learning/">Machine learning</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/programming/">Programming</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/cloud/">Cloud</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/tools/">Tools</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
+  
+  
+</div>
+<footer class="footer">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">[HBase] Scanner Caching vs Batching</h1>
+    
+    <div>
+        <p>
+        <p>HBase는 데이터베이스 시스템에서의 커서와 유사한 스캔 기능을 제공합니다. 스캔은 HBase에서 순차적이고 정렬된 저장 구조를 활용하는 방식입니다. 스캔을 사용하면 로우 키를 기반으로 하여 여러 데이터를 가져올 수 있습니다. 스캔은 로우 키가 정확히 일치하지 않아도 사용이 가능합니다.<br>
+<br>
+이와 같이 스캔은 여러 데이터를 가져오는데 하나의 로우당 하나의 RPC가 수행됩니다. 매번 하나의 셀을 처리할 때마다 RPC가 발생하면 성능 측면에서 좋지 않습니다. 그렇기 때문에 HBase에서는 한 번의 RPC에 여러 개의 로우를 요청할 수 있는 방법을 제공합니다. 이 기능을 스캐너 캐싱(Scanner caching)이라고 합니다. 이 스캐너 캐싱을 설정하는 방법은 다음과 같습니다.</p>
+<ul>
+<li>Scan 클래스에 setCaching 메소드를 통해 설정</li>
+<li>Configuration 옵션인 hbase.client.scanner.caching을 통해서 설정(기본값은 Integer.MAX_VALUE)</li>
+<li>TableMapReduceUtil.setScannerCaching()을 통해 설정(hbase.client.scanner.caching 값을 설정해주는 역할)</li>
+</ul>
+<p>이와 같이 캐싱 기능을 통해서 각 RPC를 통해 반환되는 로우 개수를 사용자가 제어할 수 있습니다. 이 설정은 클라이언트와 서버에서 사용되는 메모리 양이 증가하므로 애플리케이션에 알맞는 효율적인 값을 설정해야 합니다. 이와 같이 로우 개수를 사용자가 지정하는 경우는 next() 함수에서 특정 수 이상의 행이 필요하지 않다는 것을 개발자가 미리 인지하고 있는 경우에 사용합니다.<br>
+<br>
+위에서 설명한 것과 같이 hbase.client.scanner.caching의 기본값은 Integer.MAX_VALUE라고 했습니다. 이 의미는 스캐너가 동작할 때 가능한 캐시를 사용하겠다는 의미입니다. 기본적으로 로우의 크기는 테이블마다 다르기 때문에 특정 로우 수에 의해 제한하는 것이 아니라 네트워크 상에서 <code>hbase.client.scanner.max.result.size</code>에 정의된 청크 크기를 채우게 됩니다. 이와 같이 max size와 cache size가 함께 잘 동작해야지 스캔이 원할하게 이루어집니다. 여기서 hbase.client.scanner.max.result.size는 setMaxResultSize로 설정할 수 있습니다. 이것의 기본값은 2MB입니다.<br>
+<br>
+그리고 setCaching을 통해서 설정하는 값으로 인해 호출 사이의 시간이 <code>hbase.client.scanner.timeout.period</code>이 시간보다 오래걸리게 설정하면 안됩니다. HBase에서는 제한 시간에 도달하면 서버는 그 시점까지 축적된 결과를 반환합니다. 결과 값이 비어 있는 경우도 있는데 검색 시간이 타임아웃 시간보다 오래 걸리는 질의 패턴이 포함된 경우입니다.<br>
+<br>
+스캐너 캐싱 값을 높이면 대부분 성능은 향상시키지만 이 값을 너무 높이면 next() 메소드를 호출할 때마다 클라이언트에서 전송되는 데이터양이 많아지기 때문에 메소드 수행 시간이 길어지고 OOM(OutOfMemoryException)이 발생할 수 있습니다.<br>
+<br>
+스캐너 캐싱의 경우 로우 기반의 요청이라고 했습니다. 그러나 로우가 큰 경우 하나의 청크로 반환되는 결과가 클라이언트 메모리에 맞지 않을 수 있습니다. 이러한 경우 setBatch 메소드를 이용할 수 있습니다. setBatch는 ResultScanner의 next() 메소드가 실행될 때마다 반한되는 컬럼의 개수를 제어할 수 있습니다. 다음 예제를 통해 캐시와 배치 설정으로 결과가 어떻게 달라지는지 살펴보겠습니다.
+살펴보는 예제의 테이블은 컬럼패밀리가 2개이고, 로우가 10개, 각 컬럼 패밀리당 컬럼 10개를 갖습니다. 로우당 20개의 컬럼을 갖고 있으며 컬럼에는 버전이 1개여서 총 200개의 컬럼 혹은 셀이 존재합니다.<br>
+<!-- raw HTML omitted --><br>
+
+
+  
+
+  
+
+
+
+<table  align="center" style="max-width:1100px">
+<thead>
+<tr>
+<th>Caching</th>
+<th>Batch</th>
+<th>Results</th>
+<th>RPCs</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>200</td>
+<td>201</td>
+<td>각 컬럼이 하나의 Result 인스턴스가 됩니다. RPC가 하나 더 있는 이유는 스캔이 완료되었는지 확인하기 위해서입니다.</td>
+</tr>
+<tr>
+<td>200</td>
+<td>1</td>
+<td>200</td>
+<td>2</td>
+<td>각 컬럼이 하나의 Result 인스턴스가 되지만 이 모두가 한 번의 RPC로 전송됩니다.(스캔 완료를 위한 RPC로 인해 2가 됩니다.)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10</td>
+<td>20</td>
+<td>11</td>
+<td>배치는 한 로우가 가진 컬럼의 절반인 10개이고, 200 / 10 = 20이므로 Result는 20개가 필요합니다. 그리고 이를 전송하는데 RPC는 10번이 필요합니다. (마찬가지로 스캔 완료를 위한 RPC가 추가됩니다.)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>100</td>
+<td>10</td>
+<td>3</td>
+<td>로우의 길이인 20보다 배치 값이 더 크므로, 하나의 로우가 가진 모든 컬럼(20개)이 모두 일괄 처리됩니다. 이 경우 Result는 10개가 필요하고, 캐싱이 5개이므로 RPC는 2번이 필요합니다.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>20</td>
+<td>10</td>
+<td>3</td>
+<td>위와 동일하게 처리됩니다.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>10</td>
+<td>20</td>
+<td>3</td>
+<td>배치 설정으로 Result 인스턴스는 10개이고, 캐시 설정이 10이므로 RPC가 를 2번 요청합니다.(마찬가지로 스캔 완료를 위한 RPC가 추가됩니다.)</td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted --><br>
+<!-- raw HTML omitted --></p>
+<p>캐시와 배치가 조합되서 동작하기 때문에 애플리케이션의 성능을 높이기 위해 두 설정의 최적값을 찾아 적용해야 합니다.</p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=7112520">HBase 완벽 가이드</a></li>
+<li><a href="https://hbase.apache.org/book.html">HBase book</a></li>
+<li><a href="https://www.dotkam.com/2015/10/08/hbase-scan-let-me-cache-it-for-you/">https://www.dotkam.com/2015/10/08/hbase-scan-let-me-cache-it-for-you/</a></li>
+<li><a href="https://www.programmersought.com/article/16241623710/">https://www.programmersought.com/article/16241623710/</a></li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/hbase">#HBase</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/cache">#cache</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/batch">#batch</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/optimization">#optimization</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/row">#row</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%BA%90%EC%8B%9C">#캐시</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%B0%B0%EC%B9%98">#배치</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+		
+		
+		
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>

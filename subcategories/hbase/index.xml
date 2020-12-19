@@ -8,10 +8,28 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Mon, 06 Apr 2020 23:01:48 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 08 Dec 2020 22:35:38 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/subcategories/hbase/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[HBase] Scanner Caching vs Batching</title>
+      <link>https://eoriented.github.io/post/hbase-caching-vs-batching/</link>
+      <pubDate>Tue, 08 Dec 2020 22:35:38 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/hbase-caching-vs-batching/</guid>
+      <description>HBase는 데이터베이스 시스템에서의 커서와 유사한 스캔 기능을 제공합니다. 스캔은 HBase에서 순차적이고 정렬된 저장 구조를 활용하는 방식입니다. 스캔을 사용하면 로우 키를 기반으로 하여 여러 데이터를 가져올 수 있습니다. 스캔은 로우 키가 정확히 일치하지 않아도 사용이 가능합니다.</description>
+    </item>
+    
+    <item>
+      <title>HBase client API</title>
+      <link>https://eoriented.github.io/post/hbase-client-api-basics/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/hbase-client-api-basics/</guid>
+      <description>HBase에 접근하기 위한 주요 인터페이스는 org.apache.hadoop.hbase.client의 HTable 클래스입니다. HTable 클래스를 통해서 HBase에 데이터를 저장하고 삭제하는 등 사용자 작업에 필요한 기능을 제공합니다. HBase에서 데이터를 변경하는 로우 단위의 모든 작업은 원자성(Atomic)이 보장됩니다. 원자성이 보장된다는 말은 무슨 의미일까요? 하나의 로우에 읽기나 쓰기 작업이 수행되는 동일 다른 클라이언트나 스레드에서 동일한 로우에 읽기나 쓰기를 시도해도 아무런 문제가 발생하지 않는다는 의미입니다.</description>
+    </item>
     
     <item>
       <title>HBase 데이터 모델</title>

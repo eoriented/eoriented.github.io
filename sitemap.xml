@@ -3,18 +3,118 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://eoriented.github.io/tags/batch/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/bigdata/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eoriented.github.io/categories/bigdata/</loc>
-    <lastmod>2020-11-29T10:35:22+09:00</lastmod>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/categories/</loc>
-    <lastmod>2020-11-29T10:35:22+09:00</lastmod>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/event-time/</loc>
-    <lastmod>2020-11-29T10:35:22+09:00</lastmod>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/event-time-processing/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/lambda-architecture/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/stream/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/streaming/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/unbounded-data/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/window/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/streaming-101/</loc>
+    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/hbase-caching-vs-batching/</loc>
+    <lastmod>2020-12-08T22:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/cache/</loc>
+    <lastmod>2020-12-08T22:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/hbase/</loc>
+    <lastmod>2020-12-08T22:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/hbase/</loc>
+    <lastmod>2020-12-08T22:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/optimization/</loc>
+    <lastmod>2020-12-08T22:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/row/</loc>
+    <lastmod>2020-12-08T22:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/</loc>
+    <lastmod>2020-12-08T22:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EB%B0%B0%EC%B9%98/</loc>
+    <lastmod>2020-12-08T22:35:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EC%BA%90%EC%8B%9C/</loc>
+    <lastmod>2020-12-08T22:35:38+09:00</lastmod>
   </url>
   
   <url>
@@ -29,11 +129,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/lateness/</loc>
-    <lastmod>2020-11-29T10:35:22+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/post/</loc>
     <lastmod>2020-11-29T10:35:22+09:00</lastmod>
   </url>
   
@@ -53,27 +148,12 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/subcategories/</loc>
-    <lastmod>2020-11-29T10:35:22+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/</loc>
-    <lastmod>2020-11-29T10:35:22+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/tumbling-window/</loc>
     <lastmod>2020-11-29T10:35:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/watermark/</loc>
-    <lastmod>2020-11-29T10:35:22+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/window/</loc>
     <lastmod>2020-11-29T10:35:22+09:00</lastmod>
   </url>
   
@@ -125,6 +205,61 @@
   <url>
     <loc>https://eoriented.github.io/post/how-to-study-programming-and-algorithm/</loc>
     <lastmod>2020-11-22T13:56:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/api/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/client/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/crud/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/delete/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/get/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/hbase-client-api-basics/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/put/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EA%B0%B1%EC%8B%A0/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EC%82%AD%EC%A0%9C/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EC%9D%BD%EA%B8%B0/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/%EC%A0%80%EC%9E%A5/</loc>
+    <lastmod>2020-11-22T09:31:21+09:00</lastmod>
   </url>
   
   <url>
@@ -218,11 +353,6 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/batch/</loc>
-    <lastmod>2020-10-02T22:28:51+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/batch-processing/</loc>
     <lastmod>2020-10-02T22:28:51+09:00</lastmod>
   </url>
@@ -309,11 +439,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/messaging-system/</loc>
-    <lastmod>2020-07-19T21:49:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/stream/</loc>
     <lastmod>2020-07-19T21:49:32+09:00</lastmod>
   </url>
   
@@ -418,16 +543,6 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/hbase/</loc>
-    <lastmod>2020-04-06T23:01:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/subcategories/hbase/</loc>
-    <lastmod>2020-04-06T23:01:48+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/post/hbase-data-model/</loc>
     <lastmod>2020-04-06T23:01:48+09:00</lastmod>
   </url>
@@ -504,11 +619,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/pubsub/</loc>
-    <lastmod>2020-03-12T21:07:27+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/streaming/</loc>
     <lastmod>2020-03-12T21:07:27+09:00</lastmod>
   </url>
   
@@ -780,11 +890,6 @@
   <url>
     <loc>https://eoriented.github.io/tags/%EC%A7%88%EC%9D%98%EC%96%B8%EC%96%B4/</loc>
     <lastmod>2019-07-31T22:22:45+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/bigdata/</loc>
-    <lastmod>2019-07-31T15:06:14+09:00</lastmod>
   </url>
   
   <url>

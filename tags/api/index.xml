@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>api on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/api/</link>
+    <description>Recent content in api on Smart Tiger&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
+    <webMaster>eoriented@gmail.com (eoriented)</webMaster>
+    <lastBuildDate>Sun, 22 Nov 2020 09:31:21 +0900</lastBuildDate>
+    
+	<atom:link href="https://eoriented.github.io/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HBase client API</title>
+      <link>https://eoriented.github.io/post/hbase-client-api-basics/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/hbase-client-api-basics/</guid>
+      <description>HBase에 접근하기 위한 주요 인터페이스는 org.apache.hadoop.hbase.client의 HTable 클래스입니다. HTable 클래스를 통해서 HBase에 데이터를 저장하고 삭제하는 등 사용자 작업에 필요한 기능을 제공합니다. HBase에서 데이터를 변경하는 로우 단위의 모든 작업은 원자성(Atomic)이 보장됩니다. 원자성이 보장된다는 말은 무슨 의미일까요? 하나의 로우에 읽기나 쓰기 작업이 수행되는 동일 다른 클라이언트나 스레드에서 동일한 로우에 읽기나 쓰기를 시도해도 아무런 문제가 발생하지 않는다는 의미입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

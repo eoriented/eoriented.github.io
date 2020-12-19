@@ -8,10 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sun, 29 Nov 2020 10:35:22 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Dec 2020 15:06:33 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/window/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>스트리밍의 첫걸음 - 데이터 스트리밍 처리의 개념 정리</title>
+      <link>https://eoriented.github.io/post/streaming-101/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/streaming-101/</guid>
+      <description>스트리밍 처리의 중요성이 점점 중요해지고 있습니다. Apache Spark Streaming부터 새로운 스트림 처리의 강자인 Apache Flink와 같은 스트리밍 처리 엔진 등의 사용 사례가 많아지고 있습니다. 그래서 이번 기회에 스트리밍 처리에 대한 기본 개념들에 대해 정리해보고자 합니다.</description>
+    </item>
     
     <item>
       <title>이벤트 시간 처리(Event Time Processing)와 워터마크(Watermark) - (feat. Apache Flink)</title>

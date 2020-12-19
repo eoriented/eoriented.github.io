@@ -8,17 +8,143 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sun, 29 Nov 2020 10:35:22 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Dec 2020 15:06:33 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>batch</title>
+      <link>https://eoriented.github.io/tags/batch/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/batch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bigdata</title>
+      <link>https://eoriented.github.io/tags/bigdata/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/bigdata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>event time</title>
       <link>https://eoriented.github.io/tags/event-time/</link>
-      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/event-time/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>event time processing</title>
+      <link>https://eoriented.github.io/tags/event-time-processing/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/event-time-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lambda architecture</title>
+      <link>https://eoriented.github.io/tags/lambda-architecture/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/lambda-architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stream</title>
+      <link>https://eoriented.github.io/tags/stream/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/stream/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>streaming</title>
+      <link>https://eoriented.github.io/tags/streaming/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/streaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unbounded data</title>
+      <link>https://eoriented.github.io/tags/unbounded-data/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/unbounded-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>window</title>
+      <link>https://eoriented.github.io/tags/window/</link>
+      <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/window/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cache</title>
+      <link>https://eoriented.github.io/tags/cache/</link>
+      <pubDate>Tue, 08 Dec 2020 22:35:38 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/cache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HBase</title>
+      <link>https://eoriented.github.io/tags/hbase/</link>
+      <pubDate>Tue, 08 Dec 2020 22:35:38 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/hbase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>optimization</title>
+      <link>https://eoriented.github.io/tags/optimization/</link>
+      <pubDate>Tue, 08 Dec 2020 22:35:38 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>row</title>
+      <link>https://eoriented.github.io/tags/row/</link>
+      <pubDate>Tue, 08 Dec 2020 22:35:38 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/row/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>배치</title>
+      <link>https://eoriented.github.io/tags/%EB%B0%B0%EC%B9%98/</link>
+      <pubDate>Tue, 08 Dec 2020 22:35:38 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EB%B0%B0%EC%B9%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>캐시</title>
+      <link>https://eoriented.github.io/tags/%EC%BA%90%EC%8B%9C/</link>
+      <pubDate>Tue, 08 Dec 2020 22:35:38 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EC%BA%90%EC%8B%9C/</guid>
       <description></description>
     </item>
     
@@ -86,15 +212,6 @@
     </item>
     
     <item>
-      <title>window</title>
-      <link>https://eoriented.github.io/tags/window/</link>
-      <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/window/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>워터마크</title>
       <link>https://eoriented.github.io/tags/%EC%9B%8C%ED%84%B0%EB%A7%88%ED%81%AC/</link>
       <pubDate>Sun, 29 Nov 2020 10:35:22 +0900</pubDate>
@@ -145,6 +262,96 @@
       <pubDate>Sun, 22 Nov 2020 13:56:42 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EA%B3%B5%EB%B6%80%EB%B2%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>api</title>
+      <link>https://eoriented.github.io/tags/api/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>client</title>
+      <link>https://eoriented.github.io/tags/client/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/client/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crud</title>
+      <link>https://eoriented.github.io/tags/crud/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/crud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>delete</title>
+      <link>https://eoriented.github.io/tags/delete/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/delete/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>get</title>
+      <link>https://eoriented.github.io/tags/get/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/get/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>put</title>
+      <link>https://eoriented.github.io/tags/put/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/put/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>갱신</title>
+      <link>https://eoriented.github.io/tags/%EA%B0%B1%EC%8B%A0/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EA%B0%B1%EC%8B%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>삭제</title>
+      <link>https://eoriented.github.io/tags/%EC%82%AD%EC%A0%9C/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EC%82%AD%EC%A0%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>읽기</title>
+      <link>https://eoriented.github.io/tags/%EC%9D%BD%EA%B8%B0/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EC%9D%BD%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>저장</title>
+      <link>https://eoriented.github.io/tags/%EC%A0%80%EC%9E%A5/</link>
+      <pubDate>Sun, 22 Nov 2020 09:31:21 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/tags/%EC%A0%80%EC%9E%A5/</guid>
       <description></description>
     </item>
     
@@ -262,15 +469,6 @@
       <pubDate>Sat, 14 Nov 2020 21:04:28 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/%ED%8C%8C%ED%8B%B0%EC%85%94%EB%8B%9D/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>batch</title>
-      <link>https://eoriented.github.io/tags/batch/</link>
-      <pubDate>Fri, 02 Oct 2020 22:28:51 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/batch/</guid>
       <description></description>
     </item>
     
@@ -419,15 +617,6 @@
     </item>
     
     <item>
-      <title>stream</title>
-      <link>https://eoriented.github.io/tags/stream/</link>
-      <pubDate>Sun, 19 Jul 2020 21:49:32 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/stream/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>stream join</title>
       <link>https://eoriented.github.io/tags/stream-join/</link>
       <pubDate>Sun, 19 Jul 2020 21:49:32 +0900</pubDate>
@@ -563,15 +752,6 @@
     </item>
     
     <item>
-      <title>hbase</title>
-      <link>https://eoriented.github.io/tags/hbase/</link>
-      <pubDate>Mon, 06 Apr 2020 23:01:48 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/hbase/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>keyvalue</title>
       <link>https://eoriented.github.io/tags/keyvalue/</link>
       <pubDate>Mon, 06 Apr 2020 23:01:48 +0900</pubDate>
@@ -667,15 +847,6 @@
       <pubDate>Thu, 12 Mar 2020 21:07:27 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/pubsub/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>streaming</title>
-      <link>https://eoriented.github.io/tags/streaming/</link>
-      <pubDate>Thu, 12 Mar 2020 21:07:27 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/streaming/</guid>
       <description></description>
     </item>
     
@@ -1045,15 +1216,6 @@
       <pubDate>Wed, 31 Jul 2019 22:22:45 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/tags/%EC%A7%88%EC%9D%98%EC%96%B8%EC%96%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bigdata</title>
-      <link>https://eoriented.github.io/tags/bigdata/</link>
-      <pubDate>Wed, 31 Jul 2019 15:06:14 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/tags/bigdata/</guid>
       <description></description>
     </item>
     
