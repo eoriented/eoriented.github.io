@@ -14,6 +14,15 @@
     
     
     <item>
+      <title>데이터베이스 소개 및 훑어보기</title>
+      <link>https://eoriented.github.io/post/database-overview/</link>
+      <pubDate>Sat, 20 Mar 2021 18:13:58 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/database-overview/</guid>
+      <description>데이터베이스 시스템의 선택은 중요합니다. 성능, 일관성 문제, 운영의 어려움과 같은 이유로 데이터베이스를 변경하게 되는 경우가 발생할 수 있습니다. 데이터베이스를 변경할 때 마이그레이션이 쉽지 않을 수도 있기 때문에 초기 설계 단계에서 애플리케이션의 특성에 알맞는 데이터베이스를 선택해야 합니다.</description>
+    </item>
+    
+    <item>
       <title>스트리밍의 첫걸음 - 데이터 스트리밍 처리의 개념 정리</title>
       <link>https://eoriented.github.io/post/streaming-101/</link>
       <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>

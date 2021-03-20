@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Smart Tiger&#39;s blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.a61a6dbd5fa5e67d72c4b5f927e5fb9dee8dd9fddcb176cfdef138e99de4d8f9.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-160052384-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/bigdata/">Big data</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/machine-learning/">Machine learning</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/programming/">Programming</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/cloud/">Cloud</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/tools/">Tools</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
+  
+  
+</div>
+<footer class="footer">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">데이터베이스 소개 및 훑어보기</h1>
+    
+    <div>
+        <p>
+        <p>데이터베이스 시스템의 선택은 중요합니다. 성능, 일관성 문제, 운영의 어려움과 같은 이유로 데이터베이스를 변경하게 되는 경우가 발생할 수 있습니다. 데이터베이스를 변경할 때 마이그레이션이 쉽지 않을 수도 있기 때문에 초기 설계 단계에서 애플리케이션의 특성에 알맞는 데이터베이스를 선택해야 합니다. 데이터베이스를 선택함에 있어 다음과 같은 변수를 통해서 어떤 데이터베이스를 선택할지 예측할 수 있습니다.</p>
+<ul>
+<li>스키마와 레코드 크기</li>
+<li>클라이언트 수</li>
+<li>쿼리 형식과 접근 패턴</li>
+<li>읽기와 쓰기 쿼리 비율</li>
+<li>위 변수들의 변동폭</li>
+</ul>
+<p>그리고 위의 변수들을 기준으로 다음과 같은 체크리스트에 관한 답을 내려서 선택할 수 있습니다.</p>
+<ul>
+<li>요청된 쿼리를 수행할 수 있는가?</li>
+<li>데이터를 모두 저장할 수 있는가?</li>
+<li>단일 노드는 몇 건의 읽기와 쓰기 요청을 처리할 수 있는가?</li>
+<li>시스템에는 몇 개의 노드가 필요한가?</li>
+<li>데이터 증가 추세에 맞춰 클러스터를 확장할 수 있는가?</li>
+<li>유지보수는 어떻게 할 것인가?</li>
+</ul>
+<p>위의 변수들과 질문들을 통해서 애플리케이션에서 적절한 데이터베이스를 선택할 수 있을 것입니다.</p>
+<h2 id="dbms-아키텍처">DBMS 아키텍처</h2>
+<p>모든 데이터베이스가 동일한 아키텍처를 갖는 것은 아닙니다. 데이터베이스마다 다른 아키텍처를 가지고 있으며 내부 컴포넌트의 경계를 명확히 나누는 것이 어렵습니다. 그러나 몇몇 공통된 부분들을 모아서 나타낸 아키텍처는 다음과 같습니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/database-overview/architecture.png" width="100%"  style="max-width: 350px" />
+  
+
+</figure>
+<p>DBMS는 클라이언트/서버 모델을 기반으로 합니다. 데이터베이스와 애플리케이션은 각각 서버와 클라이언트의 역할을 합니다. 위 그림에서처럼 사용자가 쿼리를 요청하면 쿼리를 쿼리 프로세서에 전달합니다. 쿼리 프로세서에서는 쿼리를 분석하고 분석된 쿼리를 쿼리 옵티마이저에 전달합니다. 쿼리 옵티마이저에서는 쿼리의 실행 계획(Execution plan)을 최적화합니다. 그리고 선택된 실행 계획을 실행 엔진에서 실행합니다.
+스토리지 엔진은 그림과 같이 다양한 역할을 수행하는 컴포넌트들로 구성되어 있습니다.</p>
+<ul>
+<li>트랜잭션 매니저 : 트랜잭션을 스케줄링하고 데이터베이스 상태의 논리적 일관성을 보장</li>
+<li>락 매니저 : 트랜잭션에서 접근하는 데이터베이스 객체에 대한 잠금 제어</li>
+<li>엑세스 메소드 : 디스크에 저장된 데이터에 대한 접근 및 저장 방식 정의</li>
+<li>버퍼 매니저 : 데이터 페이지를 메모리에 캐시</li>
+<li>리커버리 매니저 : 로그를 유지 관리하고 장애 발생 시 시스템 복구</li>
+</ul>
+<h2 id="인메모리-dbms-vs-디스크-기반-dbms">인메모리 DBMS vs 디스크 기반 DBMS</h2>
+<p>인메모리 데이터베이스는 메모리에 데이터를 저장하고 디스크는 복구와 로그 저장 용도로 사용합니다. 반면에 디스크 기반 데이터베이스는 대부분의 데이터를 디스크에 저장하고 캐시로 메모리를 사용합니다. 인메모리 데이터베이스는 데이터 접근 성능이 디스크 기반보다 높습니다. 하지만 RAM은 휘발성이기 때문에 데이터를 영구적으로 저장할 수 없습니다. 그래서 장애 발생 시 데이터가 손실될 수 있습니다. 그래서 인메모리 데이터베이스에서는 데이터 손실을 방지하기 위해 데이터를 디스크에 백업합니다. 보통 write-ahead log(WAL)을 사용합니다.</p>
+<h2 id="컬럼형-dbms-vs-로우형-dbms">컬럼형 DBMS vs 로우형 DBMS</h2>
+<p>데이터는 디스크에 저장하는 레이아웃 방식에 따라 컬럼형과 로우형 데이터베이스로 분류할 수 있습니다.</p>
+<h3 id="로우형-데이터-레이아웃">로우형 데이터 레이아웃</h3>
+<p>로우형 DBMS는 데이터 레코드를 로우 형식으로 저장합니다. 이러한 방식은 한 개의 로우에 접근하는 경우에 적합합니다. 디스크에 저장된 데이터는 블록 단위(디스크에 엑세스하는 최소 단위)로 접근하는데 한 블록에 모든 컬럼 값이 들어갑니다. 이러한 접근 방식은 특정 사용자의 모든 정보를 읽을 때는 효율적이지만, 여러 사용자의 하나의 필드를 읽을 때는 비효율적입니다. 왜냐하면 요청하지 않은 필드까지 페이징하기 때문입니다.</p>
+<h3 id="컬럼형-데이터-레이아웃">컬럼형 데이터 레이아웃</h3>
+<p>컬럼형 DBMS는 데이터를 컬럼 단위로 저장합니다. 로우형과 달리 컬럼끼리 디스크에 연속해서 저장하는 방식입니다. 컬럼형 데이터베이스는 데이터의 평균과 같은 집계 분석 작업을 수행하는데 적합합니다. 컬럼형 데이터베이스는 조인이나 필터링, 다중 로우 집계 등을 위해 튜플을 재구성하기 위해서는 컬럼 사이의 관계를 정의하는 메타데이터가 추가로 필요합니다. 그래서 각 값마다 추가적인 값이 중복되서 저장되므로 데이터 양이 증가합니다. 컬럼형 데이터베이스에서는 아래와 같이 데이터를 저장합니다.</p>
+<pre><code>Symbol: 1:DOW; 2:DOW; 3:S&amp;P; 4:S&amp;P
+Date:   1:08 Aug 2018; 2:09 Aug 2018; 3:08 Aug 2018; 4:09 Aug 2018
+Price:  1:24,314.65; 2:24,136.16; 3:2,414.45; 4:2,232.32
+</code></pre><h3 id="와이드-컬럼-스토어">와이드 컬럼 스토어</h3>
+<p>구글의 빅테이블이나 HBase는 와이드 컬럼 스토어입니다. 일반적인 컬럼형 데이터베이스와는 다른 특성을 갖고 있기 때문에 와이드 컬럼 스토어로 다르게 구분합니다. 와이드 컬럼 스토어는 데이터를 다차원 맵의 형태로 표현하고 여러 컬럼을 컬럼 패밀리 단위로 저장합니다. 컬럼 패밀리의 데이터는 로우 형식으로 저장합니다. 이러한 방식은 키 단위 엑세스 패턴에 적합합니다.</p>
+<h2 id="데이터-파일과-인덱스-파일">데이터 파일과 인덱스 파일</h2>
+<p>데이터베이스는 여러 필드로 구성된 레코드를 테이블 형식으로 저장하는데 일반적으로 각 테이블은 별도의 파일에 저장합니다. 그리고 테이블의 각 레코드는 검색 키로 찾을 수 있습니다. 주로 이러한 레코드의 위치를 찾는데 인덱스를 사용합니다. 데이터베이스 시스템은 데이터 파일과 인덱스 파일을 분리합니다. 데이터 파일에는 데이터의 레코드가 저장되며 인덱스 파일에는 레코드에 대한 메타데이터를 저장하고 이를 통해 데이터 파일에서 레코드를 찾습니다.</p>
+<h3 id="데이터-파일">데이터 파일</h3>
+<p>데이터 파일은 Heap-organized table, Hash-organized table, Index-organized table와 같은 종류가 있습니다.</p>
+<ul>
+<li>Heap-organized table : 레코드를 삽입 순서대로 저장하고 데이터 검색 시 데이터 실제 위치를 가리키는 인덱스를 필요로 합니다.</li>
+<li>Hash-organized table : 레코드를 각 키의 해시 값에 해당하는 버킷에 저장합니다. 버킷 내 레코드는 삽입 순서대로 저장하거나 키 순서로 정렬하면 조회 속도를 향상시킬 수 있습니다.</li>
+<li>Index-organized table : 인덱스에 데이터 레코드를 저장합니다. 데이터는 키 순서로 정렬됩니다.</li>
+</ul>
+<h3 id="인덱스-파일">인덱스 파일</h3>
+<p>인덱스틑 디스크에 저장된 데이터 레코드를 효율적으로 검색할 수 있는 자료 구조입니다. 인덱스 파일은 데이터 레코드를 식별할 수 있는 키나 기본 키를 데이터 파일의 해당 레코드 위치에 매핑하는 특별한 구조로 구성되어 있습니다.
+프라이머리 인덱스는 기본 키나 기본키 역할을 할 수 있는 여러 키의 조합에 대한 인덱스입니다. 다른 인덱스는 모두 세컨더리 인덱스입니다.</p>
+<p>데이터베이스에서 데이터 레코드를 직접 참조할지 프라이머리 키 인덱스를 통해 접근할 지 의견이 갈립니다. 각각의 방식은 장단점이 존재합니다. 데이터를 직접 참조하면 디스크 탐색 오버헤드가 줄지만 레코드를 갱신하거나 위치를 변경할 때 포인터를 수정해야 합니다. 반면 프라이머리 인덱스를 통해 간접 참조하면 포인트 갱신 비용은 줄어들지만 레코드 위치를 찾는 과정이 추가됩니다.</p>
+<h2 id="버퍼링buffering-불변성immutability-순서ordering">버퍼링(Buffering), 불변성(Immutability), 순서(Ordering)</h2>
+<p>데이터베이스 자료 구조에 고려해야 할 대표적인 속성 3가지가 있습니다. 이 3가지 특정을 조합하여 데이터베이스에 가진 특징에 맞도록 사용하거나 사용하지 않는 방식으로 자료 구조를 설계할 수 있습니다. 각 속성의 특징은 다음과 같습니다.</p>
+<ul>
+<li>버퍼링
+<ul>
+<li>데이터를 디스크에 쓰기전 일부를 메모리에 저장할지 여부를 정의</li>
+</ul>
+</li>
+<li>불변성
+<ul>
+<li>파일 일부를 읽고 갱신한 뒤 똑같은 자리에 다시 쓸지에 대한 여부</li>
+</ul>
+</li>
+<li>순서
+<ul>
+<li>디스크 페이지에 데이터 레코드를 키 순서로 저장할지에 대한 것</li>
+</ul>
+</li>
+</ul>
+<h2 id="정리">정리</h2>
+<p>이번 포스트에서는 DBMS의 아키텍처와 주요 컴포넌트에 관해 살펴보았습니다. 인메모리 기반과 디스크 기반의 DBMS의 차이에 대해 알아보았고, 컬럼형과 로우형 데이터베이스에 차이도 알아보았습니다. 그리고 데이터베이스에서 데이터를 저장하는 방식에 대해 알아보았습니다. 그리고 마지막에 데이터베이스 자료 구조의 중요한 3가지 속성인 버퍼링, 불변성, 순서에 관해 살펴보았습니다. 이번 포스트를 통해서 데이터베이스의 기본 개념에 대해 청사진을 그릴 수 있었을 것이라고 생각합니다.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=17852468">데이터베이스 인터널스</a></li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/database">#database</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/rdb">#rdb</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/nosql">#nosql</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/in-memory-db">#in-memory db</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%BB%AC%EB%9F%BC%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4">#컬럼형 데이터베이스</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EB%A1%9C%EC%9A%B0%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4">#로우형 데이터베이스</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/bigtable">#BigTable</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/hbase">#HBase</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/%EC%9D%B8%EB%8D%B1%EC%8A%A4">#인덱스</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+		
+		
+		
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>
