@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LSM트리 on Smart Tiger&#39;s blog</title>
-    <link>https://eoriented.github.io/tags/lsm%ED%8A%B8%EB%A6%AC/</link>
-    <description>Recent content in LSM트리 on Smart Tiger&#39;s blog</description>
+    <title>Log-structured merge tree on Smart Tiger&#39;s blog</title>
+    <link>https://eoriented.github.io/tags/log-structured-merge-tree/</link>
+    <description>Recent content in Log-structured merge tree on Smart Tiger&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
     <lastBuildDate>Sat, 03 Apr 2021 22:12:02 +0900</lastBuildDate>
     
-	<atom:link href="https://eoriented.github.io/tags/lsm%ED%8A%B8%EB%A6%AC/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://eoriented.github.io/tags/log-structured-merge-tree/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,16 +21,6 @@
       <guid>https://eoriented.github.io/post/log-structured-storage/</guid>
       <description>회계사는 기록을 수정해야 하면 이미 입력된 값을 지우지 않고 새로운 값을 다시 씁니다. 최종 결과를 구하려면 모든 항목을 재검토하고 합계액을 계산해야 합니다. 이러한 방식은 바로 오늘 포스트에서 살펴볼 로그 구조 스토리지(Log-Structured Storage)와 유사합니다.
 또 다른 예로는 불변 스토리지(immutable storage)가 있습니다.</description>
-    </item>
-    
-    <item>
-      <title>저장소(Storage)와 검색(Retrieval) - 2</title>
-      <link>https://eoriented.github.io/post/storage-and-retrieval-2/</link>
-      <pubDate>Wed, 21 Aug 2019 22:56:25 +0900</pubDate>
-      <author>eoriented@gmail.com (eoriented)</author>
-      <guid>https://eoriented.github.io/post/storage-and-retrieval-2/</guid>
-      <description>이전 포스트에 이어서 저장소와 검색을 계속 살펴보겠습니다. 이전 포스트 마지막 부분에 대한 설명은 해시 테이블을 통한 색인이 가진 제한사항에 대해 살펴보았습니다. 이러한 제한이 없는 색인 구조를 이어서 살펴보도록 하겠습니다.
-SS 테이블과 LSM 트리   위 그림과 같이 log-structured 저장소 세그먼트는 key-value 쌍의 시퀀스입니다.</description>
     </item>
     
   </channel>

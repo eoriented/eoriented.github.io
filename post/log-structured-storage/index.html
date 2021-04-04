@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Smart Tiger&#39;s blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.a61a6dbd5fa5e67d72c4b5f927e5fb9dee8dd9fddcb176cfdef138e99de4d8f9.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-160052384-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/bigdata/">Big data</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/machine-learning/">Machine learning</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/programming/">Programming</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/cloud/">Cloud</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/tools/">Tools</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
+  
+  
+</div>
+<footer class="footer">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">로그 구조 스토리지(Log Structured Storage)</h1>
+    
+    <div>
+        <p>
+        <p>회계사는 기록을 수정해야 하면 이미 입력된 값을 지우지 않고 새로운 값을 다시 씁니다. 최종 결과를 구하려면 모든 항목을 재검토하고 합계액을 계산해야 합니다. 이러한 방식은 바로 오늘 포스트에서 살펴볼 로그 구조 스토리지(Log-Structured Storage)와 유사합니다.<br>
+또 다른 예로는 불변 스토리지(immutable storage)가 있습니다. 불변 스토리지에서 저장된 파일은 수정할 수 없습니다. 반대로 가변 스토리지(mutable storage)는 디스크에 저장된 레코드를 수정할 수 있습니다.<br>
+이와 같이 불변 자료 구조의 경우 함수형 프로그래밍에서 많이 사용되는데 그 이유는 한번 생성된 불변 자료 구조는 바뀔 수 없고 동시 참조 가능하고 무결성이 보장되는 장점이 있어서 안전하다는 특성을 가지고 있습니다.<br>
+불변 파일 역시 여러 버전의 파일 사본을 저장하며 최신 버전이 이전 버전을 덮어쓰는 형식으로 보여주고, 가변 파일은 최신 버전만 저장합니다.<br>
+지금까지 불변과 가변의 차이를 다양한 관점에서 살펴보았는데 그 이유는 데이터베이스에서 저장된 데이터를 처리하기 위한 자료구조가 이러한 특성에 따라 달라지기 때문입니다.<br>
+데이터베이스에서 B-트리는 가변 자료구조이며, LSMT(Log-Structured Merge Tree)는 불변 자료 구조입니다. LSM 트리는 추가 전용 구조가 기본이며 병합 조정(merge conciliation) 방식을 사용합니다. 반면에 B-트리의 경우 디스크에서 레코드를 찾고 해당 페이지의 기존 오프셋의 위치에 업데이트를 하는 방식을 사용합니다.<br>
+<!-- raw HTML omitted --><br>
+
+
+  
+
+  
+
+
+
+<table  align="center" style="max-width:1100px">
+<thead>
+<tr>
+<th></th>
+<th>B-트리</th>
+<th>LSM 트리</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>읽기</td>
+<td>Good</td>
+<td>Bad</td>
+</tr>
+<tr>
+<td>쓰기</td>
+<td>Bad</td>
+<td>Good</td>
+</tr>
+</tbody>
+</table></p>
+<p><!-- raw HTML omitted --><br>
+이러한 B-트리와 LSM트리는 각각의 특성에 따라 장단점이 서로 다릅니다. B-트리의 경우 읽기 작업에 효율적이지만 업데이트 대상 레코드를 디스크에서 찾아야 하므로 쓰기 성능은 떨어집니다. 반면에 LSM 트리는 쓰기 작업에 유리하지만 읽기 시 레코드의 여러 버전을 읽고 최신 버전을 찾아야 하기 때문에 읽기 성능이 조금 떨어집니다. 위 테이블에는 상대적으로 표현하기 위해 Good, Bad를 사용하였습니다.</p>
+<h2 id="lsm-트리">LSM 트리</h2>
+<p>LSM 트리의 Merge는 중복된 복사본에 대한 유지보수 작업 시 병합 정렬과 유사한 방식으로 병합하는 것을 의미합니다.<br>
+LSM 트리는 데이터 파일 쓰기를 지연시키기 위해 변경 사항을 메모리 기반 테이블에 저장합니다. 그리고 일정량이 쌓이면 내용을 불변 디스크 파일에 저장해 변경 사항을 반영합니다. 불변 파일은 데이터를 연속된 공간에 저장해 단편화를 방지합니다. 이 방식은 업데이트 된 레코드가 원본 레코드보다 큰 경우를 위한 공간을 미리 할당하지 않아도 되는 장점을 갖습니다. 파일은 수정될 수 없으므로 삽입, 수정, 삭제 작업은 디스크에서 레코드를 찾이 않아도 되므로 쓰기 성능과 처리량이 크게 향상됩니다.<br>
+반면에 LSM 트리는 성능 최적화를 위해 유지보수 작업이 필요합니다. 읽기 작업 수행시 최대한 적은 수의 파일을 읽도록 하기 위해서 파일을 병합하고 재작성하는 과정이 필요합니다.</p>
+<h3 id="lsm-트리-구조">LSM 트리 구조</h3>
+<p>LSM 트리는 메모리 기반 컴포넌트와 디스크 기반 컴포넌트 2개로 구성됩니다. 메모리 기반 컴포넌트는 멤테이블이라고 하는데 불변 자료 구조입니다. 멤테이블은 데이터 레코드를 버퍼에 저장하고 일기와 쓰는 작업을 수행합니다. 멤테이블의 크기가 설정한 기준 값에 도덜하게 되면 디스크로 플러시를 합니다. 버퍼에 저장된 데이터는 디스크 기반 컴포넌트로 플러시 되는데 디스크 기반 컴포넌트의 경우 읽기 작업에만 사용되고 한번 저장된 데이터는 다시 수정할 수 없습니다. LSM 트리의 경우 인메모리 테이블에 쓰는 작업과 메모리, 디스크 기반의 테이블에서 읽는 작업, 병합 작업, 파일을 삭제하는 작업을 수행합니다.</p>
+<h4 id="멤테이블">멤테이블</h4>
+<p>멤테이블을 플러시 하려면 우선 멤테이블을 플러시 대상 테이블로 전환해야 합니다. 새로운 멤테이블을 할당해 그 이후에 들어오는 쓰기 작업을 담당하도록 서렁하고, 기존 테이블은 플러시 상태로 전환해야 하는데 이 두 단계는 원자적으로 수행해야 합니다. 또한 플러시 대상 테이블은 완전히 플러시될 때까지 읽기가 가능해야합니다. 플러시가 완료되면 멤테이블은 삭제되고 플러시된 내용은 디스크 기반 테이블에서 읽을 수 있습니다. 다음은 LSM 트리의 컴포넌트 사이의 전환 과정을 보여줍니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/log-structured-storage/lsm-component-structure.png" width="100%"  style="max-width: 700px" />
+  
+
+</figure>
+<p>멤테이블이 완전히 플러시되기 전까지 해당 내용이 저장된 곳은 WAL(write-ahead log)이고 멤테이블이 플러시 되면 로그에서 멤테이블과 관련된 작업이 기록된 부분도 같이 삭제됩니다.</p>
+<h3 id="수정과-삭제">수정과 삭제</h3>
+<p>LSM 트리는 삽입, 수정, 삭제 시 디스크에서 데이터를 찾을 필요가 없습니다. 대신 읽기 중에 중복된 데이터들이 재조정됩니다. 삭제의 경우에는 명시적으로 삭제 여부를 기록하는데 해당 키의 값이 삭제됐음을 나타내는 툼스톤 마커를 표시합니다. 재조정 프로세스는 툼스톤을 찾아 마킹된 값을 제거합니다.</p>
+<h3 id="lsm-트리-유지보수">LSM 트리 유지보수</h3>
+<p>LSM 트리는 유지보수가 필요합니다. 이렇게 유지보수 하는 과정을 컴팩션이라고 합니다. 컴팩션을 최적화할 수 있는 다양한 전략이 존재합니다. 이제 다양한 컴팩션 기법에 대해 살펴보겠습니다.</p>
+<h4 id="leveled-컴팩션">Leveled 컴팩션</h4>
+<p>레벨 컴팩션은 디스크 테이블을 여러 레벨로 나눕니다. 레벨 별로 테이블의 수가 일정 수에 도달하면 데이터를 병합해 다음 레벨의 테이블을 생성합니다. 가장 최신의 데이터는 인덱스가 낮은 레벨에 있고 상대적으로 오래된 데이터는 높은 인덱스 레벨로 올라갑니다.</p>
+<h4 id="size-tiered-컴팩션">Size-tiered 컴팩션</h4>
+<p>Size-tiered 컴팩션은 레벨이 아닌 테이블의 크기를 기준으로 디스크 테이블을 그룹화하는 방식입니다. size-tiered 컴팩션의 문제중 하나는 테이블 기아 현상입니다. 컴팩션된 테이블의 크기가 여전히 작은 경우 높은 인덱스 레벨의 테이블은 컴팩션 기회를 얻지 못해 툼스톤이 정리되지 않고 읽기 비용이 올라가는 문제가 발생할 수 있습니다.</p>
+<h2 id="읽기-쓰기-공간-증폭">읽기, 쓰기, 공간 증폭</h2>
+<p>데이터를 디스크에 불변 방식으로 저장할 때 다음과 같은 세 가지 문제가 발생합니다.</p>
+<ul>
+<li>읽기 증폭 : 데이터를 읽기 위해 여러 테이블을 참조하면서 발생</li>
+<li>쓰기 증폭 : 컴팩션 과정에서 발생하는 지속적인 다시 쓰기로 인해 발생</li>
+<li>공간 증폭 : 같은 키에 대해 여러 레코드가 존재할 때 발생</li>
+</ul>
+<p>위와 같이 세 개의 문제는 RUM conjecture를 통해서 비용을 계산할 수 있습니다. 세 가지 오버헤드 중 두 가지를 줄이면 다른 한가지가 불가피하게 증가하게 되므로 선택이 필요합니다. 다양한 스토리지 엔진들마다 선택한 것들이 다릅니다.</p>
+<h2 id="상세-구현">상세 구현</h2>
+<h3 id="sstable">SSTable</h3>
+<p>디스크 기반 테이블은 SSTable(Sorted String Table)을 사용해 구현합니다. SSTable은 레코드를 키 순서로 정렬해 저장합니다. SSTable은 인덱스 파일과 데이터 파일로 구성됩니다. 인덱스 파일은 B-트리나 해시 테이블 등의 룩업이 가능한 자료 구조를 사용해 구현합니다. 데이터 파일은 레코드를 키 순서로 저장합니다.</p>
+<h3 id="블룸-필터">블룸 필터</h3>
+<p>LSM 트리의 경우 데이터가 여러 디스크에 저장된 테이블에 접근할 때 읽기 증폭이 발생될 수 있습니다. 디스크 기반 테이블에 검색 키에 대한 레코드가 존재하는지 미리 알 수 없기 때문입니다. 이를 위해 카산드라나 RocksDB 등에서 블룸 필터를 사용합니다. 블룸 필터는 어떤 원소가 집합에 속하는지 여부를 확인할 수 있는 공간 효율적인 확률적 자료 구조입니다. false-positive(실제 집합에 속하지 않지만 속한다고 잘못 판단)는 발생할 수 있지만 false-negative(결과가 음성인 원소는 집합에 확실히 속하지 않음)는 발생하지 않는 특징을 가집니다. 블룸 필터를 사용하면 특정 키가 테이블에 존재할 수 있는지 확인할 수 있습니다. 그래서 블룸 필터가 negative를 반환한 파일은 쿼리 수행 중에 필터링 됩니다. 이렇게 블룸 필터를 같이 사용하면 읽기 작업의 테이블 접근 횟수를 크게 줄일 수 있습니다. 블룸 필터에 관해 조금더 자세히 알고 싶은 분은 <a href="https://www.slideshare.net/charsyam2/bloomfilter-82589241">다음 슬라이드</a>를 확인하시면 도움이 될 것입니다.</p>
+<h2 id="정렬되지-않은-lsm-스토리지">정렬되지 않은 LSM 스토리지</h2>
+<h3 id="비트캐스크">비트캐스크</h3>
+<p>Riak에서 사용되는 스토리지 엔진 중 하나인 비트캐스크는 정렬되지 않는 로그 구조 기반의 스토리지 엔진입니다. 비트캐스크는 데이터 레코드를 로그 파일에 바로 저장합니다. 그리고 레코드를 검색할 수 있도록 각 키의 최신 데이터 레코드에 대한 참조를 keydir이라는 자료 구조에 저장합니다. keydir에서 참조하지 않는 이전 데이터 레코드들이 디스크에 남아 있게 되는데 이런 데이터는 컴팩션 시 정리됩니다. keydir은 인메모리 해시맵 형태이며 시스템 기동시 로그 파일을 사용해 재구성합니다. 데이터 레코드는 로그 파일에 바로 쓰기 때문에 따로 WAL이 필요 없으며 공간 오버헤드와 쓰기 증폭이 줄어드는 장점을 갖습니다. 하지만 keydir과 데이터 파일의 레코드가 정렬되어 있지 않기 때문에 범위 스캔이 불가능하고 포인트 쿼리만 수행할 수 있는 단점이 있습니다.</p>
+<h3 id="위스키wisckey">위스키(WiscKey)</h3>
+<p>정렬되지 않은 스토리지에서 범위 스캔을 지원하기 위한 자료구조입니다. 위스키는 LSM 트리에 키를 정렬된 상태로 유지하고 vLog(value log)라는 정렬되지 않은 추가 전용 파일에 데이터 레코드를 저장해 가비지 컬렉션과 정렬 작업을 분리합니다. 이를 통해 위스키는 모든 키를 메모리에 저장하고 시스템 기동 시 해시 테이블을 재구성해야 하는 비트캐스크의 문제를 해결할 수 있습니다.</p>
+<h2 id="정리">정리</h2>
+<p>이번 포스트에서는 로그 기반 스토리지에 관한 특성에 대해 살펴보았습니다. 로그 기반 스토리지에서 사용하는 자료구조는 LSM 트리를 사용합니다. 이번 포스트를 통해 LSM 트리의 특성과 장단점에 대해 이해하는데 도움이 되었으면 합니다.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://book.naver.com/bookdb/book_detail.nhn?bid=17852468">데이터베이스 인터널스</a></li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/lsm%ED%8A%B8%EB%A6%AC">#LSM트리</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/b-tree">#B-Tree</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/log-structured-merge-tree">#Log-structured merge tree</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/memtable">#memtable</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/sstable">#SSTable</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/bloom-filter">#bloom filter</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+		
+		
+		
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>

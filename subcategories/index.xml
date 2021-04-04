@@ -8,7 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Sat, 20 Mar 2021 18:13:58 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 03 Apr 2021 22:12:02 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/subcategories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +16,7 @@
     <item>
       <title>Database internals</title>
       <link>https://eoriented.github.io/subcategories/database-internals/</link>
-      <pubDate>Sat, 20 Mar 2021 18:13:58 +0900</pubDate>
+      <pubDate>Sat, 03 Apr 2021 22:12:02 +0900</pubDate>
       <author>eoriented@gmail.com (eoriented)</author>
       <guid>https://eoriented.github.io/subcategories/database-internals/</guid>
       <description></description>

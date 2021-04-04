@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>b-tree on Smart Tiger&#39;s blog</title>
+    <title>B-Tree on Smart Tiger&#39;s blog</title>
     <link>https://eoriented.github.io/tags/b-tree/</link>
-    <description>Recent content in b-tree on Smart Tiger&#39;s blog</description>
+    <description>Recent content in B-Tree on Smart Tiger&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
     <managingEditor>eoriented@gmail.com (eoriented)</managingEditor>
     <webMaster>eoriented@gmail.com (eoriented)</webMaster>
-    <lastBuildDate>Mon, 26 Aug 2019 22:56:19 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 03 Apr 2021 22:12:02 +0900</lastBuildDate>
     
 	<atom:link href="https://eoriented.github.io/tags/b-tree/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>로그 구조 스토리지(Log Structured Storage)</title>
+      <link>https://eoriented.github.io/post/log-structured-storage/</link>
+      <pubDate>Sat, 03 Apr 2021 22:12:02 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/log-structured-storage/</guid>
+      <description>회계사는 기록을 수정해야 하면 이미 입력된 값을 지우지 않고 새로운 값을 다시 씁니다. 최종 결과를 구하려면 모든 항목을 재검토하고 합계액을 계산해야 합니다. 이러한 방식은 바로 오늘 포스트에서 살펴볼 로그 구조 스토리지(Log-Structured Storage)와 유사합니다.
+또 다른 예로는 불변 스토리지(immutable storage)가 있습니다.</description>
+    </item>
     
     <item>
       <title>저장소(Storage)와 검색(Retrieval) - 3</title>

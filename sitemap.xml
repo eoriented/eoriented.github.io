@@ -3,8 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://eoriented.github.io/tags/b-tree/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://eoriented.github.io/categories/bigdata/</loc>
-    <lastmod>2021-03-20T18:13:58+09:00</lastmod>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/bloom-filter/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/categories/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/database-internals/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/log-structured-merge-tree/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/lsm%ED%8A%B8%EB%A6%AC/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/memtable/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/sstable/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/subcategories/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/tags/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/log-structured-storage/</loc>
+    <lastmod>2021-04-03T22:12:02+09:00</lastmod>
   </url>
   
   <url>
@@ -13,17 +73,7 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/categories/</loc>
-    <lastmod>2021-03-20T18:13:58+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/database/</loc>
-    <lastmod>2021-03-20T18:13:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/subcategories/database-internals/</loc>
     <lastmod>2021-03-20T18:13:58+09:00</lastmod>
   </url>
   
@@ -43,22 +93,7 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/post/</loc>
-    <lastmod>2021-03-20T18:13:58+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/rdb/</loc>
-    <lastmod>2021-03-20T18:13:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/subcategories/</loc>
-    <lastmod>2021-03-20T18:13:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/</loc>
     <lastmod>2021-03-20T18:13:58+09:00</lastmod>
   </url>
   
@@ -773,11 +808,6 @@
   </url>
   
   <url>
-    <loc>https://eoriented.github.io/tags/b-tree/</loc>
-    <lastmod>2019-08-26T22:56:19+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://eoriented.github.io/tags/lsm-tree/</loc>
     <lastmod>2019-08-26T22:56:19+09:00</lastmod>
   </url>
@@ -794,11 +824,6 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/b%ED%8A%B8%EB%A6%AC/</loc>
-    <lastmod>2019-08-21T22:56:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://eoriented.github.io/tags/lsm%ED%8A%B8%EB%A6%AC/</loc>
     <lastmod>2019-08-21T22:56:25+09:00</lastmod>
   </url>
   
