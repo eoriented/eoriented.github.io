@@ -119,47 +119,52 @@
   
   <url>
     <loc>https://eoriented.github.io/tags/batch/</loc>
-    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/bigdata/</loc>
-    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/event-time/</loc>
-    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/event-time-processing/</loc>
-    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/lambda-architecture/</loc>
-    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/stream/</loc>
-    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/streaming/</loc>
-    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/unbounded-data/</loc>
-    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://eoriented.github.io/tags/window/</loc>
-    <lastmod>2020-12-19T15:06:33+09:00</lastmod>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eoriented.github.io/post/streaming-102/</loc>
+    <lastmod>2021-01-01T14:31:42+09:00</lastmod>
   </url>
   
   <url>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>Smart Tiger&#39;s blog</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://eoriented.github.io/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="https://eoriented.github.io/favicon.ico">
+    <link rel="manifest" href="https://eoriented.github.io/manifest.json">
+    <link rel="mask-icon" href="https://eoriented.github.io/safari-pinned-tab.svg" color="#FF3DB4">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    
+    
+    <link rel="stylesheet" href="https://eoriented.github.io/css/main.min.a61a6dbd5fa5e67d72c4b5f927e5fb9dee8dd9fddcb176cfdef138e99de4d8f9.css"/>
+
+    
+    
+    
+
+    
+    
+ 
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-160052384-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> 
+</head>
+    <body>
+        
+<nav>
+  <header>
+    <div class="site-title">
+        
+        <a href="https://eoriented.github.io/">
+        <img style="display: block; margin: 0px auto" width="90%" src="https://eoriented.github.io/images/logo2.png" /></a>
+    </div>  
+</header>
+  <div class="nav-menu">
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/bigdata/">Big data</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/machine-learning/">Machine learning</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/programming/">Programming</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/cloud/">Cloud</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/tools/">Tools</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/categories/">Categories</a>
+  
+    <a class="color-link nav-link" href="https://eoriented.github.io/tags/">Tags</a>
+  
+  
+</div>
+<footer class="footer">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+</nav>
+        <div id="content" class="content-container">
+        
+<h1 class="post-title">스트리밍 두 번째 걸음 - 배치를 넘어서</h1>
+    
+    <div>
+        <p>
+        <p>이전 포스트에서는 데이터를 Bounded data와 Unbounded 데이터 구별하고, 그것을 처리하는 방법에 관해 살펴보았습니다. Unbounded data를 처리할 때 이벤트 시간과 처리 시간의 차이점에 대해서 다뤘습니다. 또한 윈도우 개념도 함께 알아보았습니다.
+이번 포스트에서는 워터마크, 트리거, 어큐뮬레이션에 관해 자세히 살펴보겠습니다.</p>
+<ul>
+<li>워터마크(Watermark) : 워터마크는 이벤트 시간과 관련된 입력 데이터의 완료성을 나타내는 방법입니다. X라는 시간 값이 있는 워터마크의 의미는 &ldquo;이벤트 시간이 X 이전의 모든 입력 데이터가 입력되었다&quot;는 것을 의미합니다. 이와 같이 워터마크는 끝을 모르는 Unbounded data를 처리할 때 진행률 지표로 사용합니다.</li>
+<li>트리거(Trigger) : 트리거는 윈도우 내용을 평가할 시점을 결정하는 메커니즘입니다. 트리거는 출력을 내보낼 시기를 선택할 때 유연성을 제공합니다.</li>
+<li>어큐뮬레이션(Accumulation) : 어큐뮬레이션은 동일한 윈도우에서 확인할 수 있는 여러 결과의 관계를 지정하는 방법입니다. 즉, 윈도우마다 차이를 확인하거나 윈도우 별 누적 결과를 이야기하는 것입니다.</li>
+</ul>
+<p>이제 이러한 개념들을 이해하기 위해서 예제를 통해 살펴보겠습니다. 오늘 자세히 살펴볼 워터마크와, 트리거, 어큐뮬레이션뿐만 아니라 앞서 살펴본 데이터를 변환하는 트랜스포메이션(Transformation)부터 윈도우 처리도 함께 예제를 통해 알아볼 예정입니다. 예제는 Apache Flink를 기반으로 살펴볼 예정이며, Apache Spark이나 Apache Beam를 사용하셨던 분들은 예제가 익숙할 것입니다.</p>
+<h2 id="transformation">Transformation</h2>
+<p>트랜스포메이션은 데이터를 원하는 형태로 가공하는 방법입니다. 트랜스포메이션하는 유형은 다음 그림과 여러 유형이 있습니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-102/transformation.jpg" width="100%"  style="max-width: 650px" />
+  
+
+</figure>
+<p>지금부터 예제를 통해 직접 살펴보겠습니다. input 데이터는 String이며, 팀 이름과 개인 별 점수가 탭(tab)으로 분리되어 있습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#007020;font-weight:bold">val</span> env <span style="color:#007020;font-weight:bold">=</span> <span style="color:#0e84b5;font-weight:bold">ExecutionEnvironment</span><span style="color:#666">.</span>getExecutionEnvironment
+
+<span style="color:#60a0b0;font-style:italic">// get input data
+</span><span style="color:#60a0b0;font-style:italic"></span><span style="color:#007020;font-weight:bold">val</span> input <span style="color:#007020;font-weight:bold">=</span> env<span style="color:#666">.</span>readTextFile<span style="color:#666">(</span><span style="color:#4070a0">&#34;/path/to/file&#34;</span><span style="color:#666">)</span>
+  <span style="color:#666">.</span>map <span style="color:#666">{</span> l <span style="color:#007020;font-weight:bold">=&gt;</span>
+      <span style="color:#007020;font-weight:bold">val</span> tokens <span style="color:#007020;font-weight:bold">=</span> l<span style="color:#666">.</span>split<span style="color:#666">(</span><span style="color:#4070a0">&#34;\t&#34;</span><span style="color:#666">)</span>
+      <span style="color:#666">(</span>tokens<span style="color:#666">(</span><span style="color:#40a070">0</span><span style="color:#666">),</span> tokens<span style="color:#666">(</span><span style="color:#40a070">1</span><span style="color:#666">))</span>
+    <span style="color:#666">}</span>
+
+<span style="color:#007020;font-weight:bold">val</span> scores <span style="color:#007020;font-weight:bold">=</span> input
+  <span style="color:#666">.</span>groupBy<span style="color:#666">(</span><span style="color:#40a070">0</span><span style="color:#666">)</span>
+  <span style="color:#666">.</span>sum<span style="color:#666">(</span><span style="color:#40a070">1</span><span style="color:#666">)</span>
+</code></pre></div><p>예제의 입력이 단일 키(하나의 팀)에 대해서 10개의 입력 데이터가 들어온 경우 다음과 같이 스코어의 총합은 51이 됩니다. 다음 그림의 x축은 이벤트 시간이며, y축은 처리 시간입니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-102/batch-processing.png" width="100%"  style="max-width: 650px" />
+  
+
+</figure>
+<p>이번 예제에서는 배치 엔진에서 처리되는 것과 같이 처리됩니다. 특정 윈도우 트랜스포메이션을 적용하지 않았기 때문에 X축이 따로 나누어져 처리되지 않고 있습니다. 그러나 Unbounded data를 처리할 때 배치 처리로는 한계가 있습니다. 입력이 끝날 때까지 기다릴수 없는 것이죠. 그래서 이벤트 시간 계산은 어디서 이루어질 것인지 윈도우 설정을 통해 알아보겠습니다.</p>
+<h2 id="windowing">Windowing</h2>
+<p>윈도우는 시간적 경계에 따라 데이터 소스를 분할하여 처리하는 것입니다. 일반적으로 윈도우 전략은 다음 그림과 같이 Fixed(Tumbling), Sliding, Session 윈도우가 있습니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-102/windowing.jpg" width="100%"  style="max-width: 650px" />
+  
+
+</figure>
+<p>이제 코드로 사이즈가 2분인 Fixed window를 정의하는 방법은 다음과 같습니다.</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scala" data-lang="scala"><span style="color:#007020;font-weight:bold">val</span> scoresByFixedWindow <span style="color:#007020;font-weight:bold">=</span> input<span style="color:#666">.</span>keyBy<span style="color:#666">(</span><span style="color:#007020;font-weight:bold">_</span><span style="color:#666">.</span>_1<span style="color:#666">).</span>window<span style="color:#666">(</span><span style="color:#0e84b5;font-weight:bold">TumblingEventTimeWindows</span><span style="color:#666">.</span>of<span style="color:#666">(</span><span style="color:#0e84b5;font-weight:bold">Time</span><span style="color:#666">.</span>seconds<span style="color:#666">(</span><span style="color:#40a070">120</span><span style="color:#666">))).</span>sum<span style="color:#666">(</span><span style="color:#40a070">1</span><span style="color:#666">)</span>
+</code></pre></div><figure >
+
+  <img src="https://eoriented.github.io/images/streaming-102/window-processing.png" width="100%"  style="max-width: 650px" />
+  
+
+</figure>
+<p>위의 그림과 같이 이벤트 타임을 기준으로 Fixed window 형태별로 결과가 나오는 것을 볼 수 있습니다. 지금까지 살펴본 2가지 예제는 배치 엔진에서 전체 데이터에 대한 배치 결과와 윈도우 파이프라인의 결과를 본 것입니다. 그러나 우리는 더 짧은 지연 시간을 가지며, Unbounded data를 처리하고 싶습니다. 그러면 스트리밍 엔진 사용으로 변경해야 합니다. 그러나 배치 엔진에서는 윈도우에 대한 입력이 완료되는 지점이 존재합니다. 여기서는 처리 시간인 12:10까지입니다. 그러나 Unbounded data를 처리하기 위해서는 완료 시점을 결정해야 하는데 이를 위해 워터마크를 사용합니다.</p>
+<h2 id="watermark">Watermark</h2>
+<p>워터마크는 어느 처리 시간 시점에 결과가 구체화될지 알려줍니다. 아래 그림의 빨간색 선은 본질적으로 워터마크를 의미합니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-102/event-time-vs-processing-time.png" width="100%"  style="max-width: 400px" />
+  
+
+</figure>
+<p>워터마크가 의미하는 것은 시스템이 워터마크를 기준으로 이벤트 시간이 워터마크보다 작은 모든 입력이 처리되었다고 알려주는 것입니다. 이러한 워터마크의 유형은 perfect와 heuristic 2가지가 있습니다.</p>
+<ul>
+<li>perfect 워터마크 : 모든 입력 데이터에 대해 완벽하게 아는 경우 perfect 워터마크를 사용합니다. 이 경우 지연된 데이터가 발생하지 않습니다.</li>
+<li>heuristic 워터마크 : 위와 같이 모든 입력 데이터를 완벽히 아는 것은 비현실적입니다. 그래서 휴리스틱 워터마크의 추정을 사용하여 인풋 데이터를 예측합니다. 너무 늦은 데이터는 버리는 것입니다.</li>
+</ul>
+<p>다음 그림은 두가지 워터마크의 상태 변화를 보여주는 그림입니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-102/watermark.png" width="100%"  style="max-width: 950px" />
+  
+
+</figure>
+<p>위 그림에서 휴리스틱 워터마크의 경우 스코어 9의 값을 고려하지 않아서 퍼펙트 워터마크와 모양이 다른 것을 알 수 있습니다. 왼쪽 그림의 경우 스코어 9로 인해 워터마크가 너무 느린 문제가 발생합니다. 그와는 다르게 오른쪽 그림에서는 워터마크가 빨라서 늦게 도착한 스코어 9를 합하지 않아서 잘못된 결과가 나오게 됩니다. 이렇게 워터마크가 너무 느리거나 워터마크가 너무 빠른 문제가 발생할 수 있습니다. 이와 같은 경우 짧은 지연 시간을 갖기 어렵거나 정확성을 갖지 못할 수 있습니다. 이러한 단점은 해결하는 방법이 바로 트리거(Trigger)입니다.</p>
+<h2 id="trigger">Trigger</h2>
+<p>트리거는 윈도우의 출력이 어느 처리 시간에 발생할 것인지 알려줍니다. 즉, 처리중인 데이터를 언제 다음 단계로 넘겨줄지(Tigger) 시스템에 알려줍니다. 예를 들어 윈도우가 종료되는 시간에 그 데이터를 다음 단계로 넘겨주는 것입니다. 이러한 트리거는 시간 기반 뿐만 아니라 다양한 종류를 제공합니다.</p>
+<ul>
+<li>Event time trigger : 이벤트 시간 기준으로 트리거를 합니다.</li>
+<li>Processing time trigger : 처리 시간을 기준으로 트리거를 합니다. 딜레이가 없이 진행되므로 정기적이고 주기적인 업데이트를 제공할 수 있습니다.</li>
+<li>Data-driven trigger : 데이터 기반 트리거는 데이터가 각 윈도우에 도착한 시점에 데이터를 데이터를 검사하여 지정한 조건이 충족되면 트리거되는 방식입니다. 예를 들어 윈도우에 일정 수의 데이터 요소가 수신되면 윈도우에서 결과를 내보내도록 처리합니다. 그래서 Element count trigger라고도 합니다.</li>
+<li>Punctuations : Punctuation은 &ldquo;구두점&quot;이라는 의미인데, 특정 데이터(이벤트)가 들어오는 순간에 트리거하는 방식입니다.</li>
+<li>Composite trigger(복합 트리거) : 트리거는 하나의 트리거 뿐만 아니라 여러 트리거를 조합해서 사용이 가능합니다. 조합할 수 있는 방법은 다음과 같습니다.
+<ul>
+<li>Repetitions(반복) : 트리거를 반복적으로 수행합니다. 정기적이고 주기적인 업데이트를 제공하기 위해서 처리시간 트리거와 함께 사용합니다.</li>
+<li>Conjunctions(AND) : AND 조건으로 두개의 트리거 조건이 모두 만족해야 트리거가 됩니다. 예를 들어 Processing time trigger가 1분이고, Element count trigger가 100개이면, 윈도우가 시작된 후 1분 후에, Element count가 100개가 되면 트리거가 됩니다. 즉, 2가지 조건에 부합해야 합니다.</li>
+<li>Disjunctions(OR) : OR 조건으로 두 트리거 중에 하나만 만족하면 트리거 됩니다.</li>
+<li>Sequence : Sequence는 정의된 트리거를 순차적으로 실행합니다. 즉, 첫 번째 트리거를 1분짜리 Processing time trigger를 등록하고 두 번째는 Element count가 100개인 트리거를 등록한 경우에, 윈도우 시작 후 1분 후에 트리거가 되고, 그 후에는 Element가 100개가 들어오면 두 번재 트리거가 된 후에 종료되는 방식입니다.</li>
+</ul>
+</li>
+</ul>
+<h2 id="allowed-lateness">Allowed Lateness</h2>
+<p>늦은 데이터가 도착했을 때 데이터를 적절하게 처리할 수 있도록 허용되는 시간동안 윈도우의 지속상태를 지속해야 합니다. 사실 지연된 데이터를 처리하기 위해서 상태를 계속 유지할 수 있으면 좋겠지만 스트림 처리에서는 제한된 리소스로 인해 불가능합니다. 결과적으로 윈도우의 생명주기를 제한하는 방법을 제공해야 하고 허용되는 지연 시간에 관한 정보가 즉, 워터마크가 윈도우의 끝나는 지점에서부터 지연시간을 초과하는 것을 기준으로 설정됩니다. 그리고 이 이후에 들어온 모든 데이터는 드랍하게 됩니다.</p>
+<h2 id="accumulation">Accumulation</h2>
+<p>트리거 이후 결과를 어떻게 반영할 것인지 결정해야 합니다. 윈도우의 결과는 3가지의 어큐뮬레이션 모드가 있습니다. 3가지의 종류는 다음과 같습니다.</p>
+<ul>
+<li>Discarding<br>
+각 윈도우 결과가 독립적입니다. 이전 윈도우의 결과는 다음의 윈도우 결과와 독립적입니다.</li>
+<li>Accumulating<br>
+기존의 모든 상태가 유지되면서 윈도우의 결과가 누적되는 방식입니다.</li>
+<li>Accumulating &amp; retracting<br>
+누적 모드와 비슷하지만 이전에 누적된 결과를 철회하고 수정하는 방식입니다.</li>
+</ul>
+<p>트리거의 결과를 반영하는 방식을 나타내는 그림이 다음과 같습니다.</p>
+<figure >
+
+  <img src="https://eoriented.github.io/images/streaming-102/accumulation.jpeg" width="100%"  style="max-width: 1500px" />
+  
+
+</figure>
+<h2 id="정리">정리</h2>
+<p>본 포스트를 통해 스트림 처리의 개념들을 익혔을 것이라고 생각됩니다. 스트림 처리의 개념을 이해하기 위해 4가지 질문에 관해 스트림 처리에선 어떻게 해결하는지 정리해보면 다음과 같습니다.</p>
+<ul>
+<li><strong>어떤</strong> 결과가 계산될까요? =&gt; 트랜스포메이션</li>
+<li>이벤트 시간 중 <strong>어디에서</strong> 결과가 계산될까요? =&gt; 윈도우</li>
+<li>처리 시간에서 <strong>언제</strong> 결과가 구체화될까요? =&gt; 워터마크와 트리거</li>
+<li><strong>어떻게</strong> 결과 여부를 반영시킬 수 있을까요? =&gt; 어큐뮬레이션 모드</li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/#L1">https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/#L1</a></li>
+<li><a href="https://bcho.tistory.com/1124?category=633903">https://bcho.tistory.com/1124?category=633903</a></li>
+</ul>
+
+        </p>
+
+        <br />
+        <br />
+
+        <div class="paging post-paging" style="margin-bottom: 15px;">
+            
+            
+        </div>
+    </div>
+
+    
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "smart-tiger" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+    <div class="page-footer">
+        
+        <hr class="footer-divider">
+        
+            <a class="tag" href="https://eoriented.github.io/tags/bigdata">#bigdata</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/streaming">#streaming</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/batch">#batch</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/lambda-architecture">#lambda architecture</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/window">#window</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/unbounded-data">#unbounded data</a>
+        
+            <a class="tag" href="https://eoriented.github.io/tags/event-time-processing">#event time processing</a>
+        
+      
+    </div>
+
+
+        
+        </div>
+        <footer class="footer-mobile">
+	<div class="social-icons" style="text-align: center">
+    
+    <a class="social-icon" href="https://github.com/eoriented" target="_blank" rel="noopener" title="GitHub">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M13.9988029,1.32087331 C6.82105037,1.32087331 1,7.14112562 1,14.3212723 C1,20.0649109 4.72454649,24.9370678 9.89038951,26.6560892 C10.5408085,26.7757983 10.7778323,26.374374 10.7778323,26.0296121 C10.7778323,25.7215609 10.7666595,24.9035493 10.760275,23.8189856 C7.14426471,24.6042767 6.38131925,22.0760223 6.38131925,22.0760223 C5.78995672,20.5740732 4.93762853,20.1742451 4.93762853,20.1742451 C3.75729765,19.3682044 5.02701126,19.3841656 5.02701126,19.3841656 C6.33183953,19.4759425 7.01817121,20.7241085 7.01817121,20.7241085 C8.17775254,22.7104801 10.0611744,22.1366749 10.8017741,21.8038838 C10.919887,20.9643246 11.2558703,20.3913175 11.6269683,20.066507 C8.74038491,19.7385043 5.70536235,18.6228163 5.70536235,13.6413251 C5.70536235,12.2223743 6.21213051,11.0611968 7.04370914,10.1530044 C6.90963504,9.82420367 6.46351945,8.50181809 7.17139875,6.71256734 C7.17139875,6.71256734 8.26234691,6.36301702 10.7459099,8.04532771 C11.78259,7.75642995 12.8950858,7.61277914 14.000399,7.60719272 C15.1049142,7.61277914 16.2166119,7.75642995 17.2548881,8.04532771 C19.736855,6.36301702 20.8262071,6.71256734 20.8262071,6.71256734 C21.5356825,8.50181809 21.0895669,9.82420367 20.9562909,10.1530044 C21.7894656,11.0611968 22.2922435,12.2223743 22.2922435,13.6413251 C22.2922435,18.6355852 19.2524325,19.734514 16.3570705,20.0561322 C16.8231376,20.4575564 17.2389269,21.2508282 17.2389269,22.4638795 C17.2389269,24.2012564 17.2229657,25.603448 17.2229657,26.0296121 C17.2229657,26.3775663 17.4575954,26.7821827 18.116793,26.6552912 C23.2786458,24.9322794 27,20.0633148 27,14.3212723 C27,7.14112562 21.1789496,1.32087331 13.9988029,1.32087331"></path>
+        </svg>
+    </a>
+    
+
+    
+
+    
+    <a class="social-icon" href="mailto:eoriented@gmail.com" target="_blank" rel="noopener" title="Email">
+        <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <path d="M25.2794292,5.59128519 L14,16.8707144 L2.72057081,5.59128519 C3.06733103,5.30237414 3.51336915,5.12857603 4,5.12857603 L24,5.12857603 C24.4866308,5.12857603 24.932669,5.30237414 25.2794292,5.59128519 Z M25.9956978,6.99633695 C25.998551,7.04004843 26,7.08414302 26,7.12857603 L26,20.871424 C26,21.0798433 25.9681197,21.2808166 25.9089697,21.4697335 L18.7156355,14.2763993 L25.9956978,6.99633695 Z M24.9498374,22.6319215 C24.6672737,22.7846939 24.3437653,22.871424 24,22.871424 L4,22.871424 C3.5268522,22.871424 3.09207889,22.7071233 2.74962118,22.432463 L10.0950247,15.0870594 L13.9848068,18.9768415 L14.1878486,18.7737996 L14.2030419,18.7889929 L17.6549753,15.3370594 L24.9498374,22.6319215 Z M2.00810114,21.0526627 C2.00273908,20.9929669 2,20.9325153 2,20.871424 L2,7.12857603 C2,7.08414302 2.00144896,7.04004843 2.00430222,6.99633695 L9.03436454,14.0263993 L2.00810114,21.0526627 Z"></path>
+        </svg>
+    </a>
+    
+
+    
+    <a class="social-icon" href="https://eoriented.github.io/index.xml" target="_blank" rel="noopener" type="application/rss+xml" title="Rss">
+        <svg width="28px" height="28px" viewBox="0 0 8 8" version="1.1" fill="#ABABAB" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <circle xmlns="http://www.w3.org/2000/svg" class="symbol" cx="2" cy="6" r="1"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,4 a 3,3 0 0 1 3,3 h 1 a 4,4 0 0 0 -4,-4 z"/>
+            <path xmlns="http://www.w3.org/2000/svg" class="symbol" d="m 1,2 a 5,5 0 0 1 5,5 h 1 a 6,6 0 0 0 -6,-6 z"/>
+        </svg>
+    </a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+</div>
+
+
+
+
+	
+		
+		
+		
+	
+
+	<script src="https://eoriented.github.io/js/main.min.fa5c2b23e07b5d9bfad267a52b4b24fdb053e6fb7524993383594926a3ac270c.js" integrity="sha256-+lwrI+B7XZv60melK0sk/bBT5vt1JJkzg1lJJqOsJww="></script>
+</footer>
+    </body>
+</html>

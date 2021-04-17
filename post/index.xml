@@ -33,6 +33,15 @@
     </item>
     
     <item>
+      <title>스트리밍 두 번째 걸음 - 배치를 넘어서</title>
+      <link>https://eoriented.github.io/post/streaming-102/</link>
+      <pubDate>Fri, 01 Jan 2021 14:31:42 +0900</pubDate>
+      <author>eoriented@gmail.com (eoriented)</author>
+      <guid>https://eoriented.github.io/post/streaming-102/</guid>
+      <description>이전 포스트에서는 데이터를 Bounded data와 Unbounded 데이터 구별하고, 그것을 처리하는 방법에 관해 살펴보았습니다. Unbounded data를 처리할 때 이벤트 시간과 처리 시간의 차이점에 대해서 다뤘습니다. 또한 윈도우 개념도 함께 알아보았습니다. 이번 포스트에서는 워터마크, 트리거, 어큐뮬레이션에 관해 자세히 살펴보겠습니다.</description>
+    </item>
+    
+    <item>
       <title>스트리밍의 첫걸음 - 데이터 스트리밍 처리의 개념 정리</title>
       <link>https://eoriented.github.io/post/streaming-101/</link>
       <pubDate>Sat, 19 Dec 2020 15:06:33 +0900</pubDate>
